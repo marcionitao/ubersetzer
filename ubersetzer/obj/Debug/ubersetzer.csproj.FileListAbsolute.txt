@@ -1,0 +1,10 @@
+C:\Users\Márcio\documents\visual studio 2015\Projects\ubersetzer\ubersetzer\obj\Debug\ubersetzer.Form1.resources
+C:\Users\Márcio\documents\visual studio 2015\Projects\ubersetzer\ubersetzer\obj\Debug\ubersetzer.Properties.Resources.resources
+C:\Users\Márcio\documents\visual studio 2015\Projects\ubersetzer\ubersetzer\obj\Debug\ubersetzer.csproj.GenerateResource.Cache
+C:\Users\Márcio\documents\visual studio 2015\Projects\ubersetzer\ubersetzer\bin\Debug\übersetzer.accdb
+C:\Users\Márcio\documents\visual studio 2015\Projects\ubersetzer\ubersetzer\bin\Debug\ubersetzer.exe.config
+C:\Users\Márcio\documents\visual studio 2015\Projects\ubersetzer\ubersetzer\bin\Debug\ubersetzer.exe
+C:\Users\Márcio\documents\visual studio 2015\Projects\ubersetzer\ubersetzer\bin\Debug\ubersetzer.pdb
+C:\Users\Márcio\documents\visual studio 2015\Projects\ubersetzer\ubersetzer\obj\Debug\ubersetzer.exe
+C:\Users\Márcio\documents\visual studio 2015\Projects\ubersetzer\ubersetzer\obj\Debug\ubersetzer.pdb
+C:\Users\Márcio\documents\visual studio 2015\Projects\ubersetzer\ubersetzer\obj\Debug\ubersetzer.csprojResolveAssemblyReference.cache
