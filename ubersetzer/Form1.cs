@@ -126,6 +126,40 @@ namespace ubersetzer
             txtSuche.Text = "";
         }
 
-       
+        private void SaveButton_Click(System.Object sender, System.EventArgs e)
+        {
+            // this.übersetzerTableAdapter.Update(this.übersetzerDataSet.übersetzer);
+
+            this.Validate();
+            this.übersetzerBindingSource.EndEdit();
+            // this.tableAdapterManager.UpdateAll(this.übersetzerDataSet);
+            this.übersetzerTableAdapter.Update(this.übersetzerDataSet.übersetzer);
+            MessageBox.Show("Die Daten wurden mit Erfolg aufgenommen!");
+        }
+
+        private void DeleteItem_Click(System.Object sender, System.EventArgs e)
+        {
+
+            if (MessageBox.Show("Sind Sie wirklich löschen das Element?", "Bestätigung löschen", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.OK)
+            {
+                for (int i = 0; i < übersetzerDataGridView_data.SelectedRows.Count; i++)
+                {
+                    this.übersetzerBindingSource.RemoveAt(übersetzerDataGridView_data.SelectedRows[i].Index);
+                }
+                this.Validate();
+                this.übersetzerBindingSource.EndEdit();
+                this.übersetzerTableAdapter.Update(this.übersetzerDataSet.übersetzer);
+
+            }
+
+            else
+            {
+                this.übersetzerTableAdapter.Fill(this.übersetzerDataSet.übersetzer);
+                MessageBox.Show("Zeile nicht entfernt", "Zeile entfernen", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+            }
+
+
+        }
     }
 }

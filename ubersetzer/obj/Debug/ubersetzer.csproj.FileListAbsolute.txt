@@ -8,3 +8,7 @@ C:\Users\Márcio\documents\visual studio 2015\Projects\ubersetzer\ubersetzer\bin
 C:\Users\Márcio\documents\visual studio 2015\Projects\ubersetzer\ubersetzer\obj\Debug\ubersetzer.exe
 C:\Users\Márcio\documents\visual studio 2015\Projects\ubersetzer\ubersetzer\obj\Debug\ubersetzer.pdb
 C:\Users\Márcio\documents\visual studio 2015\Projects\ubersetzer\ubersetzer\obj\Debug\ubersetzer.csprojResolveAssemblyReference.cache
+C:\Users\Márcio\documents\visual studio 2015\Projects\ubersetzer\ubersetzer\bin\Debug\ubersetzer.exe.manifest
+C:\Users\Márcio\documents\visual studio 2015\Projects\ubersetzer\ubersetzer\bin\Debug\ubersetzer.application
+C:\Users\Márcio\documents\visual studio 2015\Projects\ubersetzer\ubersetzer\obj\Debug\ubersetzer.exe.manifest
+C:\Users\Márcio\documents\visual studio 2015\Projects\ubersetzer\ubersetzer\obj\Debug\ubersetzer.application

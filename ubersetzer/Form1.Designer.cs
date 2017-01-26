@@ -55,19 +55,20 @@
             System.Windows.Forms.Label polnischLabel1;
             System.Windows.Forms.Label arabischLabel1;
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle23 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle24 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle25 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle26 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle27 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle28 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle29 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle30 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle31 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle32 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle33 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle34 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle35 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle36 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle37 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle38 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle39 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle40 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle41 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle42 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle43 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle44 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.uber = new System.Windows.Forms.TabPage();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.btnSuche = new System.Windows.Forms.Button();
             this.txtSuche = new System.Windows.Forms.TextBox();
             this.pictureBox12 = new System.Windows.Forms.PictureBox();
@@ -105,54 +106,71 @@
             this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.übersetzerBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.Spanien = new System.Windows.Forms.TabPage();
+            this.pictureBox25 = new System.Windows.Forms.PictureBox();
             this.pictureBox15 = new System.Windows.Forms.PictureBox();
             this.übersetzerDataGridView_2 = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Spanisch = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Portugal = new System.Windows.Forms.TabPage();
+            this.pictureBox26 = new System.Windows.Forms.PictureBox();
             this.pictureBox16 = new System.Windows.Forms.PictureBox();
             this.übersetzerDataGridView_3 = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Portugiesisch = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Frankreich = new System.Windows.Forms.TabPage();
+            this.pictureBox27 = new System.Windows.Forms.PictureBox();
             this.pictureBox17 = new System.Windows.Forms.PictureBox();
             this.übersetzerDataGridView_4 = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Französisch = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Italien = new System.Windows.Forms.TabPage();
+            this.pictureBox28 = new System.Windows.Forms.PictureBox();
+            this.pictureBox18 = new System.Windows.Forms.PictureBox();
             this.übersetzerDataGridView_5 = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn13 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn14 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Italienisch = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Turkei = new System.Windows.Forms.TabPage();
+            this.pictureBox29 = new System.Windows.Forms.PictureBox();
+            this.pictureBox19 = new System.Windows.Forms.PictureBox();
             this.übersetzerDataGridView_6 = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn16 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn17 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Türkisch = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Rumanien = new System.Windows.Forms.TabPage();
+            this.pictureBox30 = new System.Windows.Forms.PictureBox();
+            this.pictureBox20 = new System.Windows.Forms.PictureBox();
             this.übersetzerDataGridView_7 = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn19 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn20 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Rumänisch = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Bulgarien = new System.Windows.Forms.TabPage();
+            this.pictureBox31 = new System.Windows.Forms.PictureBox();
+            this.pictureBox21 = new System.Windows.Forms.PictureBox();
             this.übersetzerDataGridView_8 = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn22 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn23 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Bulgarisch = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Russland = new System.Windows.Forms.TabPage();
+            this.pictureBox32 = new System.Windows.Forms.PictureBox();
+            this.pictureBox22 = new System.Windows.Forms.PictureBox();
             this.übersetzerDataGridView_9 = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn25 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn26 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Russisch = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Polen = new System.Windows.Forms.TabPage();
+            this.pictureBox33 = new System.Windows.Forms.PictureBox();
+            this.pictureBox23 = new System.Windows.Forms.PictureBox();
             this.übersetzerDataGridView_10 = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn28 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn29 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Polnisch = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Arabien = new System.Windows.Forms.TabPage();
+            this.pictureBox34 = new System.Windows.Forms.PictureBox();
+            this.pictureBox24 = new System.Windows.Forms.PictureBox();
             this.übersetzerDataGridView_11 = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn31 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn32 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -163,34 +181,6 @@
             this.tabControl2 = new System.Windows.Forms.TabControl();
             this.Beginn = new System.Windows.Forms.TabPage();
             this.Daten = new System.Windows.Forms.TabPage();
-            this.bindingNavigator1 = new System.Windows.Forms.BindingNavigator(this.components);
-            this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
-            this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorSeparator = new System.Windows.Forms.ToolStripSeparator();
-            this.bindingNavigatorPositionItem = new System.Windows.Forms.ToolStripTextBox();
-            this.bindingNavigatorSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.ordnungTextBox = new System.Windows.Forms.TextBox();
-            this.deutschTextBox1 = new System.Windows.Forms.TextBox();
-            this.englischTextBox1 = new System.Windows.Forms.TextBox();
-            this.spanischTextBox1 = new System.Windows.Forms.TextBox();
-            this.portugiesischTextBox1 = new System.Windows.Forms.TextBox();
-            this.französischTextBox1 = new System.Windows.Forms.TextBox();
-            this.italienischTextBox1 = new System.Windows.Forms.TextBox();
-            this.türkischTextBox1 = new System.Windows.Forms.TextBox();
-            this.rumänischTextBox1 = new System.Windows.Forms.TextBox();
-            this.bulgarischTextBox1 = new System.Windows.Forms.TextBox();
-            this.russischTextBox1 = new System.Windows.Forms.TextBox();
-            this.polnischTextBox1 = new System.Windows.Forms.TextBox();
-            this.arabischTextBox1 = new System.Windows.Forms.TextBox();
-            this.übersetzerTableAdapter = new ubersetzer.übersetzerDataSetTableAdapters.übersetzerTableAdapter();
-            this.imageList2 = new System.Windows.Forms.ImageList(this.components);
-            this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.übersetzerDataGridView_data = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -205,6 +195,36 @@
             this.dataGridViewTextBoxColumn35 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn36 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn37 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.bindingNavigator1 = new System.Windows.Forms.BindingNavigator(this.components);
+            this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
+            this.DeleteItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorSeparator = new System.Windows.Forms.ToolStripSeparator();
+            this.bindingNavigatorPositionItem = new System.Windows.Forms.ToolStripTextBox();
+            this.bindingNavigatorSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
+            this.SaveButton = new System.Windows.Forms.ToolStripButton();
+            this.ordnungTextBox = new System.Windows.Forms.TextBox();
+            this.deutschTextBox1 = new System.Windows.Forms.TextBox();
+            this.englischTextBox1 = new System.Windows.Forms.TextBox();
+            this.spanischTextBox1 = new System.Windows.Forms.TextBox();
+            this.portugiesischTextBox1 = new System.Windows.Forms.TextBox();
+            this.französischTextBox1 = new System.Windows.Forms.TextBox();
+            this.italienischTextBox1 = new System.Windows.Forms.TextBox();
+            this.türkischTextBox1 = new System.Windows.Forms.TextBox();
+            this.rumänischTextBox1 = new System.Windows.Forms.TextBox();
+            this.bulgarischTextBox1 = new System.Windows.Forms.TextBox();
+            this.russischTextBox1 = new System.Windows.Forms.TextBox();
+            this.polnischTextBox1 = new System.Windows.Forms.TextBox();
+            this.arabischTextBox1 = new System.Windows.Forms.TextBox();
+            this.imageList3 = new System.Windows.Forms.ImageList(this.components);
+            this.übersetzerTableAdapter = new ubersetzer.übersetzerDataSetTableAdapters.übersetzerTableAdapter();
+            this.imageList2 = new System.Windows.Forms.ImageList(this.components);
+            this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             deutschLabel = new System.Windows.Forms.Label();
             englischLabel = new System.Windows.Forms.Label();
             spanischLabel = new System.Windows.Forms.Label();
@@ -252,35 +272,52 @@
             ((System.ComponentModel.ISupportInitialize)(this.übersetzerDataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.übersetzerBindingSource)).BeginInit();
             this.Spanien.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox25)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.übersetzerDataGridView_2)).BeginInit();
             this.Portugal.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox26)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.übersetzerDataGridView_3)).BeginInit();
             this.Frankreich.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox27)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.übersetzerDataGridView_4)).BeginInit();
             this.Italien.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox28)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox18)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.übersetzerDataGridView_5)).BeginInit();
             this.Turkei.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox29)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox19)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.übersetzerDataGridView_6)).BeginInit();
             this.Rumanien.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox30)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox20)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.übersetzerDataGridView_7)).BeginInit();
             this.Bulgarien.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox31)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox21)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.übersetzerDataGridView_8)).BeginInit();
             this.Russland.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox32)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox22)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.übersetzerDataGridView_9)).BeginInit();
             this.Polen.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox33)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox23)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.übersetzerDataGridView_10)).BeginInit();
             this.Arabien.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox34)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox24)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.übersetzerDataGridView_11)).BeginInit();
             this.tabControl2.SuspendLayout();
             this.Beginn.SuspendLayout();
             this.Daten.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.übersetzerDataGridView_data)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).BeginInit();
             this.bindingNavigator1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.übersetzerDataGridView_data)).BeginInit();
             this.SuspendLayout();
             // 
             // deutschLabel
@@ -347,7 +384,7 @@
             // 
             türkischLabel.AutoSize = true;
             türkischLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            türkischLabel.Location = new System.Drawing.Point(726, 154);
+            türkischLabel.Location = new System.Drawing.Point(726, 155);
             türkischLabel.Name = "türkischLabel";
             türkischLabel.Size = new System.Drawing.Size(72, 20);
             türkischLabel.TabIndex = 12;
@@ -397,7 +434,7 @@
             // 
             arabischLabel.AutoSize = true;
             arabischLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            arabischLabel.Location = new System.Drawing.Point(416, 154);
+            arabischLabel.Location = new System.Drawing.Point(416, 155);
             arabischLabel.Name = "arabischLabel";
             arabischLabel.Size = new System.Drawing.Size(75, 20);
             arabischLabel.TabIndex = 22;
@@ -538,12 +575,13 @@
             this.tabControl1.Location = new System.Drawing.Point(6, 6);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(994, 407);
+            this.tabControl1.Size = new System.Drawing.Size(994, 415);
             this.tabControl1.TabIndex = 0;
             // 
             // uber
             // 
             this.uber.AutoScroll = true;
+            this.uber.Controls.Add(this.textBox1);
             this.uber.Controls.Add(this.btnSuche);
             this.uber.Controls.Add(this.txtSuche);
             this.uber.Controls.Add(this.pictureBox12);
@@ -586,14 +624,24 @@
             this.uber.Location = new System.Drawing.Point(4, 31);
             this.uber.Name = "uber";
             this.uber.Padding = new System.Windows.Forms.Padding(3);
-            this.uber.Size = new System.Drawing.Size(986, 372);
+            this.uber.Size = new System.Drawing.Size(986, 380);
             this.uber.TabIndex = 0;
             this.uber.Text = "Übersetzer";
             this.uber.UseVisualStyleBackColor = true;
             // 
+            // textBox1
+            // 
+            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.Location = new System.Drawing.Point(210, 28);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(115, 16);
+            this.textBox1.TabIndex = 38;
+            this.textBox1.Text = "Geben Sie ein Wort:";
+            // 
             // btnSuche
             // 
-            this.btnSuche.Location = new System.Drawing.Point(586, 25);
+            this.btnSuche.Location = new System.Drawing.Point(651, 25);
             this.btnSuche.Name = "btnSuche";
             this.btnSuche.Size = new System.Drawing.Size(119, 23);
             this.btnSuche.TabIndex = 37;
@@ -603,7 +651,7 @@
             // 
             // txtSuche
             // 
-            this.txtSuche.Location = new System.Drawing.Point(266, 28);
+            this.txtSuche.Location = new System.Drawing.Point(331, 26);
             this.txtSuche.Name = "txtSuche";
             this.txtSuche.Size = new System.Drawing.Size(314, 20);
             this.txtSuche.TabIndex = 36;
@@ -673,7 +721,7 @@
             // pictureBox6
             // 
             this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
-            this.pictureBox6.Location = new System.Drawing.Point(381, 155);
+            this.pictureBox6.Location = new System.Drawing.Point(381, 154);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(32, 32);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -882,13 +930,14 @@
             this.England.Location = new System.Drawing.Point(4, 31);
             this.England.Name = "England";
             this.England.Padding = new System.Windows.Forms.Padding(3);
-            this.England.Size = new System.Drawing.Size(986, 372);
+            this.England.Size = new System.Drawing.Size(986, 380);
             this.England.TabIndex = 1;
             this.England.Text = "England";
             this.England.UseVisualStyleBackColor = true;
             // 
             // pictureBox14
             // 
+            this.pictureBox14.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox14.Image")));
             this.pictureBox14.Location = new System.Drawing.Point(535, 30);
             this.pictureBox14.Name = "pictureBox14";
             this.pictureBox14.Size = new System.Drawing.Size(64, 64);
@@ -898,6 +947,7 @@
             // 
             // pictureBox13
             // 
+            this.pictureBox13.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox13.Image")));
             this.pictureBox13.Location = new System.Drawing.Point(207, 30);
             this.pictureBox13.Name = "pictureBox13";
             this.pictureBox13.Size = new System.Drawing.Size(64, 64);
@@ -918,14 +968,14 @@
             this.dataGridViewTextBoxColumn3,
             this.dataGridViewTextBoxColumn4});
             this.übersetzerDataGridView.DataSource = this.übersetzerBindingSource;
-            dataGridViewCellStyle23.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle23.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle23.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle23.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle23.SelectionBackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle23.SelectionForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle23.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.übersetzerDataGridView.DefaultCellStyle = dataGridViewCellStyle23;
+            dataGridViewCellStyle34.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle34.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle34.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle34.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle34.SelectionBackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle34.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle34.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.übersetzerDataGridView.DefaultCellStyle = dataGridViewCellStyle34;
             this.übersetzerDataGridView.Location = new System.Drawing.Point(119, 100);
             this.übersetzerDataGridView.Name = "übersetzerDataGridView";
             this.übersetzerDataGridView.ReadOnly = true;
@@ -967,18 +1017,30 @@
             // 
             // Spanien
             // 
+            this.Spanien.Controls.Add(this.pictureBox25);
             this.Spanien.Controls.Add(this.pictureBox15);
             this.Spanien.Controls.Add(this.übersetzerDataGridView_2);
             this.Spanien.ImageIndex = 1;
             this.Spanien.Location = new System.Drawing.Point(4, 31);
             this.Spanien.Name = "Spanien";
-            this.Spanien.Size = new System.Drawing.Size(986, 372);
+            this.Spanien.Size = new System.Drawing.Size(986, 380);
             this.Spanien.TabIndex = 2;
             this.Spanien.Text = "Spanien";
             this.Spanien.UseVisualStyleBackColor = true;
             // 
+            // pictureBox25
+            // 
+            this.pictureBox25.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox25.Image")));
+            this.pictureBox25.Location = new System.Drawing.Point(535, 30);
+            this.pictureBox25.Name = "pictureBox25";
+            this.pictureBox25.Size = new System.Drawing.Size(64, 64);
+            this.pictureBox25.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox25.TabIndex = 3;
+            this.pictureBox25.TabStop = false;
+            // 
             // pictureBox15
             // 
+            this.pictureBox15.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox15.Image")));
             this.pictureBox15.Location = new System.Drawing.Point(207, 30);
             this.pictureBox15.Name = "pictureBox15";
             this.pictureBox15.Size = new System.Drawing.Size(64, 64);
@@ -999,14 +1061,14 @@
             this.dataGridViewTextBoxColumn5,
             this.Spanisch});
             this.übersetzerDataGridView_2.DataSource = this.übersetzerBindingSource;
-            dataGridViewCellStyle24.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle24.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle24.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle24.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle24.SelectionBackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle24.SelectionForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle24.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.übersetzerDataGridView_2.DefaultCellStyle = dataGridViewCellStyle24;
+            dataGridViewCellStyle35.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle35.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle35.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle35.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle35.SelectionBackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle35.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle35.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.übersetzerDataGridView_2.DefaultCellStyle = dataGridViewCellStyle35;
             this.übersetzerDataGridView_2.Location = new System.Drawing.Point(119, 100);
             this.übersetzerDataGridView_2.Name = "übersetzerDataGridView_2";
             this.übersetzerDataGridView_2.ReadOnly = true;
@@ -1043,18 +1105,30 @@
             // 
             // Portugal
             // 
+            this.Portugal.Controls.Add(this.pictureBox26);
             this.Portugal.Controls.Add(this.pictureBox16);
             this.Portugal.Controls.Add(this.übersetzerDataGridView_3);
             this.Portugal.ImageIndex = 7;
             this.Portugal.Location = new System.Drawing.Point(4, 31);
             this.Portugal.Name = "Portugal";
-            this.Portugal.Size = new System.Drawing.Size(986, 372);
+            this.Portugal.Size = new System.Drawing.Size(986, 380);
             this.Portugal.TabIndex = 3;
             this.Portugal.Text = "Portugal";
             this.Portugal.UseVisualStyleBackColor = true;
             // 
+            // pictureBox26
+            // 
+            this.pictureBox26.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox26.Image")));
+            this.pictureBox26.Location = new System.Drawing.Point(535, 30);
+            this.pictureBox26.Name = "pictureBox26";
+            this.pictureBox26.Size = new System.Drawing.Size(64, 64);
+            this.pictureBox26.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox26.TabIndex = 3;
+            this.pictureBox26.TabStop = false;
+            // 
             // pictureBox16
             // 
+            this.pictureBox16.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox16.Image")));
             this.pictureBox16.Location = new System.Drawing.Point(207, 30);
             this.pictureBox16.Name = "pictureBox16";
             this.pictureBox16.Size = new System.Drawing.Size(64, 64);
@@ -1075,14 +1149,14 @@
             this.dataGridViewTextBoxColumn8,
             this.Portugiesisch});
             this.übersetzerDataGridView_3.DataSource = this.übersetzerBindingSource;
-            dataGridViewCellStyle25.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle25.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle25.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle25.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle25.SelectionBackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle25.SelectionForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle25.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.übersetzerDataGridView_3.DefaultCellStyle = dataGridViewCellStyle25;
+            dataGridViewCellStyle36.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle36.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle36.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle36.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle36.SelectionBackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle36.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle36.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.übersetzerDataGridView_3.DefaultCellStyle = dataGridViewCellStyle36;
             this.übersetzerDataGridView_3.Location = new System.Drawing.Point(119, 100);
             this.übersetzerDataGridView_3.Name = "übersetzerDataGridView_3";
             this.übersetzerDataGridView_3.ReadOnly = true;
@@ -1119,18 +1193,30 @@
             // 
             // Frankreich
             // 
+            this.Frankreich.Controls.Add(this.pictureBox27);
             this.Frankreich.Controls.Add(this.pictureBox17);
             this.Frankreich.Controls.Add(this.übersetzerDataGridView_4);
             this.Frankreich.ImageIndex = 0;
             this.Frankreich.Location = new System.Drawing.Point(4, 31);
             this.Frankreich.Name = "Frankreich";
-            this.Frankreich.Size = new System.Drawing.Size(986, 372);
+            this.Frankreich.Size = new System.Drawing.Size(986, 380);
             this.Frankreich.TabIndex = 4;
             this.Frankreich.Text = "Frankreich";
             this.Frankreich.UseVisualStyleBackColor = true;
             // 
+            // pictureBox27
+            // 
+            this.pictureBox27.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox27.Image")));
+            this.pictureBox27.Location = new System.Drawing.Point(535, 30);
+            this.pictureBox27.Name = "pictureBox27";
+            this.pictureBox27.Size = new System.Drawing.Size(64, 64);
+            this.pictureBox27.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox27.TabIndex = 3;
+            this.pictureBox27.TabStop = false;
+            // 
             // pictureBox17
             // 
+            this.pictureBox17.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox17.Image")));
             this.pictureBox17.Location = new System.Drawing.Point(207, 30);
             this.pictureBox17.Name = "pictureBox17";
             this.pictureBox17.Size = new System.Drawing.Size(64, 64);
@@ -1151,14 +1237,14 @@
             this.dataGridViewTextBoxColumn11,
             this.Französisch});
             this.übersetzerDataGridView_4.DataSource = this.übersetzerBindingSource;
-            dataGridViewCellStyle26.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle26.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle26.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle26.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle26.SelectionBackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle26.SelectionForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle26.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.übersetzerDataGridView_4.DefaultCellStyle = dataGridViewCellStyle26;
+            dataGridViewCellStyle37.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle37.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle37.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle37.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle37.SelectionBackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle37.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle37.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.übersetzerDataGridView_4.DefaultCellStyle = dataGridViewCellStyle37;
             this.übersetzerDataGridView_4.Location = new System.Drawing.Point(119, 100);
             this.übersetzerDataGridView_4.Name = "übersetzerDataGridView_4";
             this.übersetzerDataGridView_4.ReadOnly = true;
@@ -1195,14 +1281,36 @@
             // 
             // Italien
             // 
+            this.Italien.Controls.Add(this.pictureBox28);
+            this.Italien.Controls.Add(this.pictureBox18);
             this.Italien.Controls.Add(this.übersetzerDataGridView_5);
             this.Italien.ImageIndex = 3;
             this.Italien.Location = new System.Drawing.Point(4, 31);
             this.Italien.Name = "Italien";
-            this.Italien.Size = new System.Drawing.Size(986, 372);
+            this.Italien.Size = new System.Drawing.Size(986, 380);
             this.Italien.TabIndex = 5;
             this.Italien.Text = "Italien";
             this.Italien.UseVisualStyleBackColor = true;
+            // 
+            // pictureBox28
+            // 
+            this.pictureBox28.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox28.Image")));
+            this.pictureBox28.Location = new System.Drawing.Point(535, 30);
+            this.pictureBox28.Name = "pictureBox28";
+            this.pictureBox28.Size = new System.Drawing.Size(64, 64);
+            this.pictureBox28.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox28.TabIndex = 4;
+            this.pictureBox28.TabStop = false;
+            // 
+            // pictureBox18
+            // 
+            this.pictureBox18.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox18.Image")));
+            this.pictureBox18.Location = new System.Drawing.Point(207, 30);
+            this.pictureBox18.Name = "pictureBox18";
+            this.pictureBox18.Size = new System.Drawing.Size(64, 64);
+            this.pictureBox18.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox18.TabIndex = 3;
+            this.pictureBox18.TabStop = false;
             // 
             // übersetzerDataGridView_5
             // 
@@ -1217,14 +1325,14 @@
             this.dataGridViewTextBoxColumn14,
             this.Italienisch});
             this.übersetzerDataGridView_5.DataSource = this.übersetzerBindingSource;
-            dataGridViewCellStyle27.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle27.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle27.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle27.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle27.SelectionBackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle27.SelectionForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle27.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.übersetzerDataGridView_5.DefaultCellStyle = dataGridViewCellStyle27;
+            dataGridViewCellStyle38.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle38.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle38.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle38.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle38.SelectionBackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle38.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle38.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.übersetzerDataGridView_5.DefaultCellStyle = dataGridViewCellStyle38;
             this.übersetzerDataGridView_5.Location = new System.Drawing.Point(119, 100);
             this.übersetzerDataGridView_5.Name = "übersetzerDataGridView_5";
             this.übersetzerDataGridView_5.ReadOnly = true;
@@ -1261,14 +1369,36 @@
             // 
             // Turkei
             // 
+            this.Turkei.Controls.Add(this.pictureBox29);
+            this.Turkei.Controls.Add(this.pictureBox19);
             this.Turkei.Controls.Add(this.übersetzerDataGridView_6);
             this.Turkei.ImageIndex = 5;
             this.Turkei.Location = new System.Drawing.Point(4, 31);
             this.Turkei.Name = "Turkei";
-            this.Turkei.Size = new System.Drawing.Size(986, 372);
+            this.Turkei.Size = new System.Drawing.Size(986, 380);
             this.Turkei.TabIndex = 6;
             this.Turkei.Text = "Türkei";
             this.Turkei.UseVisualStyleBackColor = true;
+            // 
+            // pictureBox29
+            // 
+            this.pictureBox29.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox29.Image")));
+            this.pictureBox29.Location = new System.Drawing.Point(535, 30);
+            this.pictureBox29.Name = "pictureBox29";
+            this.pictureBox29.Size = new System.Drawing.Size(64, 64);
+            this.pictureBox29.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox29.TabIndex = 4;
+            this.pictureBox29.TabStop = false;
+            // 
+            // pictureBox19
+            // 
+            this.pictureBox19.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox19.Image")));
+            this.pictureBox19.Location = new System.Drawing.Point(207, 30);
+            this.pictureBox19.Name = "pictureBox19";
+            this.pictureBox19.Size = new System.Drawing.Size(64, 64);
+            this.pictureBox19.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox19.TabIndex = 3;
+            this.pictureBox19.TabStop = false;
             // 
             // übersetzerDataGridView_6
             // 
@@ -1283,14 +1413,14 @@
             this.dataGridViewTextBoxColumn17,
             this.Türkisch});
             this.übersetzerDataGridView_6.DataSource = this.übersetzerBindingSource;
-            dataGridViewCellStyle28.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle28.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle28.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle28.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle28.SelectionBackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle28.SelectionForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle28.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.übersetzerDataGridView_6.DefaultCellStyle = dataGridViewCellStyle28;
+            dataGridViewCellStyle39.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle39.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle39.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle39.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle39.SelectionBackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle39.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle39.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.übersetzerDataGridView_6.DefaultCellStyle = dataGridViewCellStyle39;
             this.übersetzerDataGridView_6.Location = new System.Drawing.Point(119, 100);
             this.übersetzerDataGridView_6.Name = "übersetzerDataGridView_6";
             this.übersetzerDataGridView_6.ReadOnly = true;
@@ -1327,14 +1457,36 @@
             // 
             // Rumanien
             // 
+            this.Rumanien.Controls.Add(this.pictureBox30);
+            this.Rumanien.Controls.Add(this.pictureBox20);
             this.Rumanien.Controls.Add(this.übersetzerDataGridView_7);
             this.Rumanien.ImageIndex = 9;
             this.Rumanien.Location = new System.Drawing.Point(4, 31);
             this.Rumanien.Name = "Rumanien";
-            this.Rumanien.Size = new System.Drawing.Size(986, 372);
+            this.Rumanien.Size = new System.Drawing.Size(986, 380);
             this.Rumanien.TabIndex = 7;
             this.Rumanien.Text = "Rumänien";
             this.Rumanien.UseVisualStyleBackColor = true;
+            // 
+            // pictureBox30
+            // 
+            this.pictureBox30.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox30.Image")));
+            this.pictureBox30.Location = new System.Drawing.Point(535, 30);
+            this.pictureBox30.Name = "pictureBox30";
+            this.pictureBox30.Size = new System.Drawing.Size(64, 64);
+            this.pictureBox30.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox30.TabIndex = 4;
+            this.pictureBox30.TabStop = false;
+            // 
+            // pictureBox20
+            // 
+            this.pictureBox20.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox20.Image")));
+            this.pictureBox20.Location = new System.Drawing.Point(207, 30);
+            this.pictureBox20.Name = "pictureBox20";
+            this.pictureBox20.Size = new System.Drawing.Size(64, 64);
+            this.pictureBox20.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox20.TabIndex = 3;
+            this.pictureBox20.TabStop = false;
             // 
             // übersetzerDataGridView_7
             // 
@@ -1349,14 +1501,14 @@
             this.dataGridViewTextBoxColumn20,
             this.Rumänisch});
             this.übersetzerDataGridView_7.DataSource = this.übersetzerBindingSource;
-            dataGridViewCellStyle29.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle29.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle29.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle29.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle29.SelectionBackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle29.SelectionForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle29.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.übersetzerDataGridView_7.DefaultCellStyle = dataGridViewCellStyle29;
+            dataGridViewCellStyle40.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle40.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle40.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle40.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle40.SelectionBackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle40.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle40.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.übersetzerDataGridView_7.DefaultCellStyle = dataGridViewCellStyle40;
             this.übersetzerDataGridView_7.Location = new System.Drawing.Point(119, 100);
             this.übersetzerDataGridView_7.Name = "übersetzerDataGridView_7";
             this.übersetzerDataGridView_7.ReadOnly = true;
@@ -1393,14 +1545,36 @@
             // 
             // Bulgarien
             // 
+            this.Bulgarien.Controls.Add(this.pictureBox31);
+            this.Bulgarien.Controls.Add(this.pictureBox21);
             this.Bulgarien.Controls.Add(this.übersetzerDataGridView_8);
             this.Bulgarien.ImageIndex = 10;
             this.Bulgarien.Location = new System.Drawing.Point(4, 31);
             this.Bulgarien.Name = "Bulgarien";
-            this.Bulgarien.Size = new System.Drawing.Size(986, 372);
+            this.Bulgarien.Size = new System.Drawing.Size(986, 380);
             this.Bulgarien.TabIndex = 8;
             this.Bulgarien.Text = "Bulgarien";
             this.Bulgarien.UseVisualStyleBackColor = true;
+            // 
+            // pictureBox31
+            // 
+            this.pictureBox31.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox31.Image")));
+            this.pictureBox31.Location = new System.Drawing.Point(535, 30);
+            this.pictureBox31.Name = "pictureBox31";
+            this.pictureBox31.Size = new System.Drawing.Size(64, 64);
+            this.pictureBox31.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox31.TabIndex = 4;
+            this.pictureBox31.TabStop = false;
+            // 
+            // pictureBox21
+            // 
+            this.pictureBox21.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox21.Image")));
+            this.pictureBox21.Location = new System.Drawing.Point(207, 30);
+            this.pictureBox21.Name = "pictureBox21";
+            this.pictureBox21.Size = new System.Drawing.Size(64, 64);
+            this.pictureBox21.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox21.TabIndex = 3;
+            this.pictureBox21.TabStop = false;
             // 
             // übersetzerDataGridView_8
             // 
@@ -1415,14 +1589,14 @@
             this.dataGridViewTextBoxColumn23,
             this.Bulgarisch});
             this.übersetzerDataGridView_8.DataSource = this.übersetzerBindingSource;
-            dataGridViewCellStyle30.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle30.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle30.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle30.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle30.SelectionBackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle30.SelectionForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle30.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.übersetzerDataGridView_8.DefaultCellStyle = dataGridViewCellStyle30;
+            dataGridViewCellStyle41.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle41.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle41.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle41.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle41.SelectionBackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle41.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle41.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.übersetzerDataGridView_8.DefaultCellStyle = dataGridViewCellStyle41;
             this.übersetzerDataGridView_8.Location = new System.Drawing.Point(119, 100);
             this.übersetzerDataGridView_8.Name = "übersetzerDataGridView_8";
             this.übersetzerDataGridView_8.ReadOnly = true;
@@ -1459,14 +1633,36 @@
             // 
             // Russland
             // 
+            this.Russland.Controls.Add(this.pictureBox32);
+            this.Russland.Controls.Add(this.pictureBox22);
             this.Russland.Controls.Add(this.übersetzerDataGridView_9);
             this.Russland.ImageIndex = 4;
             this.Russland.Location = new System.Drawing.Point(4, 31);
             this.Russland.Name = "Russland";
-            this.Russland.Size = new System.Drawing.Size(986, 372);
+            this.Russland.Size = new System.Drawing.Size(986, 380);
             this.Russland.TabIndex = 9;
             this.Russland.Text = "Russland";
             this.Russland.UseVisualStyleBackColor = true;
+            // 
+            // pictureBox32
+            // 
+            this.pictureBox32.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox32.Image")));
+            this.pictureBox32.Location = new System.Drawing.Point(535, 30);
+            this.pictureBox32.Name = "pictureBox32";
+            this.pictureBox32.Size = new System.Drawing.Size(64, 64);
+            this.pictureBox32.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox32.TabIndex = 4;
+            this.pictureBox32.TabStop = false;
+            // 
+            // pictureBox22
+            // 
+            this.pictureBox22.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox22.Image")));
+            this.pictureBox22.Location = new System.Drawing.Point(207, 30);
+            this.pictureBox22.Name = "pictureBox22";
+            this.pictureBox22.Size = new System.Drawing.Size(64, 64);
+            this.pictureBox22.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox22.TabIndex = 3;
+            this.pictureBox22.TabStop = false;
             // 
             // übersetzerDataGridView_9
             // 
@@ -1481,14 +1677,14 @@
             this.dataGridViewTextBoxColumn26,
             this.Russisch});
             this.übersetzerDataGridView_9.DataSource = this.übersetzerBindingSource;
-            dataGridViewCellStyle31.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle31.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle31.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle31.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle31.SelectionBackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle31.SelectionForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle31.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.übersetzerDataGridView_9.DefaultCellStyle = dataGridViewCellStyle31;
+            dataGridViewCellStyle42.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle42.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle42.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle42.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle42.SelectionBackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle42.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle42.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.übersetzerDataGridView_9.DefaultCellStyle = dataGridViewCellStyle42;
             this.übersetzerDataGridView_9.Location = new System.Drawing.Point(119, 100);
             this.übersetzerDataGridView_9.Name = "übersetzerDataGridView_9";
             this.übersetzerDataGridView_9.ReadOnly = true;
@@ -1525,14 +1721,36 @@
             // 
             // Polen
             // 
+            this.Polen.Controls.Add(this.pictureBox33);
+            this.Polen.Controls.Add(this.pictureBox23);
             this.Polen.Controls.Add(this.übersetzerDataGridView_10);
             this.Polen.ImageIndex = 6;
             this.Polen.Location = new System.Drawing.Point(4, 31);
             this.Polen.Name = "Polen";
-            this.Polen.Size = new System.Drawing.Size(986, 372);
+            this.Polen.Size = new System.Drawing.Size(986, 380);
             this.Polen.TabIndex = 10;
             this.Polen.Text = "Polen";
             this.Polen.UseVisualStyleBackColor = true;
+            // 
+            // pictureBox33
+            // 
+            this.pictureBox33.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox33.Image")));
+            this.pictureBox33.Location = new System.Drawing.Point(535, 30);
+            this.pictureBox33.Name = "pictureBox33";
+            this.pictureBox33.Size = new System.Drawing.Size(64, 64);
+            this.pictureBox33.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox33.TabIndex = 4;
+            this.pictureBox33.TabStop = false;
+            // 
+            // pictureBox23
+            // 
+            this.pictureBox23.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox23.Image")));
+            this.pictureBox23.Location = new System.Drawing.Point(207, 30);
+            this.pictureBox23.Name = "pictureBox23";
+            this.pictureBox23.Size = new System.Drawing.Size(64, 64);
+            this.pictureBox23.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox23.TabIndex = 3;
+            this.pictureBox23.TabStop = false;
             // 
             // übersetzerDataGridView_10
             // 
@@ -1547,14 +1765,14 @@
             this.dataGridViewTextBoxColumn29,
             this.Polnisch});
             this.übersetzerDataGridView_10.DataSource = this.übersetzerBindingSource;
-            dataGridViewCellStyle32.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle32.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle32.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle32.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle32.SelectionBackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle32.SelectionForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle32.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.übersetzerDataGridView_10.DefaultCellStyle = dataGridViewCellStyle32;
+            dataGridViewCellStyle43.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle43.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle43.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle43.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle43.SelectionBackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle43.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle43.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.übersetzerDataGridView_10.DefaultCellStyle = dataGridViewCellStyle43;
             this.übersetzerDataGridView_10.Location = new System.Drawing.Point(119, 100);
             this.übersetzerDataGridView_10.Name = "übersetzerDataGridView_10";
             this.übersetzerDataGridView_10.ReadOnly = true;
@@ -1591,14 +1809,36 @@
             // 
             // Arabien
             // 
+            this.Arabien.Controls.Add(this.pictureBox34);
+            this.Arabien.Controls.Add(this.pictureBox24);
             this.Arabien.Controls.Add(this.übersetzerDataGridView_11);
             this.Arabien.ImageIndex = 8;
             this.Arabien.Location = new System.Drawing.Point(4, 31);
             this.Arabien.Name = "Arabien";
-            this.Arabien.Size = new System.Drawing.Size(986, 372);
+            this.Arabien.Size = new System.Drawing.Size(986, 380);
             this.Arabien.TabIndex = 11;
             this.Arabien.Text = "Arabien";
             this.Arabien.UseVisualStyleBackColor = true;
+            // 
+            // pictureBox34
+            // 
+            this.pictureBox34.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox34.Image")));
+            this.pictureBox34.Location = new System.Drawing.Point(535, 30);
+            this.pictureBox34.Name = "pictureBox34";
+            this.pictureBox34.Size = new System.Drawing.Size(64, 64);
+            this.pictureBox34.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox34.TabIndex = 4;
+            this.pictureBox34.TabStop = false;
+            // 
+            // pictureBox24
+            // 
+            this.pictureBox24.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox24.Image")));
+            this.pictureBox24.Location = new System.Drawing.Point(207, 30);
+            this.pictureBox24.Name = "pictureBox24";
+            this.pictureBox24.Size = new System.Drawing.Size(64, 64);
+            this.pictureBox24.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox24.TabIndex = 3;
+            this.pictureBox24.TabStop = false;
             // 
             // übersetzerDataGridView_11
             // 
@@ -1613,14 +1853,14 @@
             this.dataGridViewTextBoxColumn32,
             this.Arabisch});
             this.übersetzerDataGridView_11.DataSource = this.übersetzerBindingSource;
-            dataGridViewCellStyle33.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle33.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle33.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle33.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle33.SelectionBackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle33.SelectionForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle33.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.übersetzerDataGridView_11.DefaultCellStyle = dataGridViewCellStyle33;
+            dataGridViewCellStyle44.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle44.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle44.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle44.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle44.SelectionBackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle44.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle44.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.übersetzerDataGridView_11.DefaultCellStyle = dataGridViewCellStyle44;
             this.übersetzerDataGridView_11.Location = new System.Drawing.Point(119, 100);
             this.übersetzerDataGridView_11.Name = "übersetzerDataGridView_11";
             this.übersetzerDataGridView_11.ReadOnly = true;
@@ -1685,22 +1925,25 @@
             // 
             // tabControl2
             // 
+            this.tabControl2.Appearance = System.Windows.Forms.TabAppearance.FlatButtons;
             this.tabControl2.Controls.Add(this.Beginn);
             this.tabControl2.Controls.Add(this.Daten);
             this.tabControl2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabControl2.Location = new System.Drawing.Point(12, 12);
+            this.tabControl2.ImageList = this.imageList3;
+            this.tabControl2.Location = new System.Drawing.Point(12, 5);
             this.tabControl2.Name = "tabControl2";
             this.tabControl2.SelectedIndex = 0;
-            this.tabControl2.Size = new System.Drawing.Size(1014, 445);
+            this.tabControl2.Size = new System.Drawing.Size(1014, 472);
             this.tabControl2.TabIndex = 1;
             // 
             // Beginn
             // 
             this.Beginn.Controls.Add(this.tabControl1);
-            this.Beginn.Location = new System.Drawing.Point(4, 22);
+            this.Beginn.ImageIndex = 0;
+            this.Beginn.Location = new System.Drawing.Point(4, 42);
             this.Beginn.Name = "Beginn";
             this.Beginn.Padding = new System.Windows.Forms.Padding(3);
-            this.Beginn.Size = new System.Drawing.Size(1006, 419);
+            this.Beginn.Size = new System.Drawing.Size(1006, 426);
             this.Beginn.TabIndex = 0;
             this.Beginn.Text = "Beginn";
             this.Beginn.UseVisualStyleBackColor = true;
@@ -1736,20 +1979,138 @@
             this.Daten.Controls.Add(this.polnischTextBox1);
             this.Daten.Controls.Add(arabischLabel1);
             this.Daten.Controls.Add(this.arabischTextBox1);
-            this.Daten.Location = new System.Drawing.Point(4, 22);
+            this.Daten.ImageIndex = 1;
+            this.Daten.Location = new System.Drawing.Point(4, 42);
             this.Daten.Name = "Daten";
             this.Daten.Padding = new System.Windows.Forms.Padding(3);
-            this.Daten.Size = new System.Drawing.Size(1006, 419);
+            this.Daten.Size = new System.Drawing.Size(1006, 426);
             this.Daten.TabIndex = 1;
             this.Daten.Text = "Daten";
             this.Daten.UseVisualStyleBackColor = true;
+            // 
+            // übersetzerDataGridView_data
+            // 
+            this.übersetzerDataGridView_data.AutoGenerateColumns = false;
+            this.übersetzerDataGridView_data.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.DisplayedCells;
+            this.übersetzerDataGridView_data.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.übersetzerDataGridView_data.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn9,
+            this.dataGridViewTextBoxColumn12,
+            this.dataGridViewTextBoxColumn15,
+            this.dataGridViewTextBoxColumn18,
+            this.dataGridViewTextBoxColumn21,
+            this.dataGridViewTextBoxColumn24,
+            this.dataGridViewTextBoxColumn27,
+            this.dataGridViewTextBoxColumn30,
+            this.dataGridViewTextBoxColumn33,
+            this.dataGridViewTextBoxColumn34,
+            this.dataGridViewTextBoxColumn35,
+            this.dataGridViewTextBoxColumn36,
+            this.dataGridViewTextBoxColumn37});
+            this.übersetzerDataGridView_data.DataSource = this.übersetzerBindingSource;
+            this.übersetzerDataGridView_data.EnableHeadersVisualStyles = false;
+            this.übersetzerDataGridView_data.Location = new System.Drawing.Point(6, 209);
+            this.übersetzerDataGridView_data.Name = "übersetzerDataGridView_data";
+            this.übersetzerDataGridView_data.Size = new System.Drawing.Size(994, 192);
+            this.übersetzerDataGridView_data.TabIndex = 28;
+            // 
+            // dataGridViewTextBoxColumn9
+            // 
+            this.dataGridViewTextBoxColumn9.DataPropertyName = "Ordnung";
+            this.dataGridViewTextBoxColumn9.HeaderText = "Ordnung";
+            this.dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
+            this.dataGridViewTextBoxColumn9.Width = 80;
+            // 
+            // dataGridViewTextBoxColumn12
+            // 
+            this.dataGridViewTextBoxColumn12.DataPropertyName = "Deutsch";
+            this.dataGridViewTextBoxColumn12.HeaderText = "Deutsch";
+            this.dataGridViewTextBoxColumn12.Name = "dataGridViewTextBoxColumn12";
+            this.dataGridViewTextBoxColumn12.Width = 77;
+            // 
+            // dataGridViewTextBoxColumn15
+            // 
+            this.dataGridViewTextBoxColumn15.DataPropertyName = "Englisch";
+            this.dataGridViewTextBoxColumn15.HeaderText = "Englisch";
+            this.dataGridViewTextBoxColumn15.Name = "dataGridViewTextBoxColumn15";
+            this.dataGridViewTextBoxColumn15.Width = 79;
+            // 
+            // dataGridViewTextBoxColumn18
+            // 
+            this.dataGridViewTextBoxColumn18.DataPropertyName = "Spanisch";
+            this.dataGridViewTextBoxColumn18.HeaderText = "Spanisch";
+            this.dataGridViewTextBoxColumn18.Name = "dataGridViewTextBoxColumn18";
+            this.dataGridViewTextBoxColumn18.Width = 83;
+            // 
+            // dataGridViewTextBoxColumn21
+            // 
+            this.dataGridViewTextBoxColumn21.DataPropertyName = "Portugiesisch";
+            this.dataGridViewTextBoxColumn21.HeaderText = "Portugiesisch";
+            this.dataGridViewTextBoxColumn21.Name = "dataGridViewTextBoxColumn21";
+            this.dataGridViewTextBoxColumn21.Width = 106;
+            // 
+            // dataGridViewTextBoxColumn24
+            // 
+            this.dataGridViewTextBoxColumn24.DataPropertyName = "Französisch";
+            this.dataGridViewTextBoxColumn24.HeaderText = "Französisch";
+            this.dataGridViewTextBoxColumn24.Name = "dataGridViewTextBoxColumn24";
+            this.dataGridViewTextBoxColumn24.Width = 98;
+            // 
+            // dataGridViewTextBoxColumn27
+            // 
+            this.dataGridViewTextBoxColumn27.DataPropertyName = "Italienisch";
+            this.dataGridViewTextBoxColumn27.HeaderText = "Italienisch";
+            this.dataGridViewTextBoxColumn27.Name = "dataGridViewTextBoxColumn27";
+            this.dataGridViewTextBoxColumn27.Width = 87;
+            // 
+            // dataGridViewTextBoxColumn30
+            // 
+            this.dataGridViewTextBoxColumn30.DataPropertyName = "Türkisch";
+            this.dataGridViewTextBoxColumn30.HeaderText = "Türkisch";
+            this.dataGridViewTextBoxColumn30.Name = "dataGridViewTextBoxColumn30";
+            this.dataGridViewTextBoxColumn30.Width = 78;
+            // 
+            // dataGridViewTextBoxColumn33
+            // 
+            this.dataGridViewTextBoxColumn33.DataPropertyName = "Rumänisch";
+            this.dataGridViewTextBoxColumn33.HeaderText = "Rumänisch";
+            this.dataGridViewTextBoxColumn33.Name = "dataGridViewTextBoxColumn33";
+            this.dataGridViewTextBoxColumn33.Width = 95;
+            // 
+            // dataGridViewTextBoxColumn34
+            // 
+            this.dataGridViewTextBoxColumn34.DataPropertyName = "Bulgarisch";
+            this.dataGridViewTextBoxColumn34.HeaderText = "Bulgarisch";
+            this.dataGridViewTextBoxColumn34.Name = "dataGridViewTextBoxColumn34";
+            this.dataGridViewTextBoxColumn34.Width = 90;
+            // 
+            // dataGridViewTextBoxColumn35
+            // 
+            this.dataGridViewTextBoxColumn35.DataPropertyName = "Russisch";
+            this.dataGridViewTextBoxColumn35.HeaderText = "Russisch";
+            this.dataGridViewTextBoxColumn35.Name = "dataGridViewTextBoxColumn35";
+            this.dataGridViewTextBoxColumn35.Width = 82;
+            // 
+            // dataGridViewTextBoxColumn36
+            // 
+            this.dataGridViewTextBoxColumn36.DataPropertyName = "Polnisch";
+            this.dataGridViewTextBoxColumn36.HeaderText = "Polnisch";
+            this.dataGridViewTextBoxColumn36.Name = "dataGridViewTextBoxColumn36";
+            this.dataGridViewTextBoxColumn36.Width = 79;
+            // 
+            // dataGridViewTextBoxColumn37
+            // 
+            this.dataGridViewTextBoxColumn37.DataPropertyName = "Arabisch";
+            this.dataGridViewTextBoxColumn37.HeaderText = "Arabisch";
+            this.dataGridViewTextBoxColumn37.Name = "dataGridViewTextBoxColumn37";
+            this.dataGridViewTextBoxColumn37.Width = 79;
             // 
             // bindingNavigator1
             // 
             this.bindingNavigator1.AddNewItem = this.bindingNavigatorAddNewItem;
             this.bindingNavigator1.BindingSource = this.übersetzerBindingSource;
             this.bindingNavigator1.CountItem = this.bindingNavigatorCountItem;
-            this.bindingNavigator1.DeleteItem = this.bindingNavigatorDeleteItem;
+            this.bindingNavigator1.DeleteItem = this.DeleteItem;
             this.bindingNavigator1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.bindingNavigatorMoveFirstItem,
             this.bindingNavigatorMovePreviousItem,
@@ -1761,7 +2122,8 @@
             this.bindingNavigatorMoveLastItem,
             this.bindingNavigatorSeparator2,
             this.bindingNavigatorAddNewItem,
-            this.bindingNavigatorDeleteItem});
+            this.DeleteItem,
+            this.SaveButton});
             this.bindingNavigator1.Location = new System.Drawing.Point(3, 3);
             this.bindingNavigator1.MoveFirstItem = this.bindingNavigatorMoveFirstItem;
             this.bindingNavigator1.MoveLastItem = this.bindingNavigatorMoveLastItem;
@@ -1789,14 +2151,15 @@
             this.bindingNavigatorCountItem.Text = "of {0}";
             this.bindingNavigatorCountItem.ToolTipText = "Total number of items";
             // 
-            // bindingNavigatorDeleteItem
+            // DeleteItem
             // 
-            this.bindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
-            this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
-            this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(23, 22);
-            this.bindingNavigatorDeleteItem.Text = "Delete";
+            this.DeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.DeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("DeleteItem.Image")));
+            this.DeleteItem.Name = "DeleteItem";
+            this.DeleteItem.RightToLeftAutoMirrorImage = true;
+            this.DeleteItem.Size = new System.Drawing.Size(23, 22);
+            this.DeleteItem.Text = "Delete";
+            this.DeleteItem.Click += new System.EventHandler(this.DeleteItem_Click);
             // 
             // bindingNavigatorMoveFirstItem
             // 
@@ -1857,6 +2220,15 @@
             // 
             this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
             this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 25);
+            // 
+            // SaveButton
+            // 
+            this.SaveButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.SaveButton.Image = ((System.Drawing.Image)(resources.GetObject("SaveButton.Image")));
+            this.SaveButton.Name = "SaveButton";
+            this.SaveButton.Size = new System.Drawing.Size(23, 22);
+            this.SaveButton.Text = "Save";
+            this.SaveButton.Click += new System.EventHandler(this.SaveButton_Click);
             // 
             // ordnungTextBox
             // 
@@ -1962,6 +2334,13 @@
             this.arabischTextBox1.Size = new System.Drawing.Size(197, 20);
             this.arabischTextBox1.TabIndex = 27;
             // 
+            // imageList3
+            // 
+            this.imageList3.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList3.ImageStream")));
+            this.imageList3.TransparentColor = System.Drawing.Color.Transparent;
+            this.imageList3.Images.SetKeyName(0, "global-map.png");
+            this.imageList3.Images.SetKeyName(1, "server-client-exchange.png");
+            // 
             // übersetzerTableAdapter
             // 
             this.übersetzerTableAdapter.ClearBeforeFill = true;
@@ -1976,130 +2355,13 @@
             // 
             this.bindingSource1.DataSource = this.übersetzerBindingSource;
             // 
-            // übersetzerDataGridView_data
-            // 
-            this.übersetzerDataGridView_data.AutoGenerateColumns = false;
-            this.übersetzerDataGridView_data.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.DisplayedCells;
-            this.übersetzerDataGridView_data.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.übersetzerDataGridView_data.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn9,
-            this.dataGridViewTextBoxColumn12,
-            this.dataGridViewTextBoxColumn15,
-            this.dataGridViewTextBoxColumn18,
-            this.dataGridViewTextBoxColumn21,
-            this.dataGridViewTextBoxColumn24,
-            this.dataGridViewTextBoxColumn27,
-            this.dataGridViewTextBoxColumn30,
-            this.dataGridViewTextBoxColumn33,
-            this.dataGridViewTextBoxColumn34,
-            this.dataGridViewTextBoxColumn35,
-            this.dataGridViewTextBoxColumn36,
-            this.dataGridViewTextBoxColumn37});
-            this.übersetzerDataGridView_data.DataSource = this.übersetzerBindingSource;
-            this.übersetzerDataGridView_data.EnableHeadersVisualStyles = false;
-            this.übersetzerDataGridView_data.Location = new System.Drawing.Point(6, 209);
-            this.übersetzerDataGridView_data.Name = "übersetzerDataGridView_data";
-            this.übersetzerDataGridView_data.RowHeadersVisible = false;
-            this.übersetzerDataGridView_data.Size = new System.Drawing.Size(994, 192);
-            this.übersetzerDataGridView_data.TabIndex = 28;
-            // 
-            // dataGridViewTextBoxColumn9
-            // 
-            this.dataGridViewTextBoxColumn9.DataPropertyName = "Ordnung";
-            this.dataGridViewTextBoxColumn9.HeaderText = "Ordnung";
-            this.dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
-            this.dataGridViewTextBoxColumn9.Width = 80;
-            // 
-            // dataGridViewTextBoxColumn12
-            // 
-            this.dataGridViewTextBoxColumn12.DataPropertyName = "Deutsch";
-            this.dataGridViewTextBoxColumn12.HeaderText = "Deutsch";
-            this.dataGridViewTextBoxColumn12.Name = "dataGridViewTextBoxColumn12";
-            this.dataGridViewTextBoxColumn12.Width = 77;
-            // 
-            // dataGridViewTextBoxColumn15
-            // 
-            this.dataGridViewTextBoxColumn15.DataPropertyName = "Englisch";
-            this.dataGridViewTextBoxColumn15.HeaderText = "Englisch";
-            this.dataGridViewTextBoxColumn15.Name = "dataGridViewTextBoxColumn15";
-            this.dataGridViewTextBoxColumn15.Width = 79;
-            // 
-            // dataGridViewTextBoxColumn18
-            // 
-            this.dataGridViewTextBoxColumn18.DataPropertyName = "Spanisch";
-            this.dataGridViewTextBoxColumn18.HeaderText = "Spanisch";
-            this.dataGridViewTextBoxColumn18.Name = "dataGridViewTextBoxColumn18";
-            this.dataGridViewTextBoxColumn18.Width = 83;
-            // 
-            // dataGridViewTextBoxColumn21
-            // 
-            this.dataGridViewTextBoxColumn21.DataPropertyName = "Portugiesisch";
-            this.dataGridViewTextBoxColumn21.HeaderText = "Portugiesisch";
-            this.dataGridViewTextBoxColumn21.Name = "dataGridViewTextBoxColumn21";
-            this.dataGridViewTextBoxColumn21.Width = 106;
-            // 
-            // dataGridViewTextBoxColumn24
-            // 
-            this.dataGridViewTextBoxColumn24.DataPropertyName = "Französisch";
-            this.dataGridViewTextBoxColumn24.HeaderText = "Französisch";
-            this.dataGridViewTextBoxColumn24.Name = "dataGridViewTextBoxColumn24";
-            this.dataGridViewTextBoxColumn24.Width = 98;
-            // 
-            // dataGridViewTextBoxColumn27
-            // 
-            this.dataGridViewTextBoxColumn27.DataPropertyName = "Italienisch";
-            this.dataGridViewTextBoxColumn27.HeaderText = "Italienisch";
-            this.dataGridViewTextBoxColumn27.Name = "dataGridViewTextBoxColumn27";
-            this.dataGridViewTextBoxColumn27.Width = 87;
-            // 
-            // dataGridViewTextBoxColumn30
-            // 
-            this.dataGridViewTextBoxColumn30.DataPropertyName = "Türkisch";
-            this.dataGridViewTextBoxColumn30.HeaderText = "Türkisch";
-            this.dataGridViewTextBoxColumn30.Name = "dataGridViewTextBoxColumn30";
-            this.dataGridViewTextBoxColumn30.Width = 78;
-            // 
-            // dataGridViewTextBoxColumn33
-            // 
-            this.dataGridViewTextBoxColumn33.DataPropertyName = "Rumänisch";
-            this.dataGridViewTextBoxColumn33.HeaderText = "Rumänisch";
-            this.dataGridViewTextBoxColumn33.Name = "dataGridViewTextBoxColumn33";
-            this.dataGridViewTextBoxColumn33.Width = 95;
-            // 
-            // dataGridViewTextBoxColumn34
-            // 
-            this.dataGridViewTextBoxColumn34.DataPropertyName = "Bulgarisch";
-            this.dataGridViewTextBoxColumn34.HeaderText = "Bulgarisch";
-            this.dataGridViewTextBoxColumn34.Name = "dataGridViewTextBoxColumn34";
-            this.dataGridViewTextBoxColumn34.Width = 90;
-            // 
-            // dataGridViewTextBoxColumn35
-            // 
-            this.dataGridViewTextBoxColumn35.DataPropertyName = "Russisch";
-            this.dataGridViewTextBoxColumn35.HeaderText = "Russisch";
-            this.dataGridViewTextBoxColumn35.Name = "dataGridViewTextBoxColumn35";
-            this.dataGridViewTextBoxColumn35.Width = 82;
-            // 
-            // dataGridViewTextBoxColumn36
-            // 
-            this.dataGridViewTextBoxColumn36.DataPropertyName = "Polnisch";
-            this.dataGridViewTextBoxColumn36.HeaderText = "Polnisch";
-            this.dataGridViewTextBoxColumn36.Name = "dataGridViewTextBoxColumn36";
-            this.dataGridViewTextBoxColumn36.Width = 79;
-            // 
-            // dataGridViewTextBoxColumn37
-            // 
-            this.dataGridViewTextBoxColumn37.DataPropertyName = "Arabisch";
-            this.dataGridViewTextBoxColumn37.HeaderText = "Arabisch";
-            this.dataGridViewTextBoxColumn37.Name = "dataGridViewTextBoxColumn37";
-            this.dataGridViewTextBoxColumn37.Width = 79;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1038, 467);
+            this.ClientSize = new System.Drawing.Size(1038, 480);
             this.Controls.Add(this.tabControl2);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -2130,39 +2392,63 @@
             ((System.ComponentModel.ISupportInitialize)(this.übersetzerBindingSource)).EndInit();
             this.Spanien.ResumeLayout(false);
             this.Spanien.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox25)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.übersetzerDataGridView_2)).EndInit();
             this.Portugal.ResumeLayout(false);
             this.Portugal.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox26)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.übersetzerDataGridView_3)).EndInit();
             this.Frankreich.ResumeLayout(false);
             this.Frankreich.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox27)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.übersetzerDataGridView_4)).EndInit();
             this.Italien.ResumeLayout(false);
+            this.Italien.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox28)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox18)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.übersetzerDataGridView_5)).EndInit();
             this.Turkei.ResumeLayout(false);
+            this.Turkei.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox29)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox19)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.übersetzerDataGridView_6)).EndInit();
             this.Rumanien.ResumeLayout(false);
+            this.Rumanien.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox30)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox20)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.übersetzerDataGridView_7)).EndInit();
             this.Bulgarien.ResumeLayout(false);
+            this.Bulgarien.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox31)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox21)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.übersetzerDataGridView_8)).EndInit();
             this.Russland.ResumeLayout(false);
+            this.Russland.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox32)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox22)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.übersetzerDataGridView_9)).EndInit();
             this.Polen.ResumeLayout(false);
+            this.Polen.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox33)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox23)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.übersetzerDataGridView_10)).EndInit();
             this.Arabien.ResumeLayout(false);
+            this.Arabien.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox34)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox24)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.übersetzerDataGridView_11)).EndInit();
             this.tabControl2.ResumeLayout(false);
             this.Beginn.ResumeLayout(false);
             this.Daten.ResumeLayout(false);
             this.Daten.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.übersetzerDataGridView_data)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).EndInit();
             this.bindingNavigator1.ResumeLayout(false);
             this.bindingNavigator1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.übersetzerDataGridView_data)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -2285,7 +2571,7 @@
         private System.Windows.Forms.BindingNavigator bindingNavigator1;
         private System.Windows.Forms.ToolStripButton bindingNavigatorAddNewItem;
         private System.Windows.Forms.ToolStripLabel bindingNavigatorCountItem;
-        private System.Windows.Forms.ToolStripButton bindingNavigatorDeleteItem;
+        private System.Windows.Forms.ToolStripButton DeleteItem;
         private System.Windows.Forms.ToolStripButton bindingNavigatorMoveFirstItem;
         private System.Windows.Forms.ToolStripButton bindingNavigatorMovePreviousItem;
         private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator;
@@ -2308,6 +2594,26 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn35;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn36;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn37;
+        private System.Windows.Forms.ImageList imageList3;
+        private System.Windows.Forms.ToolStripButton SaveButton;
+        private System.Windows.Forms.PictureBox pictureBox18;
+        private System.Windows.Forms.PictureBox pictureBox19;
+        private System.Windows.Forms.PictureBox pictureBox20;
+        private System.Windows.Forms.PictureBox pictureBox21;
+        private System.Windows.Forms.PictureBox pictureBox22;
+        private System.Windows.Forms.PictureBox pictureBox23;
+        private System.Windows.Forms.PictureBox pictureBox24;
+        private System.Windows.Forms.PictureBox pictureBox25;
+        private System.Windows.Forms.PictureBox pictureBox26;
+        private System.Windows.Forms.PictureBox pictureBox27;
+        private System.Windows.Forms.PictureBox pictureBox28;
+        private System.Windows.Forms.PictureBox pictureBox29;
+        private System.Windows.Forms.PictureBox pictureBox30;
+        private System.Windows.Forms.PictureBox pictureBox31;
+        private System.Windows.Forms.PictureBox pictureBox32;
+        private System.Windows.Forms.PictureBox pictureBox33;
+        private System.Windows.Forms.PictureBox pictureBox34;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }
 

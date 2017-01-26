@@ -1,0 +1,219 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="ubersetzer.exe" version="1.0.0.5" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="x86" type="win32" />
+  <description asmv2:iconFile="uebersetzer-online.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="ubersetzer" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
+    <commandLine file="ubersetzer.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the 
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward 
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ubersetzer.exe" size="443840">
+      <assemblyIdentity name="ubersetzer" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>Eh+NcGDZeCJ3T8wT1Gh0ZdXhgnfT53ctG9QSet6JTwI=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="Resources\1483757841_Germany_flat.png" size="168">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>MP7R7AGBs0U8GofrvyCLeqnGiJP1UrEmyukcZVzb02Q=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Resources\1483758052_France_flat.png" size="175">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>DRjLfBDX3dnd5SOec4HRk2QtCqe8o7WD31oE0Put5Ig=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Resources\1483758062_Spain_flat.png" size="996">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>Yx/m1LaTw+Q6Tnl/zUECv4olp/aTEHk1jUwNWhkk97E=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Resources\1483758073_United-Kingdom_flat.png" size="680">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>N1FJdktW8l6nbRyfGFCIpibrAMhOFWGD771kgJwGX/E=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Resources\1483758087_Italy_flat.png" size="175">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>m/XQTH54KJBcWDD5sTIBD7p9G3jj/hN/hAtwcTgsXJo=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Resources\1483758100_Russia_flat.png" size="164">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>jDwNz9WM5kdQh2pC6bxdUFg1BmBAv+58U4Fiq98GmNI=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Resources\1483758110_Turkey_flat.png" size="624">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>m0dLwQRlprFhJqIHcHhJUMj+PkYUYTQRDYkhGpiGviY=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Resources\1483758126_Poland_flat.png" size="172">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>tEtI8NyLBKAcnBp0p4P4Ej+QRlUiqEmDZ45ttVhrTwc=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Resources\1483758140_Portugal_flat.png" size="1403">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>dyTDqAqT72/SQWwfxu+62M+Ugblvn13WSH415VTux0s=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Resources\1483758162_Saudi-Arabia_flat.png" size="1712">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>kbWW0MWxy91Iz4GTUzWQD0ftVDvXBFnf070Xa4whaO0=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Resources\1483758177_Romania_flat.png" size="180">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>qw0lyLiROtICi4IInIaMNF6Z6O/uGoQyt62xraXBOic=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Resources\1483758217_Bulgaria_flat.png" size="172">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>Pdyhpf0jecVDchOz21P0YTCHhweteHRWHkHSLSq/Rfk=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Resources\1483915538_Germany_flat.png" size="117">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>OFQDLouJcawocgEwdj41KFlN1ooqImRTRmg1Ydf7rvw=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Resources\1483915568_France_flat.png" size="123">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>CEu+WaZaHLHumTX90BoQcychdVJZp2VLHvjoBkjW9WA=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Resources\1483915585_Spain_flat.png" size="410">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>pAS7QRsBJF3Ou+NA4mJxwwd5YI2URziKjlQchrRHKbc=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="übersetzer.accdb" size="2359296">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>IdDnfyihRgB2R0Lvy6n8flLSeR1zRjrKoZJL9xUNOI8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="ubersetzer.exe.config" size="1402">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>boIJwUTUS1b+DYbUPCW/9kUghuyb5D8mVp6a7rXI7rs=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="uebersetzer-online.ico" size="99678">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>uB7mKT4pARTaY+1icnp5n+s5dqgJ4H9D0yAcpkswlt0=</dsig:DigestValue>
+    </hash>
+  </file>
+</asmv1:assembly>
