@@ -43,14 +43,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ubersetzer.exe" size="443840">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ubersetzer.exe" size="444352">
       <assemblyIdentity name="ubersetzer" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>Eh+NcGDZeCJ3T8wT1Gh0ZdXhgnfT53ctG9QSet6JTwI=</dsig:DigestValue>
+        <dsig:DigestValue>7IytlXtC0y09Wm+7BMms5oVhdGR9hiPnKAps0pxL13M=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
