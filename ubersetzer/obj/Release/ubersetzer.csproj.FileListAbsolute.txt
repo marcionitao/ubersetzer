@@ -1,10 +1,14 @@
-C:\Users\Márcio\documents\visual studio 2015\Projects\ubersetzer\ubersetzer\bin\Release\ubersetzer.exe.config
 C:\Users\Márcio\documents\visual studio 2015\Projects\ubersetzer\ubersetzer\bin\Release\übersetzer.accdb
+C:\Users\Márcio\documents\visual studio 2015\Projects\ubersetzer\ubersetzer\bin\Release\ubersetzer.exe.config
 C:\Users\Márcio\documents\visual studio 2015\Projects\ubersetzer\ubersetzer\bin\Release\ubersetzer.exe.manifest
 C:\Users\Márcio\documents\visual studio 2015\Projects\ubersetzer\ubersetzer\bin\Release\ubersetzer.application
 C:\Users\Márcio\documents\visual studio 2015\Projects\ubersetzer\ubersetzer\bin\Release\ubersetzer.exe
 C:\Users\Márcio\documents\visual studio 2015\Projects\ubersetzer\ubersetzer\bin\Release\ubersetzer.pdb
-C:\Users\Márcio\documents\visual studio 2015\Projects\ubersetzer\ubersetzer\obj\Release\ubersetzer.csprojResolveAssemblyReference.cache
+C:\Users\Márcio\documents\visual studio 2015\Projects\ubersetzer\ubersetzer\bin\Release\Interop.WMPLib.dll
+C:\Users\Márcio\documents\visual studio 2015\Projects\ubersetzer\ubersetzer\bin\Release\AxInterop.WMPLib.dll
+C:\Users\Márcio\documents\visual studio 2015\Projects\ubersetzer\ubersetzer\obj\Release\Interop.WMPLib.dll
+C:\Users\Márcio\documents\visual studio 2015\Projects\ubersetzer\ubersetzer\obj\Release\AxInterop.WMPLib.dll
+C:\Users\Márcio\documents\visual studio 2015\Projects\ubersetzer\ubersetzer\obj\Release\ubersetzer.csproj.ResolveComReference.cache
 C:\Users\Márcio\documents\visual studio 2015\Projects\ubersetzer\ubersetzer\obj\Release\ubersetzer.Form1.resources
 C:\Users\Márcio\documents\visual studio 2015\Projects\ubersetzer\ubersetzer\obj\Release\ubersetzer.Properties.Resources.resources
 C:\Users\Márcio\documents\visual studio 2015\Projects\ubersetzer\ubersetzer\obj\Release\ubersetzer.csproj.GenerateResource.Cache
@@ -12,3 +16,5 @@ C:\Users\Márcio\documents\visual studio 2015\Projects\ubersetzer\ubersetzer\obj
 C:\Users\Márcio\documents\visual studio 2015\Projects\ubersetzer\ubersetzer\obj\Release\ubersetzer.application
 C:\Users\Márcio\documents\visual studio 2015\Projects\ubersetzer\ubersetzer\obj\Release\ubersetzer.exe
 C:\Users\Márcio\documents\visual studio 2015\Projects\ubersetzer\ubersetzer\obj\Release\ubersetzer.pdb
+C:\Users\Márcio\documents\visual studio 2015\Projects\ubersetzer\ubersetzer\obj\Release\ubersetzer.csprojResolveAssemblyReference.cache
+C:\Users\Márcio\documents\visual studio 2015\Projects\ubersetzer\ubersetzer\bin\Release\NAudio.xml

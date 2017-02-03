@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
-  <asmv1:assemblyIdentity name="ubersetzer.exe" version="1.0.0.5" publicKeyToken="3d69f1cfbce49a01" language="neutral" processorArchitecture="x86" type="win32" />
+  <asmv1:assemblyIdentity name="ubersetzer.exe" version="1.0.0.6" publicKeyToken="3d69f1cfbce49a01" language="neutral" processorArchitecture="x86" type="win32" />
   <description asmv2:iconFile="uebersetzer-online.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
   <application />
   <entryPoint>
@@ -43,14 +43,50 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ubersetzer.exe" size="444352">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="AxInterop.WMPLib.dll" size="53760">
+      <assemblyIdentity name="AxInterop.WMPLib" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>tCeFDKXLg0RzUVc0+X10ZIn0fdhEHmpjwEi0n7W2Rgc=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Interop.WMPLib.dll" size="330752">
+      <assemblyIdentity name="Interop.WMPLib" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>QDPSbgj7E+a8grrmWGvPuhigHjTXkVJ1LkQmIgR3p3o=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="NAudio.dll" size="475136">
+      <assemblyIdentity name="NAudio" version="1.8.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>jjR6vJMB1n3XSToPu+XMH5EpAMIEqEIgzIzfDguN8N4=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ubersetzer.exe" size="448448">
       <assemblyIdentity name="ubersetzer" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>7IytlXtC0y09Wm+7BMms5oVhdGR9hiPnKAps0pxL13M=</dsig:DigestValue>
+        <dsig:DigestValue>EXIZ0DXSuBfRoHjux6NI4PPw2HbvyJ5/8tWfLHKlDfw=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -216,4 +252,4 @@
       <dsig:DigestValue>uB7mKT4pARTaY+1icnp5n+s5dqgJ4H9D0yAcpkswlt0=</dsig:DigestValue>
     </hash>
   </file>
-<publisherIdentity name="CN=PC-MARCIO\Marcio" issuerKeyHash="4ebdafe683d8316b32a008dd518bc253f89a2603" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>uhS3P3UnbNqV8BkbrtESKst9H0Lo0A8MXqWelZ23BXw=</DigestValue></Reference></SignedInfo><SignatureValue>H+2ZRyvXVOcX0Tt3/tbKc3H/qjDNQoL36/iVimxmDDC/lHgjHQ0DC309trhBsdMgaYaQhxwoeKpNC5qU5w4oZBJPzA9SO8WwqBMjJOV0XDJqHwxQv7+JhzfXjZkwVMMYh8MWsT3Fek6dhjKX3uP0Br4t4bkiLZxBCrAQUH5j7Mk=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>tZg0SspwqtY8h7qDZtVUG/936Cb28TiPrcH1YQRMQMHODrnf0zcELS6FuoEBReSdjwGMMBcTMKSKeH6jkoBm7LNhG/UR1yU4OOjo/J+EduGLg65NkB2esQleTiojBumBXLlfwkj4PYZjqkovKGnHxkhn1K751P+CBXks98gV0pk=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="7c05b79d959ea55e0c0fd0e8421f7dcb2a12d1ae1b19f095da6c27753fb714ba" Description="" Url=""><as:assemblyIdentity name="ubersetzer.exe" version="1.0.0.5" publicKeyToken="3d69f1cfbce49a01" language="neutral" processorArchitecture="x86" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=PC-MARCIO\Marcio</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>ov/oiA4QbehSZ0Yyxfd4/R5tOA4zw/y7ABGk2W10oPM=</DigestValue></Reference></SignedInfo><SignatureValue>ZQiKF83isPAqfttaMkUyVKDGR+N2g6SZHfUJPOk1tnDKx1rjZs+rRo7g9S69/q0AAD1hgibcbnMBINPCUk6U+HQtQeY8f0F8jU6lQPpJpxymH9TUTnH5Fiir0P+C9oKeNyj8Vls+g7WroskCdytNXLcNJXrsGsWBOazLh8xgmak=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>tZg0SspwqtY8h7qDZtVUG/936Cb28TiPrcH1YQRMQMHODrnf0zcELS6FuoEBReSdjwGMMBcTMKSKeH6jkoBm7LNhG/UR1yU4OOjo/J+EduGLg65NkB2esQleTiojBumBXLlfwkj4PYZjqkovKGnHxkhn1K751P+CBXks98gV0pk=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB2TCCAUKgAwIBAgIQOKUbNitAl7dFj5Z8gAX0pjANBgkqhkiG9w0BAQsFADArMSkwJwYDVQQDHiAAUABDAC0ATQBBAFIAQwBJAE8AXABNAGEAcgBjAGkAbzAeFw0xNzAxMjUxMDUzMzVaFw0xODAxMjUxNjUzMzVaMCsxKTAnBgNVBAMeIABQAEMALQBNAEEAUgBDAEkATwBcAE0AYQByAGMAaQBvMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQC1mDRKynCq1jyHuoNm1VQb/3foJvbxOI+twfVhBExAwc4Oud/TNwQtLoW6gQFF5J2PAYwwFxMwpIp4fqOSgGbss2Eb9RHXJTg46Oj8n4R24YuDrk2QHZ6xCV5OKiMG6YFcuV/CSPg9hmOqSi8oacfGSGfUrvnU/4IFeSz3yBXSmQIDAQABMA0GCSqGSIb3DQEBCwUAA4GBAKpIZmudGQ66zzpCi44JqJNnzR7Z0wlF0I71ea4ffYz5w12OlktnHq+qNgd3YO5/dYOOkLF2f4lVCG9r91OO6SgGaYwgByzNXAYgsPDojaTK/w8bq60A4l7dA5cfy1mDwfZEaocYb26Dk1O4XI2arFskIT2eIUWI7r2KAHTM397h</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
+<publisherIdentity name="CN=PC-MARCIO\Marcio" issuerKeyHash="4ebdafe683d8316b32a008dd518bc253f89a2603" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>HcYWIQZEPMcHwV6bjJHVGCg43TKTq2T5pcgZ51COa/A=</DigestValue></Reference></SignedInfo><SignatureValue>Y/zF8LClONPBVlGiTqERNn+XdOu/DeGHB5RLa2guqXgnh/pfh7hgyVn42zW4IGb6h2DlkZyMwRqTNK7M1Wve9c/rTUdSu8DDwjwx7dDKbOCWesFBGWINgWTQ1RhroABWwnBDqzx5U4SRl3yr6xzIG10TSyEsP9agcxdRKk7/V9I=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>tZg0SspwqtY8h7qDZtVUG/936Cb28TiPrcH1YQRMQMHODrnf0zcELS6FuoEBReSdjwGMMBcTMKSKeH6jkoBm7LNhG/UR1yU4OOjo/J+EduGLg65NkB2esQleTiojBumBXLlfwkj4PYZjqkovKGnHxkhn1K751P+CBXks98gV0pk=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="f06b8e50e719c8a5f964ab9332dd382818d5918c9b5ec107c73c44062116c61d" Description="" Url=""><as:assemblyIdentity name="ubersetzer.exe" version="1.0.0.6" publicKeyToken="3d69f1cfbce49a01" language="neutral" processorArchitecture="x86" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=PC-MARCIO\Marcio</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>7aaBK+M1oLos+Mnsd8kPnPtkvguM00ZSP8SD+92+v+Q=</DigestValue></Reference></SignedInfo><SignatureValue>FrGn4RONJoyUSF17unkSGTmy+0gdY5cJuxUsSQpK0Ald2mfKfcosV4BFD4n3H15H6ubYn6itIMk1DlLMfP2gBzO7/XvENhOyLk+7LT07ob5L3Ba8x7TDSj7Lgvj2RQEi8z1ndhjla09pcAlz40XvGaXHbhuMbg2WcqtYz4Uee9Y=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>tZg0SspwqtY8h7qDZtVUG/936Cb28TiPrcH1YQRMQMHODrnf0zcELS6FuoEBReSdjwGMMBcTMKSKeH6jkoBm7LNhG/UR1yU4OOjo/J+EduGLg65NkB2esQleTiojBumBXLlfwkj4PYZjqkovKGnHxkhn1K751P+CBXks98gV0pk=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB2TCCAUKgAwIBAgIQOKUbNitAl7dFj5Z8gAX0pjANBgkqhkiG9w0BAQsFADArMSkwJwYDVQQDHiAAUABDAC0ATQBBAFIAQwBJAE8AXABNAGEAcgBjAGkAbzAeFw0xNzAxMjUxMDUzMzVaFw0xODAxMjUxNjUzMzVaMCsxKTAnBgNVBAMeIABQAEMALQBNAEEAUgBDAEkATwBcAE0AYQByAGMAaQBvMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQC1mDRKynCq1jyHuoNm1VQb/3foJvbxOI+twfVhBExAwc4Oud/TNwQtLoW6gQFF5J2PAYwwFxMwpIp4fqOSgGbss2Eb9RHXJTg46Oj8n4R24YuDrk2QHZ6xCV5OKiMG6YFcuV/CSPg9hmOqSi8oacfGSGfUrvnU/4IFeSz3yBXSmQIDAQABMA0GCSqGSIb3DQEBCwUAA4GBAKpIZmudGQ66zzpCi44JqJNnzR7Z0wlF0I71ea4ffYz5w12OlktnHq+qNgd3YO5/dYOOkLF2f4lVCG9r91OO6SgGaYwgByzNXAYgsPDojaTK/w8bq60A4l7dA5cfy1mDwfZEaocYb26Dk1O4XI2arFskIT2eIUWI7r2KAHTM397h</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>

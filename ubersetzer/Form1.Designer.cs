@@ -98,6 +98,7 @@
             this.polnischTextBox = new System.Windows.Forms.TextBox();
             this.arabischTextBox = new System.Windows.Forms.TextBox();
             this.England = new System.Windows.Forms.TabPage();
+            this.mediaPlayer = new AxWMPLib.AxWindowsMediaPlayer();
             this.pictureBox14 = new System.Windows.Forms.PictureBox();
             this.pictureBox13 = new System.Windows.Forms.PictureBox();
             this.übersetzerDataGridView = new System.Windows.Forms.DataGridView();
@@ -180,7 +181,9 @@
             this.tableAdapterManager = new ubersetzer.übersetzerDataSetTableAdapters.TableAdapterManager();
             this.tabControl2 = new System.Windows.Forms.TabControl();
             this.Beginn = new System.Windows.Forms.TabPage();
+            this.textBox3 = new System.Windows.Forms.TextBox();
             this.Daten = new System.Windows.Forms.TabPage();
+            this.textBox2 = new System.Windows.Forms.TextBox();
             this.übersetzerDataGridView_data = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -267,6 +270,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.übersetzer_ConsultaBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.übersetzerDataSet)).BeginInit();
             this.England.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.mediaPlayer)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.übersetzerDataGridView)).BeginInit();
@@ -575,7 +579,7 @@
             this.tabControl1.Location = new System.Drawing.Point(6, 6);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(994, 415);
+            this.tabControl1.Size = new System.Drawing.Size(994, 401);
             this.tabControl1.TabIndex = 0;
             // 
             // uber
@@ -624,7 +628,7 @@
             this.uber.Location = new System.Drawing.Point(4, 31);
             this.uber.Name = "uber";
             this.uber.Padding = new System.Windows.Forms.Padding(3);
-            this.uber.Size = new System.Drawing.Size(986, 380);
+            this.uber.Size = new System.Drawing.Size(986, 366);
             this.uber.TabIndex = 0;
             this.uber.Text = "Übersetzer";
             this.uber.UseVisualStyleBackColor = true;
@@ -924,6 +928,7 @@
             // England
             // 
             this.England.CausesValidation = false;
+            this.England.Controls.Add(this.mediaPlayer);
             this.England.Controls.Add(this.pictureBox14);
             this.England.Controls.Add(this.pictureBox13);
             this.England.Controls.Add(this.übersetzerDataGridView);
@@ -931,10 +936,20 @@
             this.England.Location = new System.Drawing.Point(4, 31);
             this.England.Name = "England";
             this.England.Padding = new System.Windows.Forms.Padding(3);
-            this.England.Size = new System.Drawing.Size(986, 380);
+            this.England.Size = new System.Drawing.Size(986, 366);
             this.England.TabIndex = 1;
             this.England.Text = "England";
             this.England.UseVisualStyleBackColor = true;
+            // 
+            // mediaPlayer
+            // 
+            this.mediaPlayer.Enabled = true;
+            this.mediaPlayer.Location = new System.Drawing.Point(624, 21);
+            this.mediaPlayer.Name = "mediaPlayer";
+            this.mediaPlayer.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("mediaPlayer.OcxState")));
+            this.mediaPlayer.Size = new System.Drawing.Size(328, 61);
+            this.mediaPlayer.TabIndex = 3;
+            this.mediaPlayer.Visible = false;
             // 
             // pictureBox14
             // 
@@ -984,6 +999,7 @@
             this.übersetzerDataGridView.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.übersetzerDataGridView.Size = new System.Drawing.Size(748, 243);
             this.übersetzerDataGridView.TabIndex = 0;
+            this.übersetzerDataGridView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.übersetzerDataGridView_CellClick);
             // 
             // dataGridViewTextBoxColumn2
             // 
@@ -1024,7 +1040,7 @@
             this.Spanien.ImageIndex = 1;
             this.Spanien.Location = new System.Drawing.Point(4, 31);
             this.Spanien.Name = "Spanien";
-            this.Spanien.Size = new System.Drawing.Size(986, 380);
+            this.Spanien.Size = new System.Drawing.Size(986, 366);
             this.Spanien.TabIndex = 2;
             this.Spanien.Text = "Spanien";
             this.Spanien.UseVisualStyleBackColor = true;
@@ -1112,7 +1128,7 @@
             this.Portugal.ImageIndex = 7;
             this.Portugal.Location = new System.Drawing.Point(4, 31);
             this.Portugal.Name = "Portugal";
-            this.Portugal.Size = new System.Drawing.Size(986, 380);
+            this.Portugal.Size = new System.Drawing.Size(986, 366);
             this.Portugal.TabIndex = 3;
             this.Portugal.Text = "Portugal";
             this.Portugal.UseVisualStyleBackColor = true;
@@ -1200,7 +1216,7 @@
             this.Frankreich.ImageIndex = 0;
             this.Frankreich.Location = new System.Drawing.Point(4, 31);
             this.Frankreich.Name = "Frankreich";
-            this.Frankreich.Size = new System.Drawing.Size(986, 380);
+            this.Frankreich.Size = new System.Drawing.Size(986, 366);
             this.Frankreich.TabIndex = 4;
             this.Frankreich.Text = "Frankreich";
             this.Frankreich.UseVisualStyleBackColor = true;
@@ -1288,7 +1304,7 @@
             this.Italien.ImageIndex = 3;
             this.Italien.Location = new System.Drawing.Point(4, 31);
             this.Italien.Name = "Italien";
-            this.Italien.Size = new System.Drawing.Size(986, 380);
+            this.Italien.Size = new System.Drawing.Size(986, 366);
             this.Italien.TabIndex = 5;
             this.Italien.Text = "Italien";
             this.Italien.UseVisualStyleBackColor = true;
@@ -1376,7 +1392,7 @@
             this.Turkei.ImageIndex = 5;
             this.Turkei.Location = new System.Drawing.Point(4, 31);
             this.Turkei.Name = "Turkei";
-            this.Turkei.Size = new System.Drawing.Size(986, 380);
+            this.Turkei.Size = new System.Drawing.Size(986, 366);
             this.Turkei.TabIndex = 6;
             this.Turkei.Text = "Türkei";
             this.Turkei.UseVisualStyleBackColor = true;
@@ -1464,7 +1480,7 @@
             this.Rumanien.ImageIndex = 9;
             this.Rumanien.Location = new System.Drawing.Point(4, 31);
             this.Rumanien.Name = "Rumanien";
-            this.Rumanien.Size = new System.Drawing.Size(986, 380);
+            this.Rumanien.Size = new System.Drawing.Size(986, 366);
             this.Rumanien.TabIndex = 7;
             this.Rumanien.Text = "Rumänien";
             this.Rumanien.UseVisualStyleBackColor = true;
@@ -1552,7 +1568,7 @@
             this.Bulgarien.ImageIndex = 10;
             this.Bulgarien.Location = new System.Drawing.Point(4, 31);
             this.Bulgarien.Name = "Bulgarien";
-            this.Bulgarien.Size = new System.Drawing.Size(986, 380);
+            this.Bulgarien.Size = new System.Drawing.Size(986, 366);
             this.Bulgarien.TabIndex = 8;
             this.Bulgarien.Text = "Bulgarien";
             this.Bulgarien.UseVisualStyleBackColor = true;
@@ -1640,7 +1656,7 @@
             this.Russland.ImageIndex = 4;
             this.Russland.Location = new System.Drawing.Point(4, 31);
             this.Russland.Name = "Russland";
-            this.Russland.Size = new System.Drawing.Size(986, 380);
+            this.Russland.Size = new System.Drawing.Size(986, 366);
             this.Russland.TabIndex = 9;
             this.Russland.Text = "Russland";
             this.Russland.UseVisualStyleBackColor = true;
@@ -1728,7 +1744,7 @@
             this.Polen.ImageIndex = 6;
             this.Polen.Location = new System.Drawing.Point(4, 31);
             this.Polen.Name = "Polen";
-            this.Polen.Size = new System.Drawing.Size(986, 380);
+            this.Polen.Size = new System.Drawing.Size(986, 366);
             this.Polen.TabIndex = 10;
             this.Polen.Text = "Polen";
             this.Polen.UseVisualStyleBackColor = true;
@@ -1816,7 +1832,7 @@
             this.Arabien.ImageIndex = 8;
             this.Arabien.Location = new System.Drawing.Point(4, 31);
             this.Arabien.Name = "Arabien";
-            this.Arabien.Size = new System.Drawing.Size(986, 380);
+            this.Arabien.Size = new System.Drawing.Size(986, 366);
             this.Arabien.TabIndex = 11;
             this.Arabien.Text = "Arabien";
             this.Arabien.UseVisualStyleBackColor = true;
@@ -1939,6 +1955,7 @@
             // 
             // Beginn
             // 
+            this.Beginn.Controls.Add(this.textBox3);
             this.Beginn.Controls.Add(this.tabControl1);
             this.Beginn.ImageIndex = 0;
             this.Beginn.Location = new System.Drawing.Point(4, 42);
@@ -1949,9 +1966,21 @@
             this.Beginn.Text = "Beginn";
             this.Beginn.UseVisualStyleBackColor = true;
             // 
+            // textBox3
+            // 
+            this.textBox3.BackColor = System.Drawing.SystemColors.MenuBar;
+            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox3.Location = new System.Drawing.Point(6, 411);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(195, 12);
+            this.textBox3.TabIndex = 31;
+            this.textBox3.Text = "Copyright  © 2017 All Rights Reserved";
+            // 
             // Daten
             // 
             this.Daten.AutoScroll = true;
+            this.Daten.Controls.Add(this.textBox2);
             this.Daten.Controls.Add(this.übersetzerDataGridView_data);
             this.Daten.Controls.Add(this.bindingNavigator1);
             this.Daten.Controls.Add(ordnungLabel);
@@ -1988,6 +2017,17 @@
             this.Daten.TabIndex = 1;
             this.Daten.Text = "Daten";
             this.Daten.UseVisualStyleBackColor = true;
+            // 
+            // textBox2
+            // 
+            this.textBox2.BackColor = System.Drawing.SystemColors.MenuBar;
+            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox2.Location = new System.Drawing.Point(6, 411);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(195, 12);
+            this.textBox2.TabIndex = 30;
+            this.textBox2.Text = "Copyright  © 2017 All Rights Reserved";
             // 
             // übersetzerDataGridView_data
             // 
@@ -2109,6 +2149,7 @@
             // bindingNavigator1
             // 
             this.bindingNavigator1.AddNewItem = this.bindingNavigatorAddNewItem;
+            this.bindingNavigator1.BackColor = System.Drawing.SystemColors.InactiveBorder;
             this.bindingNavigator1.BindingSource = this.übersetzerBindingSource;
             this.bindingNavigator1.CountItem = this.bindingNavigatorCountItem;
             this.bindingNavigator1.DeleteItem = this.DeleteItem;
@@ -2143,7 +2184,7 @@
             this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
             this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
             this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(23, 22);
-            this.bindingNavigatorAddNewItem.Text = "Add new";
+            this.bindingNavigatorAddNewItem.Text = "Neu";
             // 
             // bindingNavigatorCountItem
             // 
@@ -2159,7 +2200,7 @@
             this.DeleteItem.Name = "DeleteItem";
             this.DeleteItem.RightToLeftAutoMirrorImage = true;
             this.DeleteItem.Size = new System.Drawing.Size(23, 22);
-            this.DeleteItem.Text = "Delete";
+            this.DeleteItem.Text = "Löschen";
             this.DeleteItem.Click += new System.EventHandler(this.DeleteItem_Click);
             // 
             // bindingNavigatorMoveFirstItem
@@ -2169,7 +2210,7 @@
             this.bindingNavigatorMoveFirstItem.Name = "bindingNavigatorMoveFirstItem";
             this.bindingNavigatorMoveFirstItem.RightToLeftAutoMirrorImage = true;
             this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(23, 22);
-            this.bindingNavigatorMoveFirstItem.Text = "Move first";
+            this.bindingNavigatorMoveFirstItem.Text = "Bewege dich zuerst";
             // 
             // bindingNavigatorMovePreviousItem
             // 
@@ -2178,7 +2219,7 @@
             this.bindingNavigatorMovePreviousItem.Name = "bindingNavigatorMovePreviousItem";
             this.bindingNavigatorMovePreviousItem.RightToLeftAutoMirrorImage = true;
             this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(23, 22);
-            this.bindingNavigatorMovePreviousItem.Text = "Move previous";
+            this.bindingNavigatorMovePreviousItem.Text = "Vorherigen Schritt";
             // 
             // bindingNavigatorSeparator
             // 
@@ -2206,7 +2247,7 @@
             this.bindingNavigatorMoveNextItem.Name = "bindingNavigatorMoveNextItem";
             this.bindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = true;
             this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(23, 22);
-            this.bindingNavigatorMoveNextItem.Text = "Move next";
+            this.bindingNavigatorMoveNextItem.Text = "Weiter";
             // 
             // bindingNavigatorMoveLastItem
             // 
@@ -2215,7 +2256,7 @@
             this.bindingNavigatorMoveLastItem.Name = "bindingNavigatorMoveLastItem";
             this.bindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = true;
             this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(23, 22);
-            this.bindingNavigatorMoveLastItem.Text = "Move last";
+            this.bindingNavigatorMoveLastItem.Text = "Letzte Bewegung";
             // 
             // bindingNavigatorSeparator2
             // 
@@ -2228,7 +2269,7 @@
             this.SaveButton.Image = ((System.Drawing.Image)(resources.GetObject("SaveButton.Image")));
             this.SaveButton.Name = "SaveButton";
             this.SaveButton.Size = new System.Drawing.Size(23, 22);
-            this.SaveButton.Text = "Save";
+            this.SaveButton.Text = "Speichern";
             this.SaveButton.Click += new System.EventHandler(this.SaveButton_Click);
             // 
             // ordnungTextBox
@@ -2362,11 +2403,12 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1038, 480);
             this.Controls.Add(this.tabControl2);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "My übersertzer";
+            this.Text = "Mein übersertzer";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.tabControl1.ResumeLayout(false);
             this.uber.ResumeLayout(false);
@@ -2387,6 +2429,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.übersetzerDataSet)).EndInit();
             this.England.ResumeLayout(false);
             this.England.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.mediaPlayer)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.übersetzerDataGridView)).EndInit();
@@ -2443,6 +2486,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.übersetzerDataGridView_11)).EndInit();
             this.tabControl2.ResumeLayout(false);
             this.Beginn.ResumeLayout(false);
+            this.Beginn.PerformLayout();
             this.Daten.ResumeLayout(false);
             this.Daten.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.übersetzerDataGridView_data)).EndInit();
@@ -2615,6 +2659,9 @@
         private System.Windows.Forms.PictureBox pictureBox33;
         private System.Windows.Forms.PictureBox pictureBox34;
         private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox textBox3;
+        private AxWMPLib.AxWindowsMediaPlayer mediaPlayer;
     }
 }
 
