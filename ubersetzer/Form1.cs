@@ -21,10 +21,12 @@ namespace ubersetzer
 
         Uri urltts;
         string mp3Path;
-        string wavPath;
+        //  string wavPath;
         string teks;
         WebClient tts;
-        Mp3FileReader reader;
+        //   Mp3FileReader reader;
+       
+       
 
         public Form1()
         {
@@ -40,28 +42,33 @@ namespace ubersetzer
             // TODO: This line of code loads data into the 'übersetzerDataSet.übersetzer_Consulta' table. You can move, or remove it, as needed.
             this.übersetzer_ConsultaTableAdapter.Fill(this.übersetzerDataSet.übersetzer_Consulta);
 
+            // Clean all TxtBox when begin
             this.TxtClear();
+            // Define the style of DataGridView
+            this.DataGridStyle();
+            // Define autocomplete in textBox
+            this.autoComplete();
+            // Add image in all row of column
+            this.AddImageColumn();
+           
+        }
 
-            // format font in DataGridView
-            this.übersetzerDataGridView.ColumnHeadersDefaultCellStyle.Font = new Font("Tahoma", 9.75F, FontStyle.Bold);
-            this.übersetzerDataGridView_2.ColumnHeadersDefaultCellStyle.Font = new Font("Tahoma", 9.75F, FontStyle.Bold);
-            this.übersetzerDataGridView_3.ColumnHeadersDefaultCellStyle.Font = new Font("Tahoma", 9.75F, FontStyle.Bold);
-            this.übersetzerDataGridView_4.ColumnHeadersDefaultCellStyle.Font = new Font("Tahoma", 9.75F, FontStyle.Bold);
-            this.übersetzerDataGridView_5.ColumnHeadersDefaultCellStyle.Font = new Font("Tahoma", 9.75F, FontStyle.Bold);
-            this.übersetzerDataGridView_6.ColumnHeadersDefaultCellStyle.Font = new Font("Tahoma", 9.75F, FontStyle.Bold);
-            this.übersetzerDataGridView_7.ColumnHeadersDefaultCellStyle.Font = new Font("Tahoma", 9.75F, FontStyle.Bold);
-            this.übersetzerDataGridView_8.ColumnHeadersDefaultCellStyle.Font = new Font("Tahoma", 9.75F, FontStyle.Bold);
-            this.übersetzerDataGridView_9.ColumnHeadersDefaultCellStyle.Font = new Font("Tahoma", 9.75F, FontStyle.Bold);
-            this.übersetzerDataGridView_10.ColumnHeadersDefaultCellStyle.Font = new Font("Tahoma", 9.75F, FontStyle.Bold);
-            this.übersetzerDataGridView_11.ColumnHeadersDefaultCellStyle.Font = new Font("Tahoma", 9.75F, FontStyle.Bold);
+        // Add image in all row of column
+        void AddImageColumn()
+        {
+            // Add image in all row of column
+            DataGridViewImageColumn img = new DataGridViewImageColumn();
+            Image image = Image.FromFile(@"C:\Users\Márcio\Desktop\david\icons\sound_16.bmp");
+            img.Image = image;
 
-            this.übersetzerDataGridView_data.ColumnHeadersDefaultCellStyle.Font = new Font("Tahoma", 7.00F, FontStyle.Bold);
+            übersetzerDataGridView.Columns.Add(img);
 
-            // order per Ordnung field
-            this.übersetzerDataGridView.Sort(this.dataGridViewTextBoxColumn2, ListSortDirection.Ascending);
+            img.HeaderText = "";
+            img.Name = "img";
 
-            autoComplete();
-
+            // define width size
+            DataGridViewColumn column = übersetzerDataGridView.Columns[3];
+            column.Width = 30;
         }
 
         // autocomplete suggestion must appear based on the column selected
@@ -238,80 +245,166 @@ namespace ubersetzer
             {
                 if (übersetzerDataGridView.CurrentCell != null && übersetzerDataGridView.CurrentCell.Value != null)
                 {
-                    // MessageBox.Show(übersetzerDataGridView.CurrentCell.Value.ToString());
                     string valueCell = übersetzerDataGridView.CurrentCell.Value.ToString();
-                    //MessageBox.Show(valueCell);
+                    // clear content speak, then add a new sound  
+                    mediaPlayer.currentPlaylist.clear();
 
                     try
                     {
                         teks = valueCell;
-                        mp3Path = Environment.CurrentDirectory + @"\tmp.mp3";
-                        wavPath = Environment.CurrentDirectory + @"\ubersetzer.mp3";
+                        mp3Path = Environment.CurrentDirectory + @"\ubersetzer.mp3";
                         urltts = new Uri("http://translate.google.com/translate_tts?client=tw-ob&tl=en&q=" + teks);
-
-                        /*using (tts = new WebClient())
+                        // make download file
+                        using (tts = new WebClient())
                         {
-                            tts.Headers.Add(HttpRequestHeader.UserAgent, "Mozilla/4.0 (compatible; MSIE 9.0; Windows;)");
+                            tts.Headers.Add(HttpRequestHeader.UserAgent, "Mozilla/5.0 (compatible; MSIE 9.0; Windows;)");
                             tts.DownloadFile(urltts, mp3Path);
-                            tts.Dispose();
-
                         }
-
-                        using (reader = new Mp3FileReader(new FileStream(mp3Path, FileMode.OpenOrCreate)))
-                        {
-                            WaveFileWriter.CreateWaveFile(wavPath, reader);
-                        }
-                        */
-                        // MessageBox.Show(mp3Path);
-
-                        if (File.Exists(wavPath))
-                        {
-
-                            MessageBox.Show("existe");
-                            File.Delete(mp3Path);
-                            File.Delete(wavPath);
-
-                            using (tts = new WebClient())
-                            {
-                                tts.Headers.Add(HttpRequestHeader.UserAgent, "Mozilla/4.0 (compatible; MSIE 9.0; Windows;)");
-                                tts.DownloadFile(urltts, mp3Path);
-                                // tts.DownloadFileAsync(new Uri("http://translate.google.com/translate_tts?client=tw-ob&tl=en&q=" + teks), @"\tmp.mp3");
-                            }
-                            using (reader = new Mp3FileReader(new FileStream(mp3Path, FileMode.OpenOrCreate)))
-                            {
-                                WaveFileWriter.CreateWaveFile(wavPath, reader);
-                            }
-
-                        }
-
-                        else
-                        {
-                            MessageBox.Show("não existe");
-                            using (tts = new WebClient())
-                            {
-                                tts.Headers.Add(HttpRequestHeader.UserAgent, "Mozilla/4.0 (compatible; MSIE 9.0; Windows;)");
-                                tts.DownloadFile(urltts, mp3Path);
-                            }
-                            using (reader = new Mp3FileReader(new FileStream(mp3Path, FileMode.OpenOrCreate)))
-                            {
-                                WaveFileWriter.CreateWaveFile(wavPath, reader);
-                            }
-                        }
-
-                        mediaPlayer.URL = wavPath;
-
+                        // play file speak
+                        mediaPlayer.URL = mp3Path;
                     }
                     catch (Exception ex)
                     {
-                        MessageBox.Show("Error" + ex);
+                        MessageBox.Show("Keine Internetverbindung !");
                     }
-
                     teks = null;
 
                 }
 
             }
+
+        }
+
+        // To get value from Cell in position 2
+        private void übersetzerDataGridView_2_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (übersetzerDataGridView_2.CurrentCell.ColumnIndex.Equals(2) && e.RowIndex != -1)
+            {
+                if (übersetzerDataGridView_2.CurrentCell != null && übersetzerDataGridView_2.CurrentCell.Value != null)
+                {
+                    string valueCell = übersetzerDataGridView_2.CurrentCell.Value.ToString();
+                    // clear content speak, then add a new sound  
+                    mediaPlayer.currentPlaylist.clear();
+
+                    try
+                    {
+                        teks = valueCell;
+                        mp3Path = Environment.CurrentDirectory + @"\ubersetzer.mp3";
+                        urltts = new Uri("http://translate.google.com/translate_tts?client=tw-ob&tl=es&q=" + teks);
+                        // make download file
+                        using (tts = new WebClient())
+                        {
+                            tts.Headers.Add(HttpRequestHeader.UserAgent, "Mozilla/5.0 (compatible; MSIE 9.0; Windows;)");
+                            tts.DownloadFile(urltts, mp3Path);
+                        }
+                        // play file speak
+                        mediaPlayer.URL = mp3Path;
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show("Keine Internetverbindung !");
+                    }
+                    teks = null;
+
+                }
+
+            }
+
+        }
+
+        // To get value from Cell in position 2
+        private void übersetzerDataGridView_3_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (übersetzerDataGridView_3.CurrentCell.ColumnIndex.Equals(2) && e.RowIndex != -1)
+            {
+                if (übersetzerDataGridView_3.CurrentCell != null && übersetzerDataGridView_3.CurrentCell.Value != null)
+                {
+                    string valueCell = übersetzerDataGridView_3.CurrentCell.Value.ToString();
+                    // clear content speak, then add a new sound  
+                    mediaPlayer.currentPlaylist.clear();
+
+                    try
+                    {
+                        teks = valueCell;
+                        mp3Path = Environment.CurrentDirectory + @"\ubersetzer.mp3";
+                        urltts = new Uri("http://translate.google.com/translate_tts?client=tw-ob&tl=pt-PT&q=" + teks);
+                        // make download file
+                        using (tts = new WebClient())
+                        {
+                            tts.Headers.Add(HttpRequestHeader.UserAgent, "Mozilla/5.0 (compatible; MSIE 9.0; Windows;)");
+                            tts.DownloadFile(urltts, mp3Path);
+                        }
+                        // play file speak
+                        mediaPlayer.URL = mp3Path;
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show("Keine Internetverbindung !");
+                    }
+                    teks = null;
+
+                }
+
+            }
+
+        }
+
+        // Define the style of DataGridView
+        void DataGridStyle()
+        {
+            // format font in DataGridView
+            this.übersetzerDataGridView.ColumnHeadersDefaultCellStyle.Font = new Font("Tahoma", 9.75F, FontStyle.Bold);
+            this.übersetzerDataGridView.AllowUserToAddRows = false; //disable the last blank line in DatagridView
+            this.übersetzerDataGridView.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal; // Remove all Row border
+
+            this.übersetzerDataGridView_2.ColumnHeadersDefaultCellStyle.Font = new Font("Tahoma", 9.75F, FontStyle.Bold);
+            this.übersetzerDataGridView_2.AllowUserToAddRows = false; //disable the last blank line in DatagridView
+            this.übersetzerDataGridView_2.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal; // Remove all Row border
+
+            this.übersetzerDataGridView_3.ColumnHeadersDefaultCellStyle.Font = new Font("Tahoma", 9.75F, FontStyle.Bold);
+            this.übersetzerDataGridView_3.AllowUserToAddRows = false; //disable the last blank line in DatagridView
+            this.übersetzerDataGridView_3.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal; // Remove all Row border
+
+            this.übersetzerDataGridView_4.ColumnHeadersDefaultCellStyle.Font = new Font("Tahoma", 9.75F, FontStyle.Bold);
+            this.übersetzerDataGridView_4.AllowUserToAddRows = false; //disable the last blank line in DatagridView
+            this.übersetzerDataGridView_4.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal; // Remove all Row border
+
+            this.übersetzerDataGridView_5.ColumnHeadersDefaultCellStyle.Font = new Font("Tahoma", 9.75F, FontStyle.Bold);
+            this.übersetzerDataGridView_5.AllowUserToAddRows = false; //disable the last blank line in DatagridView
+            this.übersetzerDataGridView_5.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal; // Remove all Row border
+
+            this.übersetzerDataGridView_6.ColumnHeadersDefaultCellStyle.Font = new Font("Tahoma", 9.75F, FontStyle.Bold);
+            this.übersetzerDataGridView_6.AllowUserToAddRows = false; //disable the last blank line in DatagridView
+            this.übersetzerDataGridView_6.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal; // Remove all Row border
+
+            this.übersetzerDataGridView_7.ColumnHeadersDefaultCellStyle.Font = new Font("Tahoma", 9.75F, FontStyle.Bold);
+            this.übersetzerDataGridView_7.AllowUserToAddRows = false; //disable the last blank line in DatagridView
+            this.übersetzerDataGridView_7.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal; // Remove all Row border
+
+            this.übersetzerDataGridView_8.ColumnHeadersDefaultCellStyle.Font = new Font("Tahoma", 9.75F, FontStyle.Bold);
+            this.übersetzerDataGridView_8.AllowUserToAddRows = false; //disable the last blank line in DatagridView
+            this.übersetzerDataGridView_8.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal; // Remove all Row border
+
+            this.übersetzerDataGridView_9.ColumnHeadersDefaultCellStyle.Font = new Font("Tahoma", 9.75F, FontStyle.Bold);
+            this.übersetzerDataGridView_9.AllowUserToAddRows = false; //disable the last blank line in DatagridView
+            this.übersetzerDataGridView_9.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal; // Remove all Row border
+
+            this.übersetzerDataGridView_10.ColumnHeadersDefaultCellStyle.Font = new Font("Tahoma", 9.75F, FontStyle.Bold);
+            this.übersetzerDataGridView_10.AllowUserToAddRows = false; //disable the last blank line in DatagridView
+            this.übersetzerDataGridView_10.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal; // Remove all Row border
+
+            this.übersetzerDataGridView_11.ColumnHeadersDefaultCellStyle.Font = new Font("Tahoma", 9.75F, FontStyle.Bold);
+            this.übersetzerDataGridView_11.AllowUserToAddRows = false; //disable the last blank line in DatagridView
+            this.übersetzerDataGridView_11.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal; // Remove all Row border
+
+            this.übersetzerDataGridView_data.AllowUserToAddRows = false; //disable the last blank line in DatagridView
+            this.übersetzerDataGridView_data.ColumnHeadersDefaultCellStyle.Font = new Font("Tahoma", 7.00F, FontStyle.Bold);
+
+            // order per Ordnung field
+            this.übersetzerDataGridView.Sort(this.dataGridViewTextBoxColumn2, ListSortDirection.Ascending);
+
         }
 
     }
+
 }
