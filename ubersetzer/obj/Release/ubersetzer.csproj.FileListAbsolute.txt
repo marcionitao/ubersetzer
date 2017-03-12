@@ -18,3 +18,23 @@ C:\Users\Márcio\documents\visual studio 2015\Projects\ubersetzer\ubersetzer\obj
 C:\Users\Márcio\documents\visual studio 2015\Projects\ubersetzer\ubersetzer\obj\Release\ubersetzer.pdb
 C:\Users\Márcio\documents\visual studio 2015\Projects\ubersetzer\ubersetzer\obj\Release\ubersetzer.csprojResolveAssemblyReference.cache
 C:\Users\Márcio\documents\visual studio 2015\Projects\ubersetzer\ubersetzer\bin\Release\NAudio.xml
+C:\VisualStudio_Projects\ubersetzer\ubersetzer\bin\Release\übersetzer.accdb
+C:\VisualStudio_Projects\ubersetzer\ubersetzer\bin\Release\ubersetzer.exe.config
+C:\VisualStudio_Projects\ubersetzer\ubersetzer\bin\Release\ubersetzer.exe.manifest
+C:\VisualStudio_Projects\ubersetzer\ubersetzer\bin\Release\ubersetzer.application
+C:\VisualStudio_Projects\ubersetzer\ubersetzer\bin\Release\ubersetzer.exe
+C:\VisualStudio_Projects\ubersetzer\ubersetzer\bin\Release\ubersetzer.pdb
+C:\VisualStudio_Projects\ubersetzer\ubersetzer\bin\Release\NAudio.xml
+C:\VisualStudio_Projects\ubersetzer\ubersetzer\bin\Release\Interop.WMPLib.dll
+C:\VisualStudio_Projects\ubersetzer\ubersetzer\bin\Release\AxInterop.WMPLib.dll
+C:\VisualStudio_Projects\ubersetzer\ubersetzer\obj\Release\ubersetzer.csprojResolveAssemblyReference.cache
+C:\VisualStudio_Projects\ubersetzer\ubersetzer\obj\Release\Interop.WMPLib.dll
+C:\VisualStudio_Projects\ubersetzer\ubersetzer\obj\Release\AxInterop.WMPLib.dll
+C:\VisualStudio_Projects\ubersetzer\ubersetzer\obj\Release\ubersetzer.csproj.ResolveComReference.cache
+C:\VisualStudio_Projects\ubersetzer\ubersetzer\obj\Release\ubersetzer.Form1.resources
+C:\VisualStudio_Projects\ubersetzer\ubersetzer\obj\Release\ubersetzer.Properties.Resources.resources
+C:\VisualStudio_Projects\ubersetzer\ubersetzer\obj\Release\ubersetzer.csproj.GenerateResource.Cache
+C:\VisualStudio_Projects\ubersetzer\ubersetzer\obj\Release\ubersetzer.exe.manifest
+C:\VisualStudio_Projects\ubersetzer\ubersetzer\obj\Release\ubersetzer.application
+C:\VisualStudio_Projects\ubersetzer\ubersetzer\obj\Release\ubersetzer.exe
+C:\VisualStudio_Projects\ubersetzer\ubersetzer\obj\Release\ubersetzer.pdb

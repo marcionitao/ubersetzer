@@ -1272,6 +1272,7 @@
             this.übersetzerDataGridView_4.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.übersetzerDataGridView_4.Size = new System.Drawing.Size(748, 243);
             this.übersetzerDataGridView_4.TabIndex = 1;
+            this.übersetzerDataGridView_4.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.übersetzerDataGridView_4_CellClick);
             // 
             // dataGridViewTextBoxColumn10
             // 
@@ -1360,6 +1361,7 @@
             this.übersetzerDataGridView_5.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.übersetzerDataGridView_5.Size = new System.Drawing.Size(748, 243);
             this.übersetzerDataGridView_5.TabIndex = 1;
+            this.übersetzerDataGridView_5.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.übersetzerDataGridView_5_CellClick);
             // 
             // dataGridViewTextBoxColumn13
             // 
@@ -1448,6 +1450,7 @@
             this.übersetzerDataGridView_6.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.übersetzerDataGridView_6.Size = new System.Drawing.Size(748, 243);
             this.übersetzerDataGridView_6.TabIndex = 1;
+            this.übersetzerDataGridView_6.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.übersetzerDataGridView_6_CellClick);
             // 
             // dataGridViewTextBoxColumn16
             // 
@@ -1536,6 +1539,7 @@
             this.übersetzerDataGridView_7.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.übersetzerDataGridView_7.Size = new System.Drawing.Size(748, 243);
             this.übersetzerDataGridView_7.TabIndex = 1;
+            this.übersetzerDataGridView_7.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.übersetzerDataGridView_7_CellClick);
             // 
             // dataGridViewTextBoxColumn19
             // 
@@ -1624,6 +1628,7 @@
             this.übersetzerDataGridView_8.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.übersetzerDataGridView_8.Size = new System.Drawing.Size(748, 243);
             this.übersetzerDataGridView_8.TabIndex = 1;
+            this.übersetzerDataGridView_8.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.übersetzerDataGridView_8_CellClick);
             // 
             // dataGridViewTextBoxColumn22
             // 
@@ -1712,6 +1717,7 @@
             this.übersetzerDataGridView_9.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.übersetzerDataGridView_9.Size = new System.Drawing.Size(748, 243);
             this.übersetzerDataGridView_9.TabIndex = 1;
+            this.übersetzerDataGridView_9.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.übersetzerDataGridView_9_CellClick);
             // 
             // dataGridViewTextBoxColumn25
             // 
@@ -1800,6 +1806,7 @@
             this.übersetzerDataGridView_10.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.übersetzerDataGridView_10.Size = new System.Drawing.Size(748, 243);
             this.übersetzerDataGridView_10.TabIndex = 1;
+            this.übersetzerDataGridView_10.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.übersetzerDataGridView_10_CellClick);
             // 
             // dataGridViewTextBoxColumn28
             // 
@@ -1888,6 +1895,7 @@
             this.übersetzerDataGridView_11.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.übersetzerDataGridView_11.Size = new System.Drawing.Size(748, 243);
             this.übersetzerDataGridView_11.TabIndex = 1;
+            this.übersetzerDataGridView_11.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.übersetzerDataGridView_11_CellClick);
             // 
             // dataGridViewTextBoxColumn31
             // 

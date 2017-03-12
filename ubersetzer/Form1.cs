@@ -48,26 +48,29 @@ namespace ubersetzer
             this.DataGridStyle();
             // Define autocomplete in textBox
             this.autoComplete();
-            // Add image in all row of column
-            this.AddImageColumn();
+            // Add image of sound in all row of column
+           // this.AddImageColumn();
            
         }
 
-        // Add image in all row of column
-        void AddImageColumn()
+        // Add image of sound in all row of column for parameters
+        void AddImageColumn(DataGridView dataGridImage)
         {
+           // dataGridImage = new Datagridview();
             // Add image in all row of column
             DataGridViewImageColumn img = new DataGridViewImageColumn();
             Image image = Image.FromFile(@"C:\Users\Márcio\Desktop\david\icons\sound_16.bmp");
             img.Image = image;
 
-            übersetzerDataGridView.Columns.Add(img);
+            dataGridImage.Columns.Add(img);
+            //übersetzerDataGridView.Columns.Add(img);
 
             img.HeaderText = "";
             img.Name = "img";
 
             // define width size
-            DataGridViewColumn column = übersetzerDataGridView.Columns[3];
+            // DataGridViewColumn column = übersetzerDataGridView.Columns[3];
+            DataGridViewColumn column = dataGridImage.Columns[3];
             column.Width = 30;
         }
 
@@ -237,8 +240,9 @@ namespace ubersetzer
             }
 
         }
-
-        // To get value from Cell in position 2
+        /*---------------Begin------------------Define action on click in the word to translator-------------------------------------------------*/
+       
+            // To get value from Cell in position 2 - England
         private void übersetzerDataGridView_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             if (übersetzerDataGridView.CurrentCell.ColumnIndex.Equals(2) && e.RowIndex != -1)
@@ -275,7 +279,7 @@ namespace ubersetzer
 
         }
 
-        // To get value from Cell in position 2
+        // To get value from Cell in position 2 - Spain
         private void übersetzerDataGridView_2_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             if (übersetzerDataGridView_2.CurrentCell.ColumnIndex.Equals(2) && e.RowIndex != -1)
@@ -312,7 +316,7 @@ namespace ubersetzer
 
         }
 
-        // To get value from Cell in position 2
+        // To get value from Cell in position 2 - Portugal
         private void übersetzerDataGridView_3_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             if (übersetzerDataGridView_3.CurrentCell.ColumnIndex.Equals(2) && e.RowIndex != -1)
@@ -349,53 +353,362 @@ namespace ubersetzer
 
         }
 
-        // Define the style of DataGridView
+        // To get value from Cell in position 2 - France
+        private void übersetzerDataGridView_4_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (übersetzerDataGridView_4.CurrentCell.ColumnIndex.Equals(2) && e.RowIndex != -1)
+            {
+                if (übersetzerDataGridView_4.CurrentCell != null && übersetzerDataGridView_4.CurrentCell.Value != null)
+                {
+                    string valueCell = übersetzerDataGridView_4.CurrentCell.Value.ToString();
+                    // clear content speak, then add a new sound  
+                    mediaPlayer.currentPlaylist.clear();
+
+                    try
+                    {
+                        teks = valueCell;
+                        mp3Path = Environment.CurrentDirectory + @"\ubersetzer.mp3";
+                        urltts = new Uri("http://translate.google.com/translate_tts?client=tw-ob&tl=fr-FR&q=" + teks);
+                        // make download file
+                        using (tts = new WebClient())
+                        {
+                            tts.Headers.Add(HttpRequestHeader.UserAgent, "Mozilla/5.0 (compatible; MSIE 9.0; Windows;)");
+                            tts.DownloadFile(urltts, mp3Path);
+                        }
+                        // play file speak
+                        mediaPlayer.URL = mp3Path;
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show("Keine Internetverbindung !");
+                    }
+                    teks = null;
+
+                }
+
+            }
+
+        }
+
+        // To get value from Cell in position 2 - Italy
+        private void übersetzerDataGridView_5_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (übersetzerDataGridView_5.CurrentCell.ColumnIndex.Equals(2) && e.RowIndex != -1)
+            {
+                if (übersetzerDataGridView_5.CurrentCell != null && übersetzerDataGridView_5.CurrentCell.Value != null)
+                {
+                    string valueCell = übersetzerDataGridView_5.CurrentCell.Value.ToString();
+                    // clear content speak, then add a new sound  
+                    mediaPlayer.currentPlaylist.clear();
+
+                    try
+                    {
+                        teks = valueCell;
+                        mp3Path = Environment.CurrentDirectory + @"\ubersetzer.mp3";
+                        urltts = new Uri("http://translate.google.com/translate_tts?client=tw-ob&tl=it&q=" + teks);
+                        // make download file
+                        using (tts = new WebClient())
+                        {
+                            tts.Headers.Add(HttpRequestHeader.UserAgent, "Mozilla/5.0 (compatible; MSIE 9.0; Windows;)");
+                            tts.DownloadFile(urltts, mp3Path);
+                        }
+                        // play file speak
+                        mediaPlayer.URL = mp3Path;
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show("Keine Internetverbindung !");
+                    }
+                    teks = null;
+
+                }
+
+            }
+
+        }
+
+        // To get value from Cell in position 2 - Turkei
+        private void übersetzerDataGridView_6_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (übersetzerDataGridView_6.CurrentCell.ColumnIndex.Equals(2) && e.RowIndex != -1)
+            {
+                if (übersetzerDataGridView_6.CurrentCell != null && übersetzerDataGridView_6.CurrentCell.Value != null)
+                {
+                    string valueCell = übersetzerDataGridView_6.CurrentCell.Value.ToString();
+                    // clear content speak, then add a new sound  
+                    mediaPlayer.currentPlaylist.clear();
+
+                    try
+                    {
+                        teks = valueCell;
+                        mp3Path = Environment.CurrentDirectory + @"\ubersetzer.mp3";
+                        urltts = new Uri("http://translate.google.com/translate_tts?client=tw-ob&tl=tr-TR&q=" + teks);
+                        // make download file
+                        using (tts = new WebClient())
+                        {
+                            tts.Headers.Add(HttpRequestHeader.UserAgent, "Mozilla/5.0 (compatible; MSIE 9.0; Windows;)");
+                            tts.DownloadFile(urltts, mp3Path);
+                        }
+                        // play file speak
+                        mediaPlayer.URL = mp3Path;
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show("Keine Internetverbindung !");
+                    }
+                    teks = null;
+
+                }
+
+            }
+
+        }
+
+        // To get value from Cell in position 2 - Romenien
+        private void übersetzerDataGridView_7_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (übersetzerDataGridView_7.CurrentCell.ColumnIndex.Equals(2) && e.RowIndex != -1)
+            {
+                if (übersetzerDataGridView_7.CurrentCell != null && übersetzerDataGridView_7.CurrentCell.Value != null)
+                {
+                    string valueCell = übersetzerDataGridView_7.CurrentCell.Value.ToString();
+                    // clear content speak, then add a new sound  
+                    mediaPlayer.currentPlaylist.clear();
+
+                    try
+                    {
+                        teks = valueCell;
+                        mp3Path = Environment.CurrentDirectory + @"\ubersetzer.mp3";
+                        urltts = new Uri("http://translate.google.com/translate_tts?client=tw-ob&tl=ro-RO&q=" + teks);
+                        // make download file
+                        using (tts = new WebClient())
+                        {
+                            tts.Headers.Add(HttpRequestHeader.UserAgent, "Mozilla/5.0 (compatible; MSIE 9.0; Windows;)");
+                            tts.DownloadFile(urltts, mp3Path);
+                        }
+                        // play file speak
+                        mediaPlayer.URL = mp3Path;
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show("Keine Internetverbindung !");
+                    }
+                    teks = null;
+
+                }
+
+            }
+
+        }
+
+        // To get value from Cell in position 2 - Bulgarien
+        private void übersetzerDataGridView_8_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (übersetzerDataGridView_8.CurrentCell.ColumnIndex.Equals(2) && e.RowIndex != -1)
+            {
+                if (übersetzerDataGridView_8.CurrentCell != null && übersetzerDataGridView_8.CurrentCell.Value != null)
+                {
+                    string valueCell = übersetzerDataGridView_8.CurrentCell.Value.ToString();
+                    // clear content speak, then add a new sound  
+                    mediaPlayer.currentPlaylist.clear();
+
+                    try
+                    {
+                        teks = valueCell;
+                        mp3Path = Environment.CurrentDirectory + @"\ubersetzer.mp3";
+                        urltts = new Uri("http://translate.google.com/translate_tts?client=tw-ob&tl=ru&q=" + teks);
+                        // make download file
+                        using (tts = new WebClient())
+                        {
+                            tts.Headers.Add(HttpRequestHeader.UserAgent, "Mozilla/5.0 (compatible; MSIE 9.0; Windows;)");
+                            tts.DownloadFile(urltts, mp3Path);
+                        }
+                        // play file speak
+                        mediaPlayer.URL = mp3Path;
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show("Keine Internetverbindung !");
+                    }
+                    teks = null;
+
+                }
+
+            }
+
+        }
+
+        // To get value from Cell in position 2 - Russland
+        private void übersetzerDataGridView_9_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (übersetzerDataGridView_9.CurrentCell.ColumnIndex.Equals(2) && e.RowIndex != -1)
+            {
+                if (übersetzerDataGridView_9.CurrentCell != null && übersetzerDataGridView_9.CurrentCell.Value != null)
+                {
+                    string valueCell = übersetzerDataGridView_9.CurrentCell.Value.ToString();
+                    // clear content speak, then add a new sound  
+                    mediaPlayer.currentPlaylist.clear();
+
+                    try
+                    {
+                        teks = valueCell;
+                        mp3Path = Environment.CurrentDirectory + @"\ubersetzer.mp3";
+                        urltts = new Uri("http://translate.google.com/translate_tts?client=tw-ob&tl=ru-RU&q=" + teks);
+                        // make download file
+                        using (tts = new WebClient())
+                        {
+                            tts.Headers.Add(HttpRequestHeader.UserAgent, "Mozilla/5.0 (compatible; MSIE 9.0; Windows;)");
+                            tts.DownloadFile(urltts, mp3Path);
+                        }
+                        // play file speak
+                        mediaPlayer.URL = mp3Path;
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show("Keine Internetverbindung !");
+                    }
+                    teks = null;
+
+                }
+
+            }
+
+        }
+
+        // To get value from Cell in position 2 - Polen
+        private void übersetzerDataGridView_10_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (übersetzerDataGridView_10.CurrentCell.ColumnIndex.Equals(2) && e.RowIndex != -1)
+            {
+                if (übersetzerDataGridView_10.CurrentCell != null && übersetzerDataGridView_10.CurrentCell.Value != null)
+                {
+                    string valueCell = übersetzerDataGridView_10.CurrentCell.Value.ToString();
+                    // clear content speak, then add a new sound  
+                    mediaPlayer.currentPlaylist.clear();
+
+                    try
+                    {
+                        teks = valueCell;
+                        mp3Path = Environment.CurrentDirectory + @"\ubersetzer.mp3";
+                        urltts = new Uri("http://translate.google.com/translate_tts?client=tw-ob&tl=pl-PL&q=" + teks);
+                        // make download file
+                        using (tts = new WebClient())
+                        {
+                            tts.Headers.Add(HttpRequestHeader.UserAgent, "Mozilla/5.0 (compatible; MSIE 9.0; Windows;)");
+                            tts.DownloadFile(urltts, mp3Path);
+                        }
+                        // play file speak
+                        mediaPlayer.URL = mp3Path;
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show("Keine Internetverbindung !");
+                    }
+                    teks = null;
+
+                }
+
+            }
+
+        }
+
+        // To get value from Cell in position 2 - Arabic
+        private void übersetzerDataGridView_11_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (übersetzerDataGridView_11.CurrentCell.ColumnIndex.Equals(2) && e.RowIndex != -1)
+            {
+                if (übersetzerDataGridView_11.CurrentCell != null && übersetzerDataGridView_11.CurrentCell.Value != null)
+                {
+                    string valueCell = übersetzerDataGridView_11.CurrentCell.Value.ToString();
+                    // clear content speak, then add a new sound  
+                    mediaPlayer.currentPlaylist.clear();
+
+                    try
+                    {
+                        teks = valueCell;
+                        mp3Path = Environment.CurrentDirectory + @"\ubersetzer.mp3";
+                        urltts = new Uri("http://translate.google.com/translate_tts?client=tw-ob&tl=ar-AR&q=" + teks);
+                        // make download file
+                        using (tts = new WebClient())
+                        {
+                            tts.Headers.Add(HttpRequestHeader.UserAgent, "Mozilla/5.0 (compatible; MSIE 9.0; Windows;)");
+                            tts.DownloadFile(urltts, mp3Path);
+                        }
+                        // play file speak
+                        mediaPlayer.URL = mp3Path;
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show("Keine Internetverbindung !");
+                    }
+                    teks = null;
+
+                }
+
+            }
+
+        }
+
+        /*---------------End------------------Define action on click in the word to translator-------------------------------------------------*/
+
+        // Define the style and image of DataGridView
         void DataGridStyle()
         {
             // format font in DataGridView
             this.übersetzerDataGridView.ColumnHeadersDefaultCellStyle.Font = new Font("Tahoma", 9.75F, FontStyle.Bold);
             this.übersetzerDataGridView.AllowUserToAddRows = false; //disable the last blank line in DatagridView
             this.übersetzerDataGridView.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal; // Remove all Row border
+            this.AddImageColumn(übersetzerDataGridView);  // Add image of sound in all row of column for parameters
 
             this.übersetzerDataGridView_2.ColumnHeadersDefaultCellStyle.Font = new Font("Tahoma", 9.75F, FontStyle.Bold);
             this.übersetzerDataGridView_2.AllowUserToAddRows = false; //disable the last blank line in DatagridView
             this.übersetzerDataGridView_2.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal; // Remove all Row border
+            this.AddImageColumn(übersetzerDataGridView_2);  // Add image of sound in all row of column for parameters
 
             this.übersetzerDataGridView_3.ColumnHeadersDefaultCellStyle.Font = new Font("Tahoma", 9.75F, FontStyle.Bold);
             this.übersetzerDataGridView_3.AllowUserToAddRows = false; //disable the last blank line in DatagridView
             this.übersetzerDataGridView_3.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal; // Remove all Row border
+            this.AddImageColumn(übersetzerDataGridView_3);  // Add image of sound in all row of column for parameters
 
             this.übersetzerDataGridView_4.ColumnHeadersDefaultCellStyle.Font = new Font("Tahoma", 9.75F, FontStyle.Bold);
             this.übersetzerDataGridView_4.AllowUserToAddRows = false; //disable the last blank line in DatagridView
             this.übersetzerDataGridView_4.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal; // Remove all Row border
+            this.AddImageColumn(übersetzerDataGridView_4);  // Add image of sound in all row of column for parameters
 
             this.übersetzerDataGridView_5.ColumnHeadersDefaultCellStyle.Font = new Font("Tahoma", 9.75F, FontStyle.Bold);
             this.übersetzerDataGridView_5.AllowUserToAddRows = false; //disable the last blank line in DatagridView
             this.übersetzerDataGridView_5.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal; // Remove all Row border
+            this.AddImageColumn(übersetzerDataGridView_5);  // Add image of sound in all row of column for parameters
 
             this.übersetzerDataGridView_6.ColumnHeadersDefaultCellStyle.Font = new Font("Tahoma", 9.75F, FontStyle.Bold);
             this.übersetzerDataGridView_6.AllowUserToAddRows = false; //disable the last blank line in DatagridView
             this.übersetzerDataGridView_6.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal; // Remove all Row border
+            this.AddImageColumn(übersetzerDataGridView_6);  // Add image of sound in all row of column for parameters
 
             this.übersetzerDataGridView_7.ColumnHeadersDefaultCellStyle.Font = new Font("Tahoma", 9.75F, FontStyle.Bold);
             this.übersetzerDataGridView_7.AllowUserToAddRows = false; //disable the last blank line in DatagridView
             this.übersetzerDataGridView_7.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal; // Remove all Row border
+            this.AddImageColumn(übersetzerDataGridView_7);  // Add image of sound in all row of column for parameters
 
             this.übersetzerDataGridView_8.ColumnHeadersDefaultCellStyle.Font = new Font("Tahoma", 9.75F, FontStyle.Bold);
             this.übersetzerDataGridView_8.AllowUserToAddRows = false; //disable the last blank line in DatagridView
             this.übersetzerDataGridView_8.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal; // Remove all Row border
+            this.AddImageColumn(übersetzerDataGridView_8);  // Add image of sound in all row of column for parameters
 
             this.übersetzerDataGridView_9.ColumnHeadersDefaultCellStyle.Font = new Font("Tahoma", 9.75F, FontStyle.Bold);
             this.übersetzerDataGridView_9.AllowUserToAddRows = false; //disable the last blank line in DatagridView
             this.übersetzerDataGridView_9.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal; // Remove all Row border
+            this.AddImageColumn(übersetzerDataGridView_9);  // Add image of sound in all row of column for parameters
 
             this.übersetzerDataGridView_10.ColumnHeadersDefaultCellStyle.Font = new Font("Tahoma", 9.75F, FontStyle.Bold);
             this.übersetzerDataGridView_10.AllowUserToAddRows = false; //disable the last blank line in DatagridView
             this.übersetzerDataGridView_10.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal; // Remove all Row border
+            this.AddImageColumn(übersetzerDataGridView_10);  // Add image of sound in all row of column for parameters
 
             this.übersetzerDataGridView_11.ColumnHeadersDefaultCellStyle.Font = new Font("Tahoma", 9.75F, FontStyle.Bold);
             this.übersetzerDataGridView_11.AllowUserToAddRows = false; //disable the last blank line in DatagridView
             this.übersetzerDataGridView_11.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal; // Remove all Row border
+            this.AddImageColumn(übersetzerDataGridView_11);  // Add image of sound in all row of column for parameters
 
             this.übersetzerDataGridView_data.AllowUserToAddRows = false; //disable the last blank line in DatagridView
             this.übersetzerDataGridView_data.ColumnHeadersDefaultCellStyle.Font = new Font("Tahoma", 7.00F, FontStyle.Bold);
