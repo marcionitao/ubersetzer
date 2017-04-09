@@ -342,6 +342,8 @@ namespace ubersetzer {
             
             private global::System.Data.DataColumn columnArabisch;
             
+            private global::System.Data.DataColumn columnTransaction;
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public übersetzerDataTable() {
@@ -489,6 +491,14 @@ namespace ubersetzer {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn TransactionColumn {
+                get {
+                    return this.columnTransaction;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             [global::System.ComponentModel.Browsable(false)]
             public int Count {
                 get {
@@ -524,7 +534,7 @@ namespace ubersetzer {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public übersetzerRow AddübersetzerRow(int Ordnung, string Deutsch, string Englisch, string Spanisch, string Portugiesisch, string Französisch, string Italienisch, string Türkisch, string Rumänisch, string Bulgarisch, string Russisch, string Polnisch, string Arabisch) {
+            public übersetzerRow AddübersetzerRow(int Ordnung, string Deutsch, string Englisch, string Spanisch, string Portugiesisch, string Französisch, string Italienisch, string Türkisch, string Rumänisch, string Bulgarisch, string Russisch, string Polnisch, string Arabisch, string Transaction) {
                 übersetzerRow rowübersetzerRow = ((übersetzerRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
@@ -540,7 +550,8 @@ namespace ubersetzer {
                         Bulgarisch,
                         Russisch,
                         Polnisch,
-                        Arabisch};
+                        Arabisch,
+                        Transaction};
                 rowübersetzerRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowübersetzerRow);
                 return rowübersetzerRow;
@@ -584,6 +595,7 @@ namespace ubersetzer {
                 this.columnRussisch = base.Columns["Russisch"];
                 this.columnPolnisch = base.Columns["Polnisch"];
                 this.columnArabisch = base.Columns["Arabisch"];
+                this.columnTransaction = base.Columns["Transaction"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -617,6 +629,8 @@ namespace ubersetzer {
                 base.Columns.Add(this.columnPolnisch);
                 this.columnArabisch = new global::System.Data.DataColumn("Arabisch", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnArabisch);
+                this.columnTransaction = new global::System.Data.DataColumn("Transaction", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnTransaction);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
                                 this.columnID}, true));
                 this.columnID.AutoIncrement = true;
@@ -636,6 +650,7 @@ namespace ubersetzer {
                 this.columnRussisch.MaxLength = 255;
                 this.columnPolnisch.MaxLength = 255;
                 this.columnArabisch.MaxLength = 255;
+                this.columnTransaction.MaxLength = 255;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1410,6 +1425,22 @@ namespace ubersetzer {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string Transaction {
+                get {
+                    try {
+                        return ((string)(this[this.tableübersetzer.TransactionColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'Transaction\' in table \'übersetzer\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableübersetzer.TransactionColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public bool IsOrdnungNull() {
                 return this.IsNull(this.tableübersetzer.OrdnungColumn);
             }
@@ -1562,6 +1593,18 @@ namespace ubersetzer {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public void SetArabischNull() {
                 this[this.tableübersetzer.ArabischColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsTransactionNull() {
+                return this.IsNull(this.tableübersetzer.TransactionColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetTransactionNull() {
+                this[this.tableübersetzer.TransactionColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -2123,10 +2166,11 @@ namespace ubersetzer.übersetzerDataSetTableAdapters {
             tableMapping.ColumnMappings.Add("Russisch", "Russisch");
             tableMapping.ColumnMappings.Add("Polnisch", "Polnisch");
             tableMapping.ColumnMappings.Add("Arabisch", "Arabisch");
+            tableMapping.ColumnMappings.Add("Transaction", "Transaction");
             this._adapter.TableMappings.Add(tableMapping);
             this._adapter.DeleteCommand = new global::System.Data.OleDb.OleDbCommand();
             this._adapter.DeleteCommand.Connection = this.Connection;
-            this._adapter.DeleteCommand.CommandText = @"DELETE FROM `übersetzer` WHERE ((`ID` = ?) AND ((? = 1 AND `Ordnung` IS NULL) OR (`Ordnung` = ?)) AND ((? = 1 AND `Deutsch` IS NULL) OR (`Deutsch` = ?)) AND ((? = 1 AND `Englisch` IS NULL) OR (`Englisch` = ?)) AND ((? = 1 AND `Spanisch` IS NULL) OR (`Spanisch` = ?)) AND ((? = 1 AND `Portugiesisch` IS NULL) OR (`Portugiesisch` = ?)) AND ((? = 1 AND `Französisch` IS NULL) OR (`Französisch` = ?)) AND ((? = 1 AND `Italienisch` IS NULL) OR (`Italienisch` = ?)) AND ((? = 1 AND `Türkisch` IS NULL) OR (`Türkisch` = ?)) AND ((? = 1 AND `Rumänisch` IS NULL) OR (`Rumänisch` = ?)) AND ((? = 1 AND `Bulgarisch` IS NULL) OR (`Bulgarisch` = ?)) AND ((? = 1 AND `Russisch` IS NULL) OR (`Russisch` = ?)) AND ((? = 1 AND `Polnisch` IS NULL) OR (`Polnisch` = ?)) AND ((? = 1 AND `Arabisch` IS NULL) OR (`Arabisch` = ?)))";
+            this._adapter.DeleteCommand.CommandText = @"DELETE FROM `übersetzer` WHERE ((`ID` = ?) AND ((? = 1 AND `Ordnung` IS NULL) OR (`Ordnung` = ?)) AND ((? = 1 AND `Deutsch` IS NULL) OR (`Deutsch` = ?)) AND ((? = 1 AND `Englisch` IS NULL) OR (`Englisch` = ?)) AND ((? = 1 AND `Spanisch` IS NULL) OR (`Spanisch` = ?)) AND ((? = 1 AND `Portugiesisch` IS NULL) OR (`Portugiesisch` = ?)) AND ((? = 1 AND `Französisch` IS NULL) OR (`Französisch` = ?)) AND ((? = 1 AND `Italienisch` IS NULL) OR (`Italienisch` = ?)) AND ((? = 1 AND `Türkisch` IS NULL) OR (`Türkisch` = ?)) AND ((? = 1 AND `Rumänisch` IS NULL) OR (`Rumänisch` = ?)) AND ((? = 1 AND `Bulgarisch` IS NULL) OR (`Bulgarisch` = ?)) AND ((? = 1 AND `Russisch` IS NULL) OR (`Russisch` = ?)) AND ((? = 1 AND `Polnisch` IS NULL) OR (`Polnisch` = ?)) AND ((? = 1 AND `Arabisch` IS NULL) OR (`Arabisch` = ?)) AND ((? = 1 AND `Transaction` IS NULL) OR (`Transaction` = ?)))";
             this._adapter.DeleteCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_ID", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "ID", global::System.Data.DataRowVersion.Original, false, null));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_Ordnung", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Ordnung", global::System.Data.DataRowVersion.Original, true, null));
@@ -2155,11 +2199,11 @@ namespace ubersetzer.übersetzerDataSetTableAdapters {
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_Polnisch", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Polnisch", global::System.Data.DataRowVersion.Original, false, null));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_Arabisch", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Arabisch", global::System.Data.DataRowVersion.Original, true, null));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_Arabisch", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Arabisch", global::System.Data.DataRowVersion.Original, false, null));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_Transaction", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Transaction", global::System.Data.DataRowVersion.Original, true, null));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_Transaction", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Transaction", global::System.Data.DataRowVersion.Original, false, null));
             this._adapter.InsertCommand = new global::System.Data.OleDb.OleDbCommand();
             this._adapter.InsertCommand.Connection = this.Connection;
-            this._adapter.InsertCommand.CommandText = "INSERT INTO `übersetzer` (`Ordnung`, `Deutsch`, `Englisch`, `Spanisch`, `Portugie" +
-                "sisch`, `Französisch`, `Italienisch`, `Türkisch`, `Rumänisch`, `Bulgarisch`, `Ru" +
-                "ssisch`, `Polnisch`, `Arabisch`) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
+            this._adapter.InsertCommand.CommandText = @"INSERT INTO `übersetzer` (`Ordnung`, `Deutsch`, `Englisch`, `Spanisch`, `Portugiesisch`, `Französisch`, `Italienisch`, `Türkisch`, `Rumänisch`, `Bulgarisch`, `Russisch`, `Polnisch`, `Arabisch`, `Transaction`) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
             this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Ordnung", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Ordnung", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Deutsch", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Deutsch", global::System.Data.DataRowVersion.Current, false, null));
@@ -2174,9 +2218,10 @@ namespace ubersetzer.übersetzerDataSetTableAdapters {
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Russisch", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Russisch", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Polnisch", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Polnisch", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Arabisch", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Arabisch", global::System.Data.DataRowVersion.Current, false, null));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Transaction", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Transaction", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.UpdateCommand = new global::System.Data.OleDb.OleDbCommand();
             this._adapter.UpdateCommand.Connection = this.Connection;
-            this._adapter.UpdateCommand.CommandText = @"UPDATE `übersetzer` SET `Ordnung` = ?, `Deutsch` = ?, `Englisch` = ?, `Spanisch` = ?, `Portugiesisch` = ?, `Französisch` = ?, `Italienisch` = ?, `Türkisch` = ?, `Rumänisch` = ?, `Bulgarisch` = ?, `Russisch` = ?, `Polnisch` = ?, `Arabisch` = ? WHERE ((`ID` = ?) AND ((? = 1 AND `Ordnung` IS NULL) OR (`Ordnung` = ?)) AND ((? = 1 AND `Deutsch` IS NULL) OR (`Deutsch` = ?)) AND ((? = 1 AND `Englisch` IS NULL) OR (`Englisch` = ?)) AND ((? = 1 AND `Spanisch` IS NULL) OR (`Spanisch` = ?)) AND ((? = 1 AND `Portugiesisch` IS NULL) OR (`Portugiesisch` = ?)) AND ((? = 1 AND `Französisch` IS NULL) OR (`Französisch` = ?)) AND ((? = 1 AND `Italienisch` IS NULL) OR (`Italienisch` = ?)) AND ((? = 1 AND `Türkisch` IS NULL) OR (`Türkisch` = ?)) AND ((? = 1 AND `Rumänisch` IS NULL) OR (`Rumänisch` = ?)) AND ((? = 1 AND `Bulgarisch` IS NULL) OR (`Bulgarisch` = ?)) AND ((? = 1 AND `Russisch` IS NULL) OR (`Russisch` = ?)) AND ((? = 1 AND `Polnisch` IS NULL) OR (`Polnisch` = ?)) AND ((? = 1 AND `Arabisch` IS NULL) OR (`Arabisch` = ?)))";
+            this._adapter.UpdateCommand.CommandText = @"UPDATE `übersetzer` SET `Ordnung` = ?, `Deutsch` = ?, `Englisch` = ?, `Spanisch` = ?, `Portugiesisch` = ?, `Französisch` = ?, `Italienisch` = ?, `Türkisch` = ?, `Rumänisch` = ?, `Bulgarisch` = ?, `Russisch` = ?, `Polnisch` = ?, `Arabisch` = ?, `Transaction` = ? WHERE ((`ID` = ?) AND ((? = 1 AND `Ordnung` IS NULL) OR (`Ordnung` = ?)) AND ((? = 1 AND `Deutsch` IS NULL) OR (`Deutsch` = ?)) AND ((? = 1 AND `Englisch` IS NULL) OR (`Englisch` = ?)) AND ((? = 1 AND `Spanisch` IS NULL) OR (`Spanisch` = ?)) AND ((? = 1 AND `Portugiesisch` IS NULL) OR (`Portugiesisch` = ?)) AND ((? = 1 AND `Französisch` IS NULL) OR (`Französisch` = ?)) AND ((? = 1 AND `Italienisch` IS NULL) OR (`Italienisch` = ?)) AND ((? = 1 AND `Türkisch` IS NULL) OR (`Türkisch` = ?)) AND ((? = 1 AND `Rumänisch` IS NULL) OR (`Rumänisch` = ?)) AND ((? = 1 AND `Bulgarisch` IS NULL) OR (`Bulgarisch` = ?)) AND ((? = 1 AND `Russisch` IS NULL) OR (`Russisch` = ?)) AND ((? = 1 AND `Polnisch` IS NULL) OR (`Polnisch` = ?)) AND ((? = 1 AND `Arabisch` IS NULL) OR (`Arabisch` = ?)) AND ((? = 1 AND `Transaction` IS NULL) OR (`Transaction` = ?)))";
             this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Ordnung", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Ordnung", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Deutsch", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Deutsch", global::System.Data.DataRowVersion.Current, false, null));
@@ -2191,6 +2236,7 @@ namespace ubersetzer.übersetzerDataSetTableAdapters {
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Russisch", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Russisch", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Polnisch", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Polnisch", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Arabisch", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Arabisch", global::System.Data.DataRowVersion.Current, false, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Transaction", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Transaction", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_ID", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "ID", global::System.Data.DataRowVersion.Original, false, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_Ordnung", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Ordnung", global::System.Data.DataRowVersion.Original, true, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_Ordnung", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Ordnung", global::System.Data.DataRowVersion.Original, false, null));
@@ -2218,6 +2264,8 @@ namespace ubersetzer.übersetzerDataSetTableAdapters {
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_Polnisch", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Polnisch", global::System.Data.DataRowVersion.Original, false, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_Arabisch", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Arabisch", global::System.Data.DataRowVersion.Original, true, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_Arabisch", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Arabisch", global::System.Data.DataRowVersion.Original, false, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_Transaction", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Transaction", global::System.Data.DataRowVersion.Original, true, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_Transaction", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Transaction", global::System.Data.DataRowVersion.Original, false, null));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -2234,8 +2282,8 @@ namespace ubersetzer.übersetzerDataSetTableAdapters {
             this._commandCollection[0] = new global::System.Data.OleDb.OleDbCommand();
             this._commandCollection[0].Connection = this.Connection;
             this._commandCollection[0].CommandText = "SELECT ID, Ordnung, Deutsch, Englisch, Spanisch, Portugiesisch, Französisch, Ital" +
-                "ienisch, Türkisch, Rumänisch, Bulgarisch, Russisch, Polnisch, Arabisch FROM über" +
-                "setzer";
+                "ienisch, Türkisch, Rumänisch, Bulgarisch, Russisch, Polnisch, Arabisch, [Transac" +
+                "tion] FROM übersetzer";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }
         
@@ -2296,7 +2344,7 @@ namespace ubersetzer.übersetzerDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Delete, true)]
-        public virtual int Delete(int Original_ID, global::System.Nullable<int> Original_Ordnung, string Original_Deutsch, string Original_Englisch, string Original_Spanisch, string Original_Portugiesisch, string Original_Französisch, string Original_Italienisch, string Original_Türkisch, string Original_Rumänisch, string Original_Bulgarisch, string Original_Russisch, string Original_Polnisch, string Original_Arabisch) {
+        public virtual int Delete(int Original_ID, global::System.Nullable<int> Original_Ordnung, string Original_Deutsch, string Original_Englisch, string Original_Spanisch, string Original_Portugiesisch, string Original_Französisch, string Original_Italienisch, string Original_Türkisch, string Original_Rumänisch, string Original_Bulgarisch, string Original_Russisch, string Original_Polnisch, string Original_Arabisch, string Original_Transaction) {
             this.Adapter.DeleteCommand.Parameters[0].Value = ((int)(Original_ID));
             if ((Original_Ordnung.HasValue == true)) {
                 this.Adapter.DeleteCommand.Parameters[1].Value = ((object)(0));
@@ -2402,6 +2450,14 @@ namespace ubersetzer.übersetzerDataSetTableAdapters {
                 this.Adapter.DeleteCommand.Parameters[25].Value = ((object)(0));
                 this.Adapter.DeleteCommand.Parameters[26].Value = ((string)(Original_Arabisch));
             }
+            if ((Original_Transaction == null)) {
+                this.Adapter.DeleteCommand.Parameters[27].Value = ((object)(1));
+                this.Adapter.DeleteCommand.Parameters[28].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.DeleteCommand.Parameters[27].Value = ((object)(0));
+                this.Adapter.DeleteCommand.Parameters[28].Value = ((string)(Original_Transaction));
+            }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.DeleteCommand.Connection.State;
             if (((this.Adapter.DeleteCommand.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {
@@ -2422,7 +2478,7 @@ namespace ubersetzer.übersetzerDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
-        public virtual int Insert(global::System.Nullable<int> Ordnung, string Deutsch, string Englisch, string Spanisch, string Portugiesisch, string Französisch, string Italienisch, string Türkisch, string Rumänisch, string Bulgarisch, string Russisch, string Polnisch, string Arabisch) {
+        public virtual int Insert(global::System.Nullable<int> Ordnung, string Deutsch, string Englisch, string Spanisch, string Portugiesisch, string Französisch, string Italienisch, string Türkisch, string Rumänisch, string Bulgarisch, string Russisch, string Polnisch, string Arabisch, string Transaction) {
             if ((Ordnung.HasValue == true)) {
                 this.Adapter.InsertCommand.Parameters[0].Value = ((int)(Ordnung.Value));
             }
@@ -2501,6 +2557,12 @@ namespace ubersetzer.übersetzerDataSetTableAdapters {
             else {
                 this.Adapter.InsertCommand.Parameters[12].Value = ((string)(Arabisch));
             }
+            if ((Transaction == null)) {
+                this.Adapter.InsertCommand.Parameters[13].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[13].Value = ((string)(Transaction));
+            }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.InsertCommand.Connection.State;
             if (((this.Adapter.InsertCommand.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {
@@ -2535,6 +2597,7 @@ namespace ubersetzer.übersetzerDataSetTableAdapters {
                     string Russisch, 
                     string Polnisch, 
                     string Arabisch, 
+                    string Transaction, 
                     int Original_ID, 
                     global::System.Nullable<int> Original_Ordnung, 
                     string Original_Deutsch, 
@@ -2548,7 +2611,8 @@ namespace ubersetzer.übersetzerDataSetTableAdapters {
                     string Original_Bulgarisch, 
                     string Original_Russisch, 
                     string Original_Polnisch, 
-                    string Original_Arabisch) {
+                    string Original_Arabisch, 
+                    string Original_Transaction) {
             if ((Ordnung.HasValue == true)) {
                 this.Adapter.UpdateCommand.Parameters[0].Value = ((int)(Ordnung.Value));
             }
@@ -2627,110 +2691,124 @@ namespace ubersetzer.übersetzerDataSetTableAdapters {
             else {
                 this.Adapter.UpdateCommand.Parameters[12].Value = ((string)(Arabisch));
             }
-            this.Adapter.UpdateCommand.Parameters[13].Value = ((int)(Original_ID));
-            if ((Original_Ordnung.HasValue == true)) {
-                this.Adapter.UpdateCommand.Parameters[14].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[15].Value = ((int)(Original_Ordnung.Value));
+            if ((Transaction == null)) {
+                this.Adapter.UpdateCommand.Parameters[13].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[14].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[15].Value = global::System.DBNull.Value;
+                this.Adapter.UpdateCommand.Parameters[13].Value = ((string)(Transaction));
+            }
+            this.Adapter.UpdateCommand.Parameters[14].Value = ((int)(Original_ID));
+            if ((Original_Ordnung.HasValue == true)) {
+                this.Adapter.UpdateCommand.Parameters[15].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[16].Value = ((int)(Original_Ordnung.Value));
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[15].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[16].Value = global::System.DBNull.Value;
             }
             if ((Original_Deutsch == null)) {
-                this.Adapter.UpdateCommand.Parameters[16].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[17].Value = global::System.DBNull.Value;
+                this.Adapter.UpdateCommand.Parameters[17].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[18].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[16].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[17].Value = ((string)(Original_Deutsch));
+                this.Adapter.UpdateCommand.Parameters[17].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[18].Value = ((string)(Original_Deutsch));
             }
             if ((Original_Englisch == null)) {
-                this.Adapter.UpdateCommand.Parameters[18].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[19].Value = global::System.DBNull.Value;
+                this.Adapter.UpdateCommand.Parameters[19].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[20].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[18].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[19].Value = ((string)(Original_Englisch));
+                this.Adapter.UpdateCommand.Parameters[19].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[20].Value = ((string)(Original_Englisch));
             }
             if ((Original_Spanisch == null)) {
-                this.Adapter.UpdateCommand.Parameters[20].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[21].Value = global::System.DBNull.Value;
+                this.Adapter.UpdateCommand.Parameters[21].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[22].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[20].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[21].Value = ((string)(Original_Spanisch));
+                this.Adapter.UpdateCommand.Parameters[21].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[22].Value = ((string)(Original_Spanisch));
             }
             if ((Original_Portugiesisch == null)) {
-                this.Adapter.UpdateCommand.Parameters[22].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[23].Value = global::System.DBNull.Value;
+                this.Adapter.UpdateCommand.Parameters[23].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[24].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[22].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[23].Value = ((string)(Original_Portugiesisch));
+                this.Adapter.UpdateCommand.Parameters[23].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[24].Value = ((string)(Original_Portugiesisch));
             }
             if ((Original_Französisch == null)) {
-                this.Adapter.UpdateCommand.Parameters[24].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[25].Value = global::System.DBNull.Value;
+                this.Adapter.UpdateCommand.Parameters[25].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[26].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[24].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[25].Value = ((string)(Original_Französisch));
+                this.Adapter.UpdateCommand.Parameters[25].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[26].Value = ((string)(Original_Französisch));
             }
             if ((Original_Italienisch == null)) {
-                this.Adapter.UpdateCommand.Parameters[26].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[27].Value = global::System.DBNull.Value;
+                this.Adapter.UpdateCommand.Parameters[27].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[28].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[26].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[27].Value = ((string)(Original_Italienisch));
+                this.Adapter.UpdateCommand.Parameters[27].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[28].Value = ((string)(Original_Italienisch));
             }
             if ((Original_Türkisch == null)) {
-                this.Adapter.UpdateCommand.Parameters[28].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[29].Value = global::System.DBNull.Value;
+                this.Adapter.UpdateCommand.Parameters[29].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[30].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[28].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[29].Value = ((string)(Original_Türkisch));
+                this.Adapter.UpdateCommand.Parameters[29].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[30].Value = ((string)(Original_Türkisch));
             }
             if ((Original_Rumänisch == null)) {
-                this.Adapter.UpdateCommand.Parameters[30].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[31].Value = global::System.DBNull.Value;
+                this.Adapter.UpdateCommand.Parameters[31].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[32].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[30].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[31].Value = ((string)(Original_Rumänisch));
+                this.Adapter.UpdateCommand.Parameters[31].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[32].Value = ((string)(Original_Rumänisch));
             }
             if ((Original_Bulgarisch == null)) {
-                this.Adapter.UpdateCommand.Parameters[32].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[33].Value = global::System.DBNull.Value;
+                this.Adapter.UpdateCommand.Parameters[33].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[34].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[32].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[33].Value = ((string)(Original_Bulgarisch));
+                this.Adapter.UpdateCommand.Parameters[33].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[34].Value = ((string)(Original_Bulgarisch));
             }
             if ((Original_Russisch == null)) {
-                this.Adapter.UpdateCommand.Parameters[34].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[35].Value = global::System.DBNull.Value;
+                this.Adapter.UpdateCommand.Parameters[35].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[36].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[34].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[35].Value = ((string)(Original_Russisch));
+                this.Adapter.UpdateCommand.Parameters[35].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[36].Value = ((string)(Original_Russisch));
             }
             if ((Original_Polnisch == null)) {
-                this.Adapter.UpdateCommand.Parameters[36].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[37].Value = global::System.DBNull.Value;
+                this.Adapter.UpdateCommand.Parameters[37].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[38].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[36].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[37].Value = ((string)(Original_Polnisch));
+                this.Adapter.UpdateCommand.Parameters[37].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[38].Value = ((string)(Original_Polnisch));
             }
             if ((Original_Arabisch == null)) {
-                this.Adapter.UpdateCommand.Parameters[38].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[39].Value = global::System.DBNull.Value;
+                this.Adapter.UpdateCommand.Parameters[39].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[40].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[38].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[39].Value = ((string)(Original_Arabisch));
+                this.Adapter.UpdateCommand.Parameters[39].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[40].Value = ((string)(Original_Arabisch));
+            }
+            if ((Original_Transaction == null)) {
+                this.Adapter.UpdateCommand.Parameters[41].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[42].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[41].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[42].Value = ((string)(Original_Transaction));
             }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.UpdateCommand.Connection.State;
             if (((this.Adapter.UpdateCommand.Connection.State & global::System.Data.ConnectionState.Open) 

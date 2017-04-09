@@ -22,14 +22,14 @@ namespace ubersetzer.Properties {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class Resources_1 {
+    internal class Resources {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
         private static global::System.Globalization.CultureInfo resourceCulture;
         
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal Resources_1() {
+        internal Resources() {
         }
         
         /// <summary>
@@ -63,139 +63,9 @@ namespace ubersetzer.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap _1483757841_Germany_flat {
+        internal static System.Drawing.Bitmap western_union {
             get {
-                object obj = ResourceManager.GetObject("1483757841_Germany_flat", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap _1483758073_United_Kingdom_flat {
-            get {
-                object obj = ResourceManager.GetObject("1483758073_United-Kingdom_flat", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap _1483758073_United_Kingdom_flat_321 {
-            get {
-                object obj = ResourceManager.GetObject("1483758073_United-Kingdom_flat_321", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap _1483758087_Italy_flat_32 {
-            get {
-                object obj = ResourceManager.GetObject("_1483758087_Italy_flat_32", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap _1483758100_Russia_flat_32 {
-            get {
-                object obj = ResourceManager.GetObject("_1483758100_Russia_flat_32", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap _1483758110_Turkey_flat_32 {
-            get {
-                object obj = ResourceManager.GetObject("_1483758110_Turkey_flat_32", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap _1483758126_Poland_flat_32 {
-            get {
-                object obj = ResourceManager.GetObject("_1483758126_Poland_flat_32", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap _1483758140_Portugal_flat_32 {
-            get {
-                object obj = ResourceManager.GetObject("_1483758140_Portugal_flat_32", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap _1483758162_Saudi_Arabia_flat_32 {
-            get {
-                object obj = ResourceManager.GetObject("_1483758162_Saudi_Arabia_flat_32", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap _1483758177_Romania_flat_32 {
-            get {
-                object obj = ResourceManager.GetObject("_1483758177_Romania_flat_32", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap _1483758217_Bulgaria_flat_32 {
-            get {
-                object obj = ResourceManager.GetObject("_1483758217_Bulgaria_flat_32", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap _1483915538_Germany_flat {
-            get {
-                object obj = ResourceManager.GetObject("_1483915538_Germany_flat", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap _1483915568_France_flat {
-            get {
-                object obj = ResourceManager.GetObject("_1483915568_France_flat", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap _1483915585_Spain_flat1 {
-            get {
-                object obj = ResourceManager.GetObject("1483915585_Spain_flat1", resourceCulture);
+                object obj = ResourceManager.GetObject("western_union", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

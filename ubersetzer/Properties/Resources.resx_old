@@ -118,7 +118,43 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="western_union" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\western-union.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="_1483758126_Poland_flat_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1483758126_Poland_flat_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_1483758162_Saudi_Arabia_flat_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1483758162_Saudi-Arabia_flat_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_1483758100_Russia_flat_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1483758100_Russia_flat_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_1483758110_Turkey_flat_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1483758110_Turkey_flat_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_1483915538_Germany_flat" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1483915538_Germany_flat.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_1483915568_France_flat" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1483915568_France_flat.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_1483758087_Italy_flat_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1483758087_Italy_flat_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_1483758177_Romania_flat_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1483758177_Romania_flat_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_1483758073_United_Kingdom_flat_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1483758073_United-Kingdom_flat_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_1483915585_Spain_flat" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1483915585_Spain_flat.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_1483758217_Bulgaria_flat_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1483758217_Bulgaria_flat_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_1483758140_Portugal_flat_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1483758140_Portugal_flat_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="western" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\western.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
