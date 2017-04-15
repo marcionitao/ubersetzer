@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
-  <asmv1:assemblyIdentity name="ubersetzer.exe" version="1.0.0.9" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="x86" type="win32" />
+  <asmv1:assemblyIdentity name="ubersetzer.exe" version="1.0.0.10" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="x86" type="win32" />
   <description asmv2:iconFile="uebersetzer-online.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
   <application />
   <entryPoint>
@@ -62,7 +62,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>PTRh5RiP4Uf+bj92/iHlFPVyJUsB4zIq2o+US1SpuEE=</dsig:DigestValue>
+        <dsig:DigestValue>sjB5XvEn67o+2Ga5H4wGNRA9RVeqL0xLso6Vm5Z529w=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -79,14 +79,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ubersetzer.exe" size="526784">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ubersetzer.exe" size="527296">
       <assemblyIdentity name="ubersetzer" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>KBCLSXhLAzCL5Q5upqKhMtUnW2tZJyqQ+rAdSBbpVrc=</dsig:DigestValue>
+        <dsig:DigestValue>OeV3eu1cOFIVgwX0/jxl8C1Bc5AcpkYakbmpH7fbWJY=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -225,13 +225,13 @@
       <dsig:DigestValue>pAS7QRsBJF3Ou+NA4mJxwwd5YI2URziKjlQchrRHKbc=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="übersetzer.accdb" size="2359296">
+  <file name="übersetzer.accdb" size="2359296" writeableType="applicationData">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>PExvBoyqo4Cj0uNElH68CLPDvyG691vaN4kVQQzuqyI=</dsig:DigestValue>
+      <dsig:DigestValue>lGLKaX5MgW/TE8nk8JdiQZiY9JeIaKYgsZ9L0uNVNNw=</dsig:DigestValue>
     </hash>
   </file>
   <file name="ubersetzer.exe.config" size="1402">

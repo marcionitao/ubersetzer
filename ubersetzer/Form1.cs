@@ -31,6 +31,7 @@ namespace ubersetzer
 
             MessageBox.Show("Herzlich Willkommen! Dies ist eine Probeversion. Diese Version wird in 30 Tagen verfallen");
             this.DateTimeOut();// Time out date
+
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -39,26 +40,26 @@ namespace ubersetzer
             // TODO: This line of code loads data into the 'übersetzerDataSet.übersetzer' table. You can move, or remove it, as needed.
             this.übersetzerTableAdapter.Fill(this.übersetzerDataSet.übersetzer);
             // order the fields per Ordnung and Transaction 
-            this.übersetzerBindingSource.Sort="Transaction DESC, Ordnung ASC";
+            this.übersetzerBindingSource.Sort = "Transaction DESC, Ordnung ASC";
             // TODO: This line of code loads data into the 'übersetzerDataSet.übersetzer_Consulta' table. You can move, or remove it, as needed.
             this.übersetzer_ConsultaTableAdapter.Fill(this.übersetzerDataSet.übersetzer_Consulta);
-            
+
             // Clean all TxtBox when begin
             this.TxtClear();
- 
+
             // Define the style of DataGridView
             this.DataGridStyle();
             // Define autocomplete in textBox
             this.autoComplete();
             // Add image of sound in all row of column
             // this.AddImageColumn();
-           
+
         }
 
         // Add image of sound in all row of column for parameters
         void AddImageColumn(DataGridView dataGridImage)
         {
-           // dataGridImage = new Datagridview();
+            // dataGridImage = new Datagridview();
             // Add image in all row of column
             DataGridViewImageColumn img = new DataGridViewImageColumn();
             Image image = Image.FromFile(@"C:\Users\Márcio\Desktop\david\icons\sound_16.bmp");
@@ -75,173 +76,100 @@ namespace ubersetzer
             DataGridViewColumn column = dataGridImage.Columns[3];
             column.Width = 30;
         }
-        
-       void updateDataBase()
+
+        // Update datas after insert new registe
+        void updateDataBase()
         {
-            Int32 regNr = Int32.Parse(id.Text);
 
-            if (regNr != 0)
-            {
-                try
-                {
-                    string strProvider = @"Provider = Microsoft.ACE.OLEDB.12.0; Data Source=C:\VisualStudio_Projects\ubersetzer\ubersetzer\übersetzer.accdb";
-                    OleDbConnection con = new OleDbConnection(strProvider);
-                    con.Open();
-                    string strSql = "update [übersetzer] set [Ordnung]='" + ordnungTextBox.Text + "' ,[Transaction]='" + transaktionComboBox.Text + "' ,[Deutsch]='" + deutschTextBox1.Text + "' ,[Englisch]='" + englischTextBox1.Text + "' ,[Spanisch]='" + spanischTextBox1.Text + "' ,[Portugiesisch]='" + portugiesischTextBox1.Text + "' ,[Französisch]='" + französischTextBox1.Text + "' ,[Italienisch]='" + italienischTextBox1.Text + "' ,[Türkisch]='" + türkischTextBox1.Text + "' ,[Rumänisch]='" + rumänischTextBox1.Text + "' ,[Bulgarisch]='" + bulgarischTextBox1.Text + "' ,[Russisch]='" + russischTextBox1.Text + "' ,[Polnisch]='" + polnischTextBox1.Text + "' ,[Arabisch]='" + arabischTextBox1.Text + "' where ID=" + id.Text + "";
-                    // MessageBox.Show(strSql);
-                    OleDbCommand cmd = new OleDbCommand(strSql, con);
-                    cmd.ExecuteNonQuery();
-                    MessageBox.Show("Die Daten wurden mit Erfolg aufgenommen!");
-                    con.Close();
-                }
-                catch (System.Exception ex)
-                {
-                    MessageBox.Show("Update fehlgeschlagen!" + ex);
-                }
-
-                this.Validate();
-                this.übersetzerBindingSource.EndEdit();
-                this.übersetzerTableAdapter.Update(this.übersetzerDataSet.übersetzer);
-            }else
-            {
-                MessageBox.Show("Speichern Sie zuerst die Daten nach der Aktualisierung.");
-            }             
-
-        }
-
-        void refreshDataBase()
-        {
-            Int32 regNr = Int32.Parse(id.Text);
-
-            if (regNr != 0)
-            {
-                try
-                {
-                    string strProvider = @"Provider = Microsoft.ACE.OLEDB.12.0; Data Source=C:\VisualStudio_Projects\ubersetzer\ubersetzer\übersetzer.accdb";
-                    OleDbConnection con = new OleDbConnection(strProvider);
-                    con.Open();
-                    string strSql = "SELECT ID,Ordnung,Transaction,Deutsch,Englisch,Spanisch,Portugiesisch,Französisch,Italienisch,Türkisch,Rumänisch,Bulgarisch,Russisch,Polnisch,Arabisch FROM übersetzer";
-                    // MessageBox.Show(strSql);
-                    OleDbCommand cmd = new OleDbCommand(strSql, con);
-                    cmd.ExecuteNonQuery();
-                    
-                    con.Close();
-                }
-                catch (System.Exception ex)
-                {
-                    MessageBox.Show("Update fehlgeschlagen!" + ex);
-                }
-                
-            }
-            else
-            {
-                MessageBox.Show("Speichern Sie zuerst die Daten nach der Aktualisierung.");
-            }
-
-        }
-        // Verifica se id existe ou não
-        void selectDataBase()
-         {
-           
             try
-             {
-                 string strProvider = @"Provider = Microsoft.ACE.OLEDB.12.0; Data Source=C:\VisualStudio_Projects\ubersetzer\ubersetzer\übersetzer.accdb";
-                 OleDbConnection con = new OleDbConnection(strProvider);
-                 con.Open();
-                 string strSql = "SELECT COUNT(*) FROM [übersetzer] WHERE ([ID] = @id)";
+            {
+                string strProvider = @"Provider = Microsoft.ACE.OLEDB.12.0; Data Source=C:\VisualStudio_Projects\ubersetzer\ubersetzer\übersetzer.accdb";
+                OleDbConnection con = new OleDbConnection(strProvider);
+                con.Open();
+                string strSql = "update [übersetzer] set [Ordnung]='" + ordnungTextBox.Text + "' ,[Transaction]='" + transaktionComboBox.Text + "' ,[Deutsch]='" + deutschTextBox1.Text + "' ,[Englisch]='" + englischTextBox1.Text + "' ,[Spanisch]='" + spanischTextBox1.Text + "' ,[Portugiesisch]='" + portugiesischTextBox1.Text + "' ,[Französisch]='" + französischTextBox1.Text + "' ,[Italienisch]='" + italienischTextBox1.Text + "' ,[Türkisch]='" + türkischTextBox1.Text + "' ,[Rumänisch]='" + rumänischTextBox1.Text + "' ,[Bulgarisch]='" + bulgarischTextBox1.Text + "' ,[Russisch]='" + russischTextBox1.Text + "' ,[Polnisch]='" + polnischTextBox1.Text + "' ,[Arabisch]='" + arabischTextBox1.Text + "' where ID=" + id.Text + "";
+                // MessageBox.Show(strSql);
+                OleDbCommand cmd = new OleDbCommand(strSql, con);
+                cmd.ExecuteNonQuery();
+                MessageBox.Show("Die Daten wurden mit Erfolg aufgenommen!");
+                con.Close();
+            }
+            catch (System.Exception ex)
+            {
+                MessageBox.Show("Achtung! Setzen Sie nicht Zeichen, wie zB: / + '- \\ ; ´ | \" * ´ ");
+            }
 
-                 // MessageBox.Show(strSql);
-                 OleDbCommand cmd = new OleDbCommand(strSql, con);
-                 cmd.Parameters.AddWithValue("@id", id.Text);
+            this.Validate();
+            this.übersetzerBindingSource.EndEdit();
+            this.übersetzerTableAdapter.Update(this.übersetzerDataSet.übersetzer);
 
-                 int UserExist = (int)cmd.ExecuteScalar();
-
-                 if (UserExist > 0)
-                 {
-                     MessageBox.Show("existe");
-                 }
-                 else
-                 {
-                     MessageBox.Show("não existe!!");
-                 }
-
-                 cmd.ExecuteNonQuery();
-                // MessageBox.Show("Die Daten wurden mit Erfolg aufgenommen!");
-                 con.Close();
-             }
-             catch (System.Exception ex)
-             {
-                 MessageBox.Show("Update fehlgeschlagen!" + ex);
-             }
-         }
+        }
 
         // save or update database when click in save button
         void insertDataBase()
         {
-            Int32 regNr = Int32.Parse(id.Text);
 
-            if ((ordnungTextBox.Text == "")||(transaktionComboBox.Text == ""))
+            if ((ordnungTextBox.Text == "") || (transaktionComboBox.Text == ""))
             {
                 MessageBox.Show("Es gibt wichtige Felder leer. Bitte füllen sie in und speichern!");
             }
             else
             {
-                if (regNr <= 0)
+
+                try
                 {
-                    try
+                    string strProvider = @"Provider = Microsoft.ACE.OLEDB.12.0; Data Source=C:\VisualStudio_Projects\ubersetzer\ubersetzer\übersetzer.accdb";
+                    OleDbConnection con = new OleDbConnection(strProvider);
+                    con.Open();
+                    string strSql = "INSERT INTO [übersetzer] ([Ordnung],[Transaction],[Deutsch],[Englisch],[Spanisch],[Portugiesisch],[Französisch],[Italienisch],[Türkisch],[Rumänisch],[Bulgarisch],[Russisch],[Polnisch],[Arabisch])" + " VALUES(@Ordnung, @Transaction, @Deustch, @Englisch,@Spanisch,@Portugiesisch,@Französisch,@Italienisch,@Türkisch,@Rumänisch,@Bulgarisch,@Russisch,@Polnisch,@Arabisch)";
+
+                    OleDbCommand cmd = new OleDbCommand(strSql, con);
+
+                    cmd.Parameters.AddWithValue("@Ordnung", ordnungTextBox.Text);
+                    cmd.Parameters.AddWithValue("@Transaction", transaktionComboBox.Text);
+                    cmd.Parameters.AddWithValue("@Deutsch", deutschTextBox1.Text);
+                    cmd.Parameters.AddWithValue("@Englisch", englischTextBox1.Text);
+                    cmd.Parameters.AddWithValue("@Spanisch", spanischTextBox1.Text);
+                    cmd.Parameters.AddWithValue("@Portugiesisch", portugiesischTextBox1.Text);
+                    cmd.Parameters.AddWithValue("@Französisch", französischTextBox1.Text);
+                    cmd.Parameters.AddWithValue("@Italienisch", italienischTextBox1.Text);
+                    cmd.Parameters.AddWithValue("@Türkisch", türkischTextBox1.Text);
+                    cmd.Parameters.AddWithValue("@Rumänisch", rumänischTextBox1.Text);
+                    cmd.Parameters.AddWithValue("@Bulgarisch", bulgarischTextBox1.Text);
+                    cmd.Parameters.AddWithValue("@Russisch", russischTextBox1.Text);
+                    cmd.Parameters.AddWithValue("@Polnisch", polnischTextBox1.Text);
+                    cmd.Parameters.AddWithValue("@Arabisch", arabischTextBox1.Text);
+
+                    int a = cmd.ExecuteNonQuery();
+                    if (a > 0)
                     {
-                        string strProvider = @"Provider = Microsoft.ACE.OLEDB.12.0; Data Source=C:\VisualStudio_Projects\ubersetzer\ubersetzer\übersetzer.accdb";
-                        OleDbConnection con = new OleDbConnection(strProvider);
-                        con.Open();
-                        string strSql = "INSERT INTO [übersetzer] ([Ordnung],[Transaction],[Deutsch],[Englisch],[Spanisch],[Portugiesisch],[Französisch],[Italienisch],[Türkisch],[Rumänisch],[Bulgarisch],[Russisch],[Polnisch],[Arabisch])" + " VALUES(@Ordnung, @Transaction, @Deustch, @Englisch,@Spanisch,@Portugiesisch,@Französisch,@Italienisch,@Türkisch,@Rumänisch,@Bulgarisch,@Russisch,@Polnisch,@Arabisch)";
-
-                        OleDbCommand cmd = new OleDbCommand(strSql, con);
-                        cmd.Parameters.AddWithValue("@Ordnung", ordnungTextBox.Text);
-                        cmd.Parameters.AddWithValue("@Transaction", transaktionComboBox.Text);
-                        cmd.Parameters.AddWithValue("@Deutsch", deutschTextBox1.Text);
-                        cmd.Parameters.AddWithValue("@Englisch", englischTextBox1.Text);
-                        cmd.Parameters.AddWithValue("@Spanisch", spanischTextBox1.Text);
-                        cmd.Parameters.AddWithValue("@Portugiesisch", portugiesischTextBox1.Text);
-                        cmd.Parameters.AddWithValue("@Französisch", französischTextBox1.Text);
-                        cmd.Parameters.AddWithValue("@Italienisch", italienischTextBox1.Text);
-                        cmd.Parameters.AddWithValue("@Türkisch", türkischTextBox1.Text);
-                        cmd.Parameters.AddWithValue("@Rumänisch", rumänischTextBox1.Text);
-                        cmd.Parameters.AddWithValue("@Bulgarisch", bulgarischTextBox1.Text);
-                        cmd.Parameters.AddWithValue("@Russisch", russischTextBox1.Text);
-                        cmd.Parameters.AddWithValue("@Polnisch", polnischTextBox1.Text);
-                        cmd.Parameters.AddWithValue("@Arabisch", arabischTextBox1.Text);
-
-                        cmd.ExecuteNonQuery();
                         MessageBox.Show("Die Daten wurden mit Erfolg aufgenommen!");
-
-                        // this.refreshDataBase();
-                        con.Close();
                     }
-                    catch (System.Exception ex)
-                    {
-                        Console.Write("-" + ex);
-                    }
-
-                    this.Validate();
-                    this.übersetzerBindingSource.EndEdit();
-                    this.übersetzerTableAdapter.Update(this.übersetzerDataSet.übersetzer);
-                    //this.übersetzerBindingSource.ResetBindings(false);
-
+                    // this.refreshDataBase();
+                    con.Close();
                 }
-                else
+                catch (System.Exception ex)
                 {
-                    MessageBox.Show("Diese Daten sind bereits gespeichert, klicken Sie auf Aktualisieren!");
+                    Console.Write("-" + ex);
                 }
-            }       
-                     
+
+                this.Validate();
+                this.übersetzerBindingSource.EndEdit();
+                this.übersetzerTableAdapter.Update(this.übersetzerDataSet.übersetzer);
+
+                this.übersetzerTableAdapter.Fill(this.übersetzerDataSet.übersetzer);
+                this.übersetzerBindingSource.ResetBindings(false);
+
+
+            }
+
         }
 
         // autocomplete suggestion must appear based on the column selected
         void autoComplete()
         {
             AutoCompleteStringCollection namesCollection = new AutoCompleteStringCollection();
-        
-           // string strProvider = @"Provider = Microsoft.ACE.OLEDB.12.0; Data Source=C:\Users\Márcio\documents\visual studio 2015\Projects\ubersetzer\ubersetzer\übersetzer.accdb";
+
+            // string strProvider = @"Provider = Microsoft.ACE.OLEDB.12.0; Data Source=C:\Users\Márcio\documents\visual studio 2015\Projects\ubersetzer\ubersetzer\übersetzer.accdb";
             string strProvider = @"Provider = Microsoft.ACE.OLEDB.12.0; Data Source=C:\VisualStudio_Projects\ubersetzer\ubersetzer\übersetzer.accdb";
             String strText = txtSuche.Text;
 
@@ -330,10 +258,8 @@ namespace ubersetzer
         // Method clear all fields and txtSuche
         private void txtSuche_TextChanged(object sender, EventArgs e)
         {
-
             this.TxtClear();
             this.DateTimeOut();// Time out date
-
         }
 
         // Press ENTER is executable btnSuche_Click to search
@@ -351,7 +277,7 @@ namespace ubersetzer
         // The fields are clear when click in txtSuche to search word
         public void TxtClear()
         {
-            id.Clear();
+            //id.Clear();
             deutschTextBox.Clear();
             englischTextBox.Clear();
             spanischTextBox.Clear();
@@ -402,71 +328,47 @@ namespace ubersetzer
             }
         }
 
-        // update after edit datas
-        private void btn_refresh_Click(object sender, EventArgs e)
-        {
-            this.selectDataBase();
-        }
-
-
         private void SaveButton_Click(System.Object sender, System.EventArgs e)
         {
-            this.insertDataBase();
-            //selectDataBase();
+            //First Verify if record exist, then define save or update
+            try
+            {
+                string strProvider = @"Provider = Microsoft.ACE.OLEDB.12.0; Data Source=C:\VisualStudio_Projects\ubersetzer\ubersetzer\übersetzer.accdb";
+                OleDbConnection con = new OleDbConnection(strProvider);
+                con.Open();
+                string strSql = "SELECT COUNT(*) FROM [übersetzer] WHERE ([ID] = @id)";
+
+                // MessageBox.Show(strSql);
+                OleDbCommand cmd = new OleDbCommand(strSql, con);
+                cmd.Parameters.AddWithValue("@id", id.Text);
+
+                int UserExist = (int)cmd.ExecuteScalar();
+
+                if (UserExist > 0)
+                {
+                    this.updateDataBase();// if registe exist update
+                }
+                else
+                {
+                    this.insertDataBase();// if registe not exist add new
+                }
+
+                cmd.ExecuteNonQuery();
+                con.Close();
+            }
+            catch (System.Exception ex)
+            {
+                MessageBox.Show("Update fehlgeschlagen!" + ex);
+            }
         }
 
-        // btn to Delete records
-        /*private void DeleteItem_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show("id numero: "+id.Text);
-            if (MessageBox.Show("Sind Sie wirklich löschen das Element?", "Bestätigung löschen", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.OK)
-            {
-                // this.deleteDataBase();
-                try
-                {
-                    string strProvider = @"Provider = Microsoft.ACE.OLEDB.12.0; Data Source=C:\VisualStudio_Projects\ubersetzer\ubersetzer\übersetzer.accdb";
-                    OleDbConnection con = new OleDbConnection(strProvider);
-                    con.Open();
-
-                    string strSql = "DELETE FROM [übersetzer]  where ID=" + id.Text + "";
-                    OleDbCommand cmd = new OleDbCommand(strSql, con);
-
-                    //cmd.Parameters.AddWithValue("@Id", id.Text);
-
-                    cmd.ExecuteNonQuery();
-                    // MessageBox.Show("Die Daten wurden erfolgreich gelöscht!");
-                    con.Close();
-                }
-                catch (System.Exception ex)
-                {
-                    Console.Write("-" + ex);
-                }
-
-               for (int i = 0; i < übersetzerDataGridView_data.SelectedRows.Count; i++)
-                {
-                    this.übersetzerBindingSource.RemoveAt(übersetzerDataGridView_data.SelectedRows[i].Index);
-                }
-                this.Validate();
-                this.übersetzerBindingSource.EndEdit();
-                this.übersetzerTableAdapter.Update(this.übersetzerDataSet.übersetzer);
-                MessageBox.Show("Die Daten wurden erfolgreich gelöscht!");
-            }
-            else
-            {
-                this.übersetzerTableAdapter.Fill(this.übersetzerDataSet.übersetzer);
-                MessageBox.Show("Zeile nicht entfernt", "Zeile entfernen", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
-            }
-
-        }*/
-
         /*---------------Begin------------------Define action on click in the word to translator-------------------------------------------------*/
-       
-            // To get value from Cell in position 3 - England
+
+        // To get value from Cell in position 3 - England
         private void übersetzerDataGridView_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             // Clear the select Cell
-           // this.übersetzerDataGridView.ClearSelection();
+            // this.übersetzerDataGridView.ClearSelection();
 
             if (übersetzerDataGridView.CurrentCell.ColumnIndex.Equals(3) && e.RowIndex != -1)
             {
@@ -492,7 +394,7 @@ namespace ubersetzer
                     }
                     catch (Exception)
                     {
-                        MessageBox.Show("Keine Internetverbindung !");
+                        MessageBox.Show("Der Ton ist leider nicht verfügbar!");
                     }
                     teks = null;
 
@@ -505,7 +407,7 @@ namespace ubersetzer
         // To get value from Cell in position 3- Spain
         private void übersetzerDataGridView_2_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-           
+
             if (übersetzerDataGridView_2.CurrentCell.ColumnIndex.Equals(3) && e.RowIndex != -1)
             {
                 if (übersetzerDataGridView_2.CurrentCell != null && übersetzerDataGridView_2.CurrentCell.Value != null)
@@ -530,7 +432,7 @@ namespace ubersetzer
                     }
                     catch (Exception)
                     {
-                        MessageBox.Show("Keine Internetverbindung !");
+                        MessageBox.Show("Der Ton ist leider nicht verfügbar!");
                     }
                     teks = null;
 
@@ -567,7 +469,7 @@ namespace ubersetzer
                     }
                     catch (Exception)
                     {
-                        MessageBox.Show("Keine Internetverbindung !");
+                        MessageBox.Show("Der Ton ist leider nicht verfügbar!");
                     }
                     teks = null;
 
@@ -604,7 +506,7 @@ namespace ubersetzer
                     }
                     catch (Exception)
                     {
-                        MessageBox.Show("Keine Internetverbindung !");
+                        MessageBox.Show("Der Ton ist leider nicht verfügbar!");
                     }
                     teks = null;
 
@@ -641,7 +543,7 @@ namespace ubersetzer
                     }
                     catch (Exception)
                     {
-                        MessageBox.Show("Keine Internetverbindung !");
+                        MessageBox.Show("Der Ton ist leider nicht verfügbar!");
                     }
                     teks = null;
 
@@ -678,7 +580,7 @@ namespace ubersetzer
                     }
                     catch (Exception)
                     {
-                        MessageBox.Show("Keine Internetverbindung !");
+                        MessageBox.Show("Der Ton ist leider nicht verfügbar!");
                     }
                     teks = null;
 
@@ -715,7 +617,7 @@ namespace ubersetzer
                     }
                     catch (Exception)
                     {
-                        MessageBox.Show("Keine Internetverbindung !");
+                        MessageBox.Show("Der Ton ist leider nicht verfügbar!");
                     }
                     teks = null;
 
@@ -752,7 +654,7 @@ namespace ubersetzer
                     }
                     catch (Exception)
                     {
-                        MessageBox.Show("Keine Internetverbindung !");
+                        MessageBox.Show("Der Ton ist leider nicht verfügbar!");
                     }
                     teks = null;
 
@@ -789,7 +691,7 @@ namespace ubersetzer
                     }
                     catch (Exception)
                     {
-                        MessageBox.Show("Keine Internetverbindung !");
+                        MessageBox.Show("Der Ton ist leider nicht verfügbar!");
                     }
                     teks = null;
 
@@ -826,7 +728,7 @@ namespace ubersetzer
                     }
                     catch (Exception)
                     {
-                        MessageBox.Show("Keine Internetverbindung !");
+                        MessageBox.Show("Der Ton ist leider nicht verfügbar!");
                     }
                     teks = null;
 
@@ -863,7 +765,7 @@ namespace ubersetzer
                     }
                     catch (Exception)
                     {
-                        MessageBox.Show("Keine Internetverbindung !");
+                        MessageBox.Show("Der Ton ist leider nicht verfügbar!");
                     }
                     teks = null;
 
@@ -887,55 +789,55 @@ namespace ubersetzer
             this.übersetzerDataGridView_2.AllowUserToAddRows = false; //disable the last blank line in DatagridView
             this.übersetzerDataGridView_2.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal; // Remove all Row border
             this.AddImageColumn(übersetzerDataGridView_2);  // Add image of sound in all row of column for parameters
-          
+
             this.übersetzerDataGridView_3.ColumnHeadersDefaultCellStyle.Font = new Font("Tahoma", 9.75F, FontStyle.Bold);
             this.übersetzerDataGridView_3.AllowUserToAddRows = false; //disable the last blank line in DatagridView
             this.übersetzerDataGridView_3.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal; // Remove all Row border
             this.AddImageColumn(übersetzerDataGridView_3);  // Add image of sound in all row of column for parameters
-          
+
             this.übersetzerDataGridView_4.ColumnHeadersDefaultCellStyle.Font = new Font("Tahoma", 9.75F, FontStyle.Bold);
             this.übersetzerDataGridView_4.AllowUserToAddRows = false; //disable the last blank line in DatagridView
             this.übersetzerDataGridView_4.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal; // Remove all Row border
             this.AddImageColumn(übersetzerDataGridView_4);  // Add image of sound in all row of column for parameters
-           
+
             this.übersetzerDataGridView_5.ColumnHeadersDefaultCellStyle.Font = new Font("Tahoma", 9.75F, FontStyle.Bold);
             this.übersetzerDataGridView_5.AllowUserToAddRows = false; //disable the last blank line in DatagridView
             this.übersetzerDataGridView_5.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal; // Remove all Row border
             this.AddImageColumn(übersetzerDataGridView_5);  // Add image of sound in all row of column for parameters
-         
+
             this.übersetzerDataGridView_6.ColumnHeadersDefaultCellStyle.Font = new Font("Tahoma", 9.75F, FontStyle.Bold);
             this.übersetzerDataGridView_6.AllowUserToAddRows = false; //disable the last blank line in DatagridView
             this.übersetzerDataGridView_6.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal; // Remove all Row border
             this.AddImageColumn(übersetzerDataGridView_6);  // Add image of sound in all row of column for parameters
-          
+
             this.übersetzerDataGridView_7.ColumnHeadersDefaultCellStyle.Font = new Font("Tahoma", 9.75F, FontStyle.Bold);
             this.übersetzerDataGridView_7.AllowUserToAddRows = false; //disable the last blank line in DatagridView
             this.übersetzerDataGridView_7.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal; // Remove all Row border
             this.AddImageColumn(übersetzerDataGridView_7);  // Add image of sound in all row of column for parameters
-           
+
             this.übersetzerDataGridView_8.ColumnHeadersDefaultCellStyle.Font = new Font("Tahoma", 9.75F, FontStyle.Bold);
             this.übersetzerDataGridView_8.AllowUserToAddRows = false; //disable the last blank line in DatagridView
             this.übersetzerDataGridView_8.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal; // Remove all Row border
             this.AddImageColumn(übersetzerDataGridView_8);  // Add image of sound in all row of column for parameters
-         
+
             this.übersetzerDataGridView_9.ColumnHeadersDefaultCellStyle.Font = new Font("Tahoma", 9.75F, FontStyle.Bold);
             this.übersetzerDataGridView_9.AllowUserToAddRows = false; //disable the last blank line in DatagridView
             this.übersetzerDataGridView_9.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal; // Remove all Row border
             this.AddImageColumn(übersetzerDataGridView_9);  // Add image of sound in all row of column for parameters
-           
+
             this.übersetzerDataGridView_10.ColumnHeadersDefaultCellStyle.Font = new Font("Tahoma", 9.75F, FontStyle.Bold);
             this.übersetzerDataGridView_10.AllowUserToAddRows = false; //disable the last blank line in DatagridView
             this.übersetzerDataGridView_10.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal; // Remove all Row border
             this.AddImageColumn(übersetzerDataGridView_10);  // Add image of sound in all row of column for parameters
-          
+
             this.übersetzerDataGridView_11.ColumnHeadersDefaultCellStyle.Font = new Font("Tahoma", 9.75F, FontStyle.Bold);
             this.übersetzerDataGridView_11.AllowUserToAddRows = false; //disable the last blank line in DatagridView
             this.übersetzerDataGridView_11.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal; // Remove all Row border
             this.AddImageColumn(übersetzerDataGridView_11);  // Add image of sound in all row of column for parameters
-                   
+
             this.übersetzerDataGridView_data.AllowUserToAddRows = false; //disable the last blank line in DatagridView
             this.übersetzerDataGridView_data.ColumnHeadersDefaultCellStyle.Font = new Font("Tahoma", 7.00F, FontStyle.Bold);
-            
+
         }
 
         // ----Function Define Colors condiction in Rows - "geld senden" or "geld empfangen" - begin----------------
@@ -1156,7 +1058,7 @@ namespace ubersetzer
         }
 
         //----------------------------------------end - format color------------------------------------------------------------
-  
+
         void DateTimeOut()
         {
             int day = DateTime.Now.Day;
@@ -1176,13 +1078,13 @@ namespace ubersetzer
             int NrOfDays = ts.Days * (-1);
 
             if (NrOfDays == 0)
-            {             
+            {
                 this.txtNrDays.Text = "Heute ist die Frist dieser Anmeldung!!";
                 this.txtNrDays_2.Text = "Heute ist die Frist dieser Anmeldung!!";
             }
 
             string numdays = NrOfDays.ToString();
-            this.txtNrDays.Text = numdays+" tages";
+            this.txtNrDays.Text = numdays + " tages";
             this.txtNrDays_2.Text = numdays + " tages";
         }
 
