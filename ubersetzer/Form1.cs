@@ -159,7 +159,6 @@ namespace ubersetzer
                 this.übersetzerTableAdapter.Fill(this.übersetzerDataSet.übersetzer);
                 this.übersetzerBindingSource.ResetBindings(false);
 
-
             }
 
         }
@@ -376,8 +375,9 @@ namespace ubersetzer
                 {
                     string valueCell = übersetzerDataGridView.CurrentCell.Value.ToString();
                     // clear content speak, then add a new sound  
-                    mediaPlayer.currentPlaylist.clear();
 
+                    mediaPlayer.currentPlaylist.clear();
+                   
                     try
                     {
                         teks = valueCell;
@@ -386,7 +386,7 @@ namespace ubersetzer
                         // make download file
                         using (tts = new WebClient())
                         {
-                            tts.Headers.Add(HttpRequestHeader.UserAgent, "Mozilla/5.0 (compatible; MSIE 9.0; Windows;)");
+                            tts.Headers.Add(HttpRequestHeader.UserAgent, "Mozilla/5.0 (compatible; MSIE 9.0; Windows;)");                           
                             tts.DownloadFile(urltts, mp3Path);
                         }
                         // play file speak
@@ -403,7 +403,7 @@ namespace ubersetzer
             }
 
         }
-
+       
         // To get value from Cell in position 3- Spain
         private void übersetzerDataGridView_2_CellClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -780,63 +780,183 @@ namespace ubersetzer
         void DataGridStyle()
         {
             // format font in DataGridView
+            //-------------------------DataGrieView England-------------------------------
             this.übersetzerDataGridView.ColumnHeadersDefaultCellStyle.Font = new Font("Tahoma", 9.75F, FontStyle.Bold);
             this.übersetzerDataGridView.AllowUserToAddRows = false; //disable the last blank line in DatagridView
             this.übersetzerDataGridView.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal; // Remove all Row border
             this.AddImageColumn(übersetzerDataGridView);  // Add image of sound in all row of column for parameters
+            // break line and adjust text in cell and fill
+            this.übersetzerDataGridView.Columns[2].DefaultCellStyle.WrapMode = DataGridViewTriState.True; // option only one column         
+            this.übersetzerDataGridView.Columns[3].DefaultCellStyle.WrapMode = DataGridViewTriState.True; // option only one column         
+            this.übersetzerDataGridView.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.DisplayedCellsExceptHeaders;         
+            this.übersetzerDataGridView.Columns[2].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            this.übersetzerDataGridView.Columns[3].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
 
+            // this.übersetzerDataGridView.RowsDefaultCellStyle.WrapMode = DataGridViewTriState.True;
+            //this.übersetzerDataGridView.DefaultCellStyle.WrapMode = DataGridViewTriState.False;
+
+            //-------------------------DataGrieView Spain-------------------------------------------
             this.übersetzerDataGridView_2.ColumnHeadersDefaultCellStyle.Font = new Font("Tahoma", 9.75F, FontStyle.Bold);
             this.übersetzerDataGridView_2.AllowUserToAddRows = false; //disable the last blank line in DatagridView
             this.übersetzerDataGridView_2.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal; // Remove all Row border
             this.AddImageColumn(übersetzerDataGridView_2);  // Add image of sound in all row of column for parameters
 
+            // break line and adjust text in cell and fill
+            this.übersetzerDataGridView_2.Columns[2].DefaultCellStyle.WrapMode = DataGridViewTriState.True; // option only one column         
+            this.übersetzerDataGridView_2.Columns[3].DefaultCellStyle.WrapMode = DataGridViewTriState.True; // option only one column         
+            this.übersetzerDataGridView_2.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.DisplayedCellsExceptHeaders;
+            this.übersetzerDataGridView_2.Columns[2].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            this.übersetzerDataGridView_2.Columns[3].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+
+            //--------------------------DataGrieView Portugal------------------------------------------
             this.übersetzerDataGridView_3.ColumnHeadersDefaultCellStyle.Font = new Font("Tahoma", 9.75F, FontStyle.Bold);
             this.übersetzerDataGridView_3.AllowUserToAddRows = false; //disable the last blank line in DatagridView
             this.übersetzerDataGridView_3.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal; // Remove all Row border
             this.AddImageColumn(übersetzerDataGridView_3);  // Add image of sound in all row of column for parameters
 
+            // break line and adjust text in cell and fill
+            this.übersetzerDataGridView_3.Columns[2].DefaultCellStyle.WrapMode = DataGridViewTriState.True; // option only one column         
+            this.übersetzerDataGridView_3.Columns[3].DefaultCellStyle.WrapMode = DataGridViewTriState.True; // option only one column         
+            this.übersetzerDataGridView_3.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.DisplayedCellsExceptHeaders;
+            this.übersetzerDataGridView_3.Columns[2].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            this.übersetzerDataGridView_3.Columns[3].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+
+            //--------------------------DataGrieView--France---------------------------------------
             this.übersetzerDataGridView_4.ColumnHeadersDefaultCellStyle.Font = new Font("Tahoma", 9.75F, FontStyle.Bold);
             this.übersetzerDataGridView_4.AllowUserToAddRows = false; //disable the last blank line in DatagridView
             this.übersetzerDataGridView_4.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal; // Remove all Row border
             this.AddImageColumn(übersetzerDataGridView_4);  // Add image of sound in all row of column for parameters
 
+            // break line and adjust text in cell and fill
+            this.übersetzerDataGridView_4.Columns[2].DefaultCellStyle.WrapMode = DataGridViewTriState.True; // option only one column         
+            this.übersetzerDataGridView_4.Columns[3].DefaultCellStyle.WrapMode = DataGridViewTriState.True; // option only one column         
+            this.übersetzerDataGridView_4.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.DisplayedCellsExceptHeaders;
+            this.übersetzerDataGridView_4.Columns[2].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            this.übersetzerDataGridView_4.Columns[3].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+
+            //--------------------------DataGrieView Italy------------------------------------------
             this.übersetzerDataGridView_5.ColumnHeadersDefaultCellStyle.Font = new Font("Tahoma", 9.75F, FontStyle.Bold);
             this.übersetzerDataGridView_5.AllowUserToAddRows = false; //disable the last blank line in DatagridView
             this.übersetzerDataGridView_5.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal; // Remove all Row border
             this.AddImageColumn(übersetzerDataGridView_5);  // Add image of sound in all row of column for parameters
 
+            // break line and adjust text in cell and fill
+            this.übersetzerDataGridView_5.Columns[2].DefaultCellStyle.WrapMode = DataGridViewTriState.True; // option only one column         
+            this.übersetzerDataGridView_5.Columns[3].DefaultCellStyle.WrapMode = DataGridViewTriState.True; // option only one column         
+            this.übersetzerDataGridView_5.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.DisplayedCellsExceptHeaders;
+            this.übersetzerDataGridView_5.Columns[2].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            this.übersetzerDataGridView_5.Columns[3].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+
+            //---------------------------DataGrieView Turkei-----------------------------------------
             this.übersetzerDataGridView_6.ColumnHeadersDefaultCellStyle.Font = new Font("Tahoma", 9.75F, FontStyle.Bold);
             this.übersetzerDataGridView_6.AllowUserToAddRows = false; //disable the last blank line in DatagridView
             this.übersetzerDataGridView_6.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal; // Remove all Row border
             this.AddImageColumn(übersetzerDataGridView_6);  // Add image of sound in all row of column for parameters
 
+            // break line and adjust text in cell and fill
+            this.übersetzerDataGridView_6.Columns[2].DefaultCellStyle.WrapMode = DataGridViewTriState.True; // option only one column         
+            this.übersetzerDataGridView_6.Columns[3].DefaultCellStyle.WrapMode = DataGridViewTriState.True; // option only one column         
+            this.übersetzerDataGridView_6.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.DisplayedCellsExceptHeaders;
+            this.übersetzerDataGridView_6.Columns[2].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            this.übersetzerDataGridView_6.Columns[3].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+
+            //---------------------------DataGrieView Romenien-----------------------------------------
             this.übersetzerDataGridView_7.ColumnHeadersDefaultCellStyle.Font = new Font("Tahoma", 9.75F, FontStyle.Bold);
             this.übersetzerDataGridView_7.AllowUserToAddRows = false; //disable the last blank line in DatagridView
             this.übersetzerDataGridView_7.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal; // Remove all Row border
             this.AddImageColumn(übersetzerDataGridView_7);  // Add image of sound in all row of column for parameters
 
+            // break line and adjust text in cell and fill
+            this.übersetzerDataGridView_7.Columns[2].DefaultCellStyle.WrapMode = DataGridViewTriState.True; // option only one column         
+            this.übersetzerDataGridView_7.Columns[3].DefaultCellStyle.WrapMode = DataGridViewTriState.True; // option only one column         
+            this.übersetzerDataGridView_7.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.DisplayedCellsExceptHeaders;
+            this.übersetzerDataGridView_7.Columns[2].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            this.übersetzerDataGridView_7.Columns[3].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+
+            //---------------------------DataGrieView Bulgarien-----------------------------------------
             this.übersetzerDataGridView_8.ColumnHeadersDefaultCellStyle.Font = new Font("Tahoma", 9.75F, FontStyle.Bold);
             this.übersetzerDataGridView_8.AllowUserToAddRows = false; //disable the last blank line in DatagridView
             this.übersetzerDataGridView_8.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal; // Remove all Row border
             this.AddImageColumn(übersetzerDataGridView_8);  // Add image of sound in all row of column for parameters
 
+            // break line and adjust text in cell and fill
+            this.übersetzerDataGridView_8.Columns[2].DefaultCellStyle.WrapMode = DataGridViewTriState.True; // option only one column         
+            this.übersetzerDataGridView_8.Columns[3].DefaultCellStyle.WrapMode = DataGridViewTriState.True; // option only one column         
+            this.übersetzerDataGridView_8.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.DisplayedCellsExceptHeaders;
+            this.übersetzerDataGridView_8.Columns[2].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            this.übersetzerDataGridView_8.Columns[3].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+
+            //---------------------------DataGrieView Russian-----------------------------------------
             this.übersetzerDataGridView_9.ColumnHeadersDefaultCellStyle.Font = new Font("Tahoma", 9.75F, FontStyle.Bold);
             this.übersetzerDataGridView_9.AllowUserToAddRows = false; //disable the last blank line in DatagridView
             this.übersetzerDataGridView_9.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal; // Remove all Row border
             this.AddImageColumn(übersetzerDataGridView_9);  // Add image of sound in all row of column for parameters
 
+            // break line and adjust text in cell and fill
+            this.übersetzerDataGridView_9.Columns[2].DefaultCellStyle.WrapMode = DataGridViewTriState.True; // option only one column         
+            this.übersetzerDataGridView_9.Columns[3].DefaultCellStyle.WrapMode = DataGridViewTriState.True; // option only one column         
+            this.übersetzerDataGridView_9.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.DisplayedCellsExceptHeaders;
+            this.übersetzerDataGridView_9.Columns[2].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            this.übersetzerDataGridView_9.Columns[3].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+
+            //----------------------------DataGrieView Polen----------------------------------------
             this.übersetzerDataGridView_10.ColumnHeadersDefaultCellStyle.Font = new Font("Tahoma", 9.75F, FontStyle.Bold);
             this.übersetzerDataGridView_10.AllowUserToAddRows = false; //disable the last blank line in DatagridView
             this.übersetzerDataGridView_10.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal; // Remove all Row border
             this.AddImageColumn(übersetzerDataGridView_10);  // Add image of sound in all row of column for parameters
 
+            // break line and adjust text in cell and fill
+            this.übersetzerDataGridView_10.Columns[2].DefaultCellStyle.WrapMode = DataGridViewTriState.True; // option only one column         
+            this.übersetzerDataGridView_10.Columns[3].DefaultCellStyle.WrapMode = DataGridViewTriState.True; // option only one column         
+            this.übersetzerDataGridView_10.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.DisplayedCellsExceptHeaders;
+            this.übersetzerDataGridView_10.Columns[2].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            this.übersetzerDataGridView_10.Columns[3].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+
+            //--------------------------DataGrieView Arabian------------------------------------------
             this.übersetzerDataGridView_11.ColumnHeadersDefaultCellStyle.Font = new Font("Tahoma", 9.75F, FontStyle.Bold);
             this.übersetzerDataGridView_11.AllowUserToAddRows = false; //disable the last blank line in DatagridView
             this.übersetzerDataGridView_11.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal; // Remove all Row border
             this.AddImageColumn(übersetzerDataGridView_11);  // Add image of sound in all row of column for parameters
 
+            // break line and adjust text in cell and fill
+            this.übersetzerDataGridView_11.Columns[2].DefaultCellStyle.WrapMode = DataGridViewTriState.True; // option only one column         
+            this.übersetzerDataGridView_11.Columns[3].DefaultCellStyle.WrapMode = DataGridViewTriState.True; // option only one column         
+            this.übersetzerDataGridView_11.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.DisplayedCellsExceptHeaders;
+            this.übersetzerDataGridView_11.Columns[2].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            this.übersetzerDataGridView_11.Columns[3].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+
+            //--------------------------DataGrieView in the Management Data------------------------------------------
             this.übersetzerDataGridView_data.AllowUserToAddRows = false; //disable the last blank line in DatagridView
-            this.übersetzerDataGridView_data.ColumnHeadersDefaultCellStyle.Font = new Font("Tahoma", 7.00F, FontStyle.Bold);
+            this.übersetzerDataGridView_data.ColumnHeadersDefaultCellStyle.Font = new Font("Consolas", 8.00F, FontStyle.Bold);
+
+            // break line and adjust text in cell and fill
+            this.übersetzerDataGridView_data.Columns[2].DefaultCellStyle.WrapMode = DataGridViewTriState.True; // option only one column         
+            this.übersetzerDataGridView_data.Columns[3].DefaultCellStyle.WrapMode = DataGridViewTriState.True; // option only one column
+            this.übersetzerDataGridView_data.Columns[4].DefaultCellStyle.WrapMode = DataGridViewTriState.True; // option only one column         
+            this.übersetzerDataGridView_data.Columns[5].DefaultCellStyle.WrapMode = DataGridViewTriState.True; // option only one column         
+            this.übersetzerDataGridView_data.Columns[6].DefaultCellStyle.WrapMode = DataGridViewTriState.True; // option only one column         
+            this.übersetzerDataGridView_data.Columns[7].DefaultCellStyle.WrapMode = DataGridViewTriState.True; // option only one column
+            this.übersetzerDataGridView_data.Columns[8].DefaultCellStyle.WrapMode = DataGridViewTriState.True; // option only one column         
+            this.übersetzerDataGridView_data.Columns[9].DefaultCellStyle.WrapMode = DataGridViewTriState.True; // option only one column    
+            this.übersetzerDataGridView_data.Columns[10].DefaultCellStyle.WrapMode = DataGridViewTriState.True; // option only one column         
+            this.übersetzerDataGridView_data.Columns[11].DefaultCellStyle.WrapMode = DataGridViewTriState.True; // option only one column
+            this.übersetzerDataGridView_data.Columns[12].DefaultCellStyle.WrapMode = DataGridViewTriState.True; // option only one column         
+            this.übersetzerDataGridView_data.Columns[13].DefaultCellStyle.WrapMode = DataGridViewTriState.True; // option only one column    
+
+            this.übersetzerDataGridView_data.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.DisplayedCells;
+
+            this.übersetzerDataGridView_data.Columns[2].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            this.übersetzerDataGridView_data.Columns[3].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            this.übersetzerDataGridView_data.Columns[4].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            this.übersetzerDataGridView_data.Columns[5].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            this.übersetzerDataGridView_data.Columns[6].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            this.übersetzerDataGridView_data.Columns[7].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            this.übersetzerDataGridView_data.Columns[8].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            this.übersetzerDataGridView_data.Columns[9].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            this.übersetzerDataGridView_data.Columns[10].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            this.übersetzerDataGridView_data.Columns[11].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            this.übersetzerDataGridView_data.Columns[12].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            this.übersetzerDataGridView_data.Columns[13].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
 
         }
 

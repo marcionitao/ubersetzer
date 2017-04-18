@@ -56,17 +56,19 @@
             System.Windows.Forms.Label arabischLabel1;
             System.Windows.Forms.Label label1;
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle56 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle57 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle58 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle59 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle60 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle61 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle62 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle63 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle64 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle65 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle66 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle27 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle28 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle29 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle30 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle31 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle32 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle33 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle34 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle35 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle36 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle37 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle38 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle39 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.uber = new System.Windows.Forms.TabPage();
             this.pictureBox35 = new System.Windows.Forms.PictureBox();
@@ -190,8 +192,6 @@
             this.dataGridViewTextBoxColumn47 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Arabisch = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
-            this.übersetzer_ConsultaTableAdapter = new ubersetzer.übersetzerDataSetTableAdapters.übersetzer_ConsultaTableAdapter();
-            this.tableAdapterManager = new ubersetzer.übersetzerDataSetTableAdapters.TableAdapterManager();
             this.tabControl2 = new System.Windows.Forms.TabControl();
             this.Beginn = new System.Windows.Forms.TabPage();
             this.txtNrDays = new System.Windows.Forms.TextBox();
@@ -205,20 +205,6 @@
             this.transaktionComboBox = new System.Windows.Forms.ComboBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.übersetzerDataGridView_data = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Transaction = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn15 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn18 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn21 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn24 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn27 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn30 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn33 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn34 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn35 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn36 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn37 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn48 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.bindingNavigator1 = new System.Windows.Forms.BindingNavigator(this.components);
             this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
@@ -249,9 +235,25 @@
             this.polnischTextBox1 = new System.Windows.Forms.TextBox();
             this.arabischTextBox1 = new System.Windows.Forms.TextBox();
             this.imageList3 = new System.Windows.Forms.ImageList(this.components);
-            this.übersetzerTableAdapter = new ubersetzer.übersetzerDataSetTableAdapters.übersetzerTableAdapter();
             this.imageList2 = new System.Windows.Forms.ImageList(this.components);
             this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.übersetzer_ConsultaTableAdapter = new ubersetzer.übersetzerDataSetTableAdapters.übersetzer_ConsultaTableAdapter();
+            this.tableAdapterManager = new ubersetzer.übersetzerDataSetTableAdapters.TableAdapterManager();
+            this.übersetzerTableAdapter = new ubersetzer.übersetzerDataSetTableAdapters.übersetzerTableAdapter();
+            this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Transaction = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn15 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn18 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn21 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn24 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn27 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn30 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn33 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn34 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn35 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn36 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn37 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn48 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             deutschLabel = new System.Windows.Forms.Label();
             englischLabel = new System.Windows.Forms.Label();
             spanischLabel = new System.Windows.Forms.Label();
@@ -473,130 +475,146 @@
             // ordnungLabel
             // 
             ordnungLabel.AutoSize = true;
-            ordnungLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            ordnungLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            ordnungLabel.Location = new System.Drawing.Point(182, 32);
+            ordnungLabel.Font = new System.Drawing.Font("Consolas", 8F, System.Drawing.FontStyle.Bold);
+            ordnungLabel.ForeColor = System.Drawing.Color.Crimson;
+            ordnungLabel.Location = new System.Drawing.Point(198, 34);
             ordnungLabel.Name = "ordnungLabel";
-            ordnungLabel.Size = new System.Drawing.Size(243, 15);
+            ordnungLabel.Size = new System.Drawing.Size(217, 13);
             ordnungLabel.TabIndex = 2;
             ordnungLabel.Text = "Legen Sie die Reihenfolge der Sätze";
             // 
             // deutschLabel1
             // 
             deutschLabel1.AutoSize = true;
-            deutschLabel1.Location = new System.Drawing.Point(14, 59);
+            deutschLabel1.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            deutschLabel1.Location = new System.Drawing.Point(19, 62);
             deutschLabel1.Name = "deutschLabel1";
-            deutschLabel1.Size = new System.Drawing.Size(52, 15);
+            deutschLabel1.Size = new System.Drawing.Size(49, 13);
             deutschLabel1.TabIndex = 4;
             deutschLabel1.Text = "Deutsch";
             // 
             // englischLabel1
             // 
             englischLabel1.AutoSize = true;
-            englischLabel1.Location = new System.Drawing.Point(14, 95);
+            englischLabel1.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            englischLabel1.Location = new System.Drawing.Point(13, 98);
             englischLabel1.Name = "englischLabel1";
-            englischLabel1.Size = new System.Drawing.Size(54, 15);
+            englischLabel1.Size = new System.Drawing.Size(55, 13);
             englischLabel1.TabIndex = 6;
             englischLabel1.Text = "Englisch";
             // 
             // spanischLabel1
             // 
             spanischLabel1.AutoSize = true;
-            spanischLabel1.Location = new System.Drawing.Point(14, 131);
+            spanischLabel1.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            spanischLabel1.Location = new System.Drawing.Point(13, 134);
             spanischLabel1.Name = "spanischLabel1";
-            spanischLabel1.Size = new System.Drawing.Size(58, 15);
+            spanischLabel1.Size = new System.Drawing.Size(55, 13);
             spanischLabel1.TabIndex = 8;
             spanischLabel1.Text = "Spanisch";
             // 
             // portugiesischLabel1
             // 
             portugiesischLabel1.AutoSize = true;
-            portugiesischLabel1.Location = new System.Drawing.Point(342, 131);
+            portugiesischLabel1.Font = new System.Drawing.Font("Consolas", 8F, System.Drawing.FontStyle.Bold);
+            portugiesischLabel1.Location = new System.Drawing.Point(330, 134);
             portugiesischLabel1.Name = "portugiesischLabel1";
-            portugiesischLabel1.Size = new System.Drawing.Size(81, 15);
+            portugiesischLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            portugiesischLabel1.Size = new System.Drawing.Size(85, 13);
             portugiesischLabel1.TabIndex = 10;
             portugiesischLabel1.Text = "Portugiesisch";
             // 
             // französischLabel1
             // 
             französischLabel1.AutoSize = true;
-            französischLabel1.Location = new System.Drawing.Point(342, 59);
+            französischLabel1.Font = new System.Drawing.Font("Consolas", 8F, System.Drawing.FontStyle.Bold);
+            französischLabel1.Location = new System.Drawing.Point(342, 62);
             französischLabel1.Name = "französischLabel1";
             französischLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            französischLabel1.Size = new System.Drawing.Size(73, 15);
+            französischLabel1.Size = new System.Drawing.Size(73, 13);
             französischLabel1.TabIndex = 12;
             französischLabel1.Text = "Französisch";
             // 
             // italienischLabel1
             // 
             italienischLabel1.AutoSize = true;
-            italienischLabel1.Location = new System.Drawing.Point(342, 95);
+            italienischLabel1.Font = new System.Drawing.Font("Consolas", 8F, System.Drawing.FontStyle.Bold);
+            italienischLabel1.Location = new System.Drawing.Point(342, 98);
             italienischLabel1.Name = "italienischLabel1";
-            italienischLabel1.Size = new System.Drawing.Size(62, 15);
+            italienischLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            italienischLabel1.Size = new System.Drawing.Size(73, 13);
             italienischLabel1.TabIndex = 14;
             italienischLabel1.Text = "Italienisch";
             // 
             // türkischLabel1
             // 
             türkischLabel1.AutoSize = true;
-            türkischLabel1.Location = new System.Drawing.Point(14, 167);
+            türkischLabel1.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            türkischLabel1.Location = new System.Drawing.Point(13, 170);
             türkischLabel1.Name = "türkischLabel1";
-            türkischLabel1.Size = new System.Drawing.Size(53, 15);
+            türkischLabel1.Size = new System.Drawing.Size(55, 13);
             türkischLabel1.TabIndex = 16;
             türkischLabel1.Text = "Türkisch";
             // 
             // rumänischLabel1
             // 
             rumänischLabel1.AutoSize = true;
-            rumänischLabel1.Location = new System.Drawing.Point(342, 167);
+            rumänischLabel1.Font = new System.Drawing.Font("Consolas", 8F, System.Drawing.FontStyle.Bold);
+            rumänischLabel1.Location = new System.Drawing.Point(354, 170);
             rumänischLabel1.Name = "rumänischLabel1";
-            rumänischLabel1.Size = new System.Drawing.Size(70, 15);
+            rumänischLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            rumänischLabel1.Size = new System.Drawing.Size(61, 13);
             rumänischLabel1.TabIndex = 18;
             rumänischLabel1.Text = "Rumänisch";
             // 
             // bulgarischLabel1
             // 
             bulgarischLabel1.AutoSize = true;
-            bulgarischLabel1.Location = new System.Drawing.Point(689, 59);
+            bulgarischLabel1.Font = new System.Drawing.Font("Consolas", 8F, System.Drawing.FontStyle.Bold);
+            bulgarischLabel1.Location = new System.Drawing.Point(682, 62);
             bulgarischLabel1.Name = "bulgarischLabel1";
-            bulgarischLabel1.Size = new System.Drawing.Size(65, 15);
+            bulgarischLabel1.Size = new System.Drawing.Size(67, 13);
             bulgarischLabel1.TabIndex = 20;
             bulgarischLabel1.Text = "Bulgarisch";
             // 
             // russischLabel1
             // 
             russischLabel1.AutoSize = true;
-            russischLabel1.Location = new System.Drawing.Point(689, 95);
+            russischLabel1.Font = new System.Drawing.Font("Consolas", 8F, System.Drawing.FontStyle.Bold);
+            russischLabel1.Location = new System.Drawing.Point(694, 98);
             russischLabel1.Name = "russischLabel1";
-            russischLabel1.Size = new System.Drawing.Size(57, 15);
+            russischLabel1.Size = new System.Drawing.Size(55, 13);
             russischLabel1.TabIndex = 22;
             russischLabel1.Text = "Russisch";
             // 
             // polnischLabel1
             // 
             polnischLabel1.AutoSize = true;
-            polnischLabel1.Location = new System.Drawing.Point(689, 131);
+            polnischLabel1.Font = new System.Drawing.Font("Consolas", 8F, System.Drawing.FontStyle.Bold);
+            polnischLabel1.Location = new System.Drawing.Point(694, 134);
             polnischLabel1.Name = "polnischLabel1";
-            polnischLabel1.Size = new System.Drawing.Size(54, 15);
+            polnischLabel1.Size = new System.Drawing.Size(55, 13);
             polnischLabel1.TabIndex = 24;
             polnischLabel1.Text = "Polnisch";
             // 
             // arabischLabel1
             // 
             arabischLabel1.AutoSize = true;
-            arabischLabel1.Location = new System.Drawing.Point(689, 167);
+            arabischLabel1.Font = new System.Drawing.Font("Consolas", 8F, System.Drawing.FontStyle.Bold);
+            arabischLabel1.Location = new System.Drawing.Point(694, 170);
             arabischLabel1.Name = "arabischLabel1";
-            arabischLabel1.Size = new System.Drawing.Size(54, 15);
+            arabischLabel1.Size = new System.Drawing.Size(55, 13);
             arabischLabel1.TabIndex = 26;
             arabischLabel1.Text = "Arabisch";
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            label1.Location = new System.Drawing.Point(554, 32);
+            label1.Font = new System.Drawing.Font("Consolas", 8F, System.Drawing.FontStyle.Bold);
+            label1.ForeColor = System.Drawing.Color.Crimson;
+            label1.Location = new System.Drawing.Point(653, 34);
             label1.Name = "label1";
-            label1.Size = new System.Drawing.Size(106, 15);
+            label1.Size = new System.Drawing.Size(97, 13);
             label1.TabIndex = 32;
             label1.Text = "Transaktionsart";
             // 
@@ -1030,7 +1048,7 @@
             // mediaPlayer
             // 
             this.mediaPlayer.Enabled = true;
-            this.mediaPlayer.Location = new System.Drawing.Point(624, 21);
+            this.mediaPlayer.Location = new System.Drawing.Point(658, 9);
             this.mediaPlayer.Name = "mediaPlayer";
             this.mediaPlayer.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("mediaPlayer.OcxState")));
             this.mediaPlayer.Size = new System.Drawing.Size(328, 61);
@@ -1041,7 +1059,6 @@
             // 
             this.übersetzerDataGridView.AllowUserToOrderColumns = true;
             this.übersetzerDataGridView.AutoGenerateColumns = false;
-            this.übersetzerDataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.übersetzerDataGridView.BackgroundColor = System.Drawing.SystemColors.Window;
             this.übersetzerDataGridView.CausesValidation = false;
             this.übersetzerDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -1051,18 +1068,20 @@
             this.dataGridViewTextBoxColumn3,
             this.dataGridViewTextBoxColumn6});
             this.übersetzerDataGridView.DataSource = this.übersetzerBindingSource;
-            dataGridViewCellStyle56.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle56.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle56.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle56.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle56.SelectionBackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle56.SelectionForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle56.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.übersetzerDataGridView.DefaultCellStyle = dataGridViewCellStyle56;
+            dataGridViewCellStyle27.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopLeft;
+            dataGridViewCellStyle27.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle27.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle27.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle27.SelectionBackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle27.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle27.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.übersetzerDataGridView.DefaultCellStyle = dataGridViewCellStyle27;
             this.übersetzerDataGridView.Location = new System.Drawing.Point(6, 76);
             this.übersetzerDataGridView.Name = "übersetzerDataGridView";
             this.übersetzerDataGridView.ReadOnly = true;
+            this.übersetzerDataGridView.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.übersetzerDataGridView.RowHeadersVisible = false;
+            this.übersetzerDataGridView.RowHeadersWidth = 100;
             this.übersetzerDataGridView.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.übersetzerDataGridView.Size = new System.Drawing.Size(991, 312);
             this.übersetzerDataGridView.TabIndex = 0;
@@ -1075,11 +1094,12 @@
             this.dataGridViewTextBoxColumn2.DataPropertyName = "Ordnung";
             this.dataGridViewTextBoxColumn2.DividerWidth = 1;
             this.dataGridViewTextBoxColumn2.FillWeight = 25F;
+            this.dataGridViewTextBoxColumn2.Frozen = true;
             this.dataGridViewTextBoxColumn2.HeaderText = "Ord.";
             this.dataGridViewTextBoxColumn2.MaxInputLength = 3255;
             this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
             this.dataGridViewTextBoxColumn2.ReadOnly = true;
-            this.dataGridViewTextBoxColumn2.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewTextBoxColumn2.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.dataGridViewTextBoxColumn2.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
             this.dataGridViewTextBoxColumn2.Width = 37;
             // 
@@ -1087,33 +1107,38 @@
             // 
             this.dataGridViewTextBoxColumn4.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
             this.dataGridViewTextBoxColumn4.DataPropertyName = "Transaction";
+            this.dataGridViewTextBoxColumn4.DividerWidth = 1;
+            this.dataGridViewTextBoxColumn4.Frozen = true;
             this.dataGridViewTextBoxColumn4.HeaderText = "Transaktion";
             this.dataGridViewTextBoxColumn4.MaxInputLength = 3276;
             this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
             this.dataGridViewTextBoxColumn4.ReadOnly = true;
+            this.dataGridViewTextBoxColumn4.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.dataGridViewTextBoxColumn4.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.dataGridViewTextBoxColumn4.Width = 77;
+            this.dataGridViewTextBoxColumn4.Width = 78;
             // 
             // dataGridViewTextBoxColumn3
             // 
-            this.dataGridViewTextBoxColumn3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.dataGridViewTextBoxColumn3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCellsExceptHeader;
             this.dataGridViewTextBoxColumn3.DataPropertyName = "Deutsch";
             this.dataGridViewTextBoxColumn3.DividerWidth = 1;
             this.dataGridViewTextBoxColumn3.HeaderText = "Deutsch";
             this.dataGridViewTextBoxColumn3.MinimumWidth = 370;
             this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
             this.dataGridViewTextBoxColumn3.ReadOnly = true;
+            this.dataGridViewTextBoxColumn3.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.dataGridViewTextBoxColumn3.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
             this.dataGridViewTextBoxColumn3.Width = 370;
             // 
             // dataGridViewTextBoxColumn6
             // 
-            this.dataGridViewTextBoxColumn6.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.dataGridViewTextBoxColumn6.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCellsExceptHeader;
             this.dataGridViewTextBoxColumn6.DataPropertyName = "Englisch";
             this.dataGridViewTextBoxColumn6.HeaderText = "Englisch";
             this.dataGridViewTextBoxColumn6.MinimumWidth = 370;
             this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
             this.dataGridViewTextBoxColumn6.ReadOnly = true;
+            this.dataGridViewTextBoxColumn6.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.dataGridViewTextBoxColumn6.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
             this.dataGridViewTextBoxColumn6.ToolTipText = "Klicken Sie auf das Wort zu hören";
             this.dataGridViewTextBoxColumn6.Width = 370;
@@ -1180,7 +1205,6 @@
             // 
             this.übersetzerDataGridView_2.AllowUserToOrderColumns = true;
             this.übersetzerDataGridView_2.AutoGenerateColumns = false;
-            this.übersetzerDataGridView_2.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.übersetzerDataGridView_2.BackgroundColor = System.Drawing.SystemColors.Window;
             this.übersetzerDataGridView_2.CausesValidation = false;
             this.übersetzerDataGridView_2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -1190,14 +1214,14 @@
             this.dataGridViewTextBoxColumn38,
             this.Spanisch});
             this.übersetzerDataGridView_2.DataSource = this.übersetzerBindingSource;
-            dataGridViewCellStyle57.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle57.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle57.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle57.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle57.SelectionBackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle57.SelectionForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle57.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.übersetzerDataGridView_2.DefaultCellStyle = dataGridViewCellStyle57;
+            dataGridViewCellStyle28.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopLeft;
+            dataGridViewCellStyle28.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle28.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle28.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle28.SelectionBackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle28.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle28.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.übersetzerDataGridView_2.DefaultCellStyle = dataGridViewCellStyle28;
             this.übersetzerDataGridView_2.Location = new System.Drawing.Point(6, 76);
             this.übersetzerDataGridView_2.Name = "übersetzerDataGridView_2";
             this.übersetzerDataGridView_2.ReadOnly = true;
@@ -1292,7 +1316,6 @@
             // 
             this.übersetzerDataGridView_3.AllowUserToOrderColumns = true;
             this.übersetzerDataGridView_3.AutoGenerateColumns = false;
-            this.übersetzerDataGridView_3.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.übersetzerDataGridView_3.BackgroundColor = System.Drawing.SystemColors.Window;
             this.übersetzerDataGridView_3.CausesValidation = false;
             this.übersetzerDataGridView_3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -1302,14 +1325,14 @@
             this.dataGridViewTextBoxColumn39,
             this.Portugiesisch});
             this.übersetzerDataGridView_3.DataSource = this.übersetzerBindingSource;
-            dataGridViewCellStyle58.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle58.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle58.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle58.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle58.SelectionBackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle58.SelectionForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle58.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.übersetzerDataGridView_3.DefaultCellStyle = dataGridViewCellStyle58;
+            dataGridViewCellStyle29.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopLeft;
+            dataGridViewCellStyle29.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle29.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle29.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle29.SelectionBackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle29.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle29.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.übersetzerDataGridView_3.DefaultCellStyle = dataGridViewCellStyle29;
             this.übersetzerDataGridView_3.Location = new System.Drawing.Point(6, 76);
             this.übersetzerDataGridView_3.Name = "übersetzerDataGridView_3";
             this.übersetzerDataGridView_3.ReadOnly = true;
@@ -1404,7 +1427,6 @@
             // 
             this.übersetzerDataGridView_4.AllowUserToOrderColumns = true;
             this.übersetzerDataGridView_4.AutoGenerateColumns = false;
-            this.übersetzerDataGridView_4.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.übersetzerDataGridView_4.BackgroundColor = System.Drawing.SystemColors.Window;
             this.übersetzerDataGridView_4.CausesValidation = false;
             this.übersetzerDataGridView_4.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -1414,14 +1436,14 @@
             this.dataGridViewTextBoxColumn40,
             this.Französisch});
             this.übersetzerDataGridView_4.DataSource = this.übersetzerBindingSource;
-            dataGridViewCellStyle59.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle59.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle59.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle59.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle59.SelectionBackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle59.SelectionForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle59.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.übersetzerDataGridView_4.DefaultCellStyle = dataGridViewCellStyle59;
+            dataGridViewCellStyle30.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopLeft;
+            dataGridViewCellStyle30.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle30.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle30.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle30.SelectionBackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle30.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle30.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.übersetzerDataGridView_4.DefaultCellStyle = dataGridViewCellStyle30;
             this.übersetzerDataGridView_4.Location = new System.Drawing.Point(6, 76);
             this.übersetzerDataGridView_4.Name = "übersetzerDataGridView_4";
             this.übersetzerDataGridView_4.ReadOnly = true;
@@ -1516,7 +1538,6 @@
             // 
             this.übersetzerDataGridView_5.AllowUserToOrderColumns = true;
             this.übersetzerDataGridView_5.AutoGenerateColumns = false;
-            this.übersetzerDataGridView_5.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.übersetzerDataGridView_5.BackgroundColor = System.Drawing.SystemColors.Window;
             this.übersetzerDataGridView_5.CausesValidation = false;
             this.übersetzerDataGridView_5.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -1526,14 +1547,14 @@
             this.dataGridViewTextBoxColumn41,
             this.Italienisch});
             this.übersetzerDataGridView_5.DataSource = this.übersetzerBindingSource;
-            dataGridViewCellStyle60.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle60.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle60.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle60.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle60.SelectionBackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle60.SelectionForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle60.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.übersetzerDataGridView_5.DefaultCellStyle = dataGridViewCellStyle60;
+            dataGridViewCellStyle31.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopLeft;
+            dataGridViewCellStyle31.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle31.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle31.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle31.SelectionBackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle31.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle31.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.übersetzerDataGridView_5.DefaultCellStyle = dataGridViewCellStyle31;
             this.übersetzerDataGridView_5.Location = new System.Drawing.Point(6, 76);
             this.übersetzerDataGridView_5.Name = "übersetzerDataGridView_5";
             this.übersetzerDataGridView_5.ReadOnly = true;
@@ -1628,7 +1649,6 @@
             // 
             this.übersetzerDataGridView_6.AllowUserToOrderColumns = true;
             this.übersetzerDataGridView_6.AutoGenerateColumns = false;
-            this.übersetzerDataGridView_6.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.übersetzerDataGridView_6.BackgroundColor = System.Drawing.SystemColors.Window;
             this.übersetzerDataGridView_6.CausesValidation = false;
             this.übersetzerDataGridView_6.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -1638,14 +1658,14 @@
             this.dataGridViewTextBoxColumn42,
             this.Türkisch});
             this.übersetzerDataGridView_6.DataSource = this.übersetzerBindingSource;
-            dataGridViewCellStyle61.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle61.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle61.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle61.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle61.SelectionBackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle61.SelectionForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle61.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.übersetzerDataGridView_6.DefaultCellStyle = dataGridViewCellStyle61;
+            dataGridViewCellStyle32.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopLeft;
+            dataGridViewCellStyle32.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle32.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle32.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle32.SelectionBackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle32.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle32.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.übersetzerDataGridView_6.DefaultCellStyle = dataGridViewCellStyle32;
             this.übersetzerDataGridView_6.Location = new System.Drawing.Point(6, 76);
             this.übersetzerDataGridView_6.Name = "übersetzerDataGridView_6";
             this.übersetzerDataGridView_6.ReadOnly = true;
@@ -1740,7 +1760,6 @@
             // 
             this.übersetzerDataGridView_7.AllowUserToOrderColumns = true;
             this.übersetzerDataGridView_7.AutoGenerateColumns = false;
-            this.übersetzerDataGridView_7.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.übersetzerDataGridView_7.BackgroundColor = System.Drawing.SystemColors.Window;
             this.übersetzerDataGridView_7.CausesValidation = false;
             this.übersetzerDataGridView_7.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -1750,14 +1769,14 @@
             this.dataGridViewTextBoxColumn43,
             this.Rumänisch});
             this.übersetzerDataGridView_7.DataSource = this.übersetzerBindingSource;
-            dataGridViewCellStyle62.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle62.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle62.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle62.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle62.SelectionBackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle62.SelectionForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle62.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.übersetzerDataGridView_7.DefaultCellStyle = dataGridViewCellStyle62;
+            dataGridViewCellStyle33.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopLeft;
+            dataGridViewCellStyle33.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle33.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle33.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle33.SelectionBackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle33.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle33.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.übersetzerDataGridView_7.DefaultCellStyle = dataGridViewCellStyle33;
             this.übersetzerDataGridView_7.Location = new System.Drawing.Point(6, 76);
             this.übersetzerDataGridView_7.Name = "übersetzerDataGridView_7";
             this.übersetzerDataGridView_7.ReadOnly = true;
@@ -1852,9 +1871,16 @@
             // 
             this.übersetzerDataGridView_8.AllowUserToOrderColumns = true;
             this.übersetzerDataGridView_8.AutoGenerateColumns = false;
-            this.übersetzerDataGridView_8.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.übersetzerDataGridView_8.BackgroundColor = System.Drawing.SystemColors.Window;
             this.übersetzerDataGridView_8.CausesValidation = false;
+            dataGridViewCellStyle34.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle34.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle34.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle34.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle34.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle34.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle34.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.übersetzerDataGridView_8.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle34;
             this.übersetzerDataGridView_8.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.übersetzerDataGridView_8.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn22,
@@ -1862,14 +1888,14 @@
             this.dataGridViewTextBoxColumn44,
             this.Bulgarisch});
             this.übersetzerDataGridView_8.DataSource = this.übersetzerBindingSource;
-            dataGridViewCellStyle63.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle63.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle63.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle63.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle63.SelectionBackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle63.SelectionForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle63.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.übersetzerDataGridView_8.DefaultCellStyle = dataGridViewCellStyle63;
+            dataGridViewCellStyle35.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopLeft;
+            dataGridViewCellStyle35.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle35.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle35.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle35.SelectionBackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle35.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle35.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.übersetzerDataGridView_8.DefaultCellStyle = dataGridViewCellStyle35;
             this.übersetzerDataGridView_8.Location = new System.Drawing.Point(6, 76);
             this.übersetzerDataGridView_8.Name = "übersetzerDataGridView_8";
             this.übersetzerDataGridView_8.ReadOnly = true;
@@ -1964,7 +1990,6 @@
             // 
             this.übersetzerDataGridView_9.AllowUserToOrderColumns = true;
             this.übersetzerDataGridView_9.AutoGenerateColumns = false;
-            this.übersetzerDataGridView_9.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.übersetzerDataGridView_9.BackgroundColor = System.Drawing.SystemColors.Window;
             this.übersetzerDataGridView_9.CausesValidation = false;
             this.übersetzerDataGridView_9.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -1974,14 +1999,14 @@
             this.dataGridViewTextBoxColumn45,
             this.Russisch});
             this.übersetzerDataGridView_9.DataSource = this.übersetzerBindingSource;
-            dataGridViewCellStyle64.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle64.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle64.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle64.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle64.SelectionBackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle64.SelectionForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle64.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.übersetzerDataGridView_9.DefaultCellStyle = dataGridViewCellStyle64;
+            dataGridViewCellStyle36.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopLeft;
+            dataGridViewCellStyle36.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle36.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle36.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle36.SelectionBackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle36.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle36.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.übersetzerDataGridView_9.DefaultCellStyle = dataGridViewCellStyle36;
             this.übersetzerDataGridView_9.Location = new System.Drawing.Point(6, 76);
             this.übersetzerDataGridView_9.Name = "übersetzerDataGridView_9";
             this.übersetzerDataGridView_9.ReadOnly = true;
@@ -2076,7 +2101,6 @@
             // 
             this.übersetzerDataGridView_10.AllowUserToOrderColumns = true;
             this.übersetzerDataGridView_10.AutoGenerateColumns = false;
-            this.übersetzerDataGridView_10.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.übersetzerDataGridView_10.BackgroundColor = System.Drawing.SystemColors.Window;
             this.übersetzerDataGridView_10.CausesValidation = false;
             this.übersetzerDataGridView_10.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -2086,14 +2110,14 @@
             this.dataGridViewTextBoxColumn46,
             this.Polnisch});
             this.übersetzerDataGridView_10.DataSource = this.übersetzerBindingSource;
-            dataGridViewCellStyle65.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle65.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle65.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle65.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle65.SelectionBackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle65.SelectionForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle65.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.übersetzerDataGridView_10.DefaultCellStyle = dataGridViewCellStyle65;
+            dataGridViewCellStyle37.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopLeft;
+            dataGridViewCellStyle37.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle37.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle37.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle37.SelectionBackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle37.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle37.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.übersetzerDataGridView_10.DefaultCellStyle = dataGridViewCellStyle37;
             this.übersetzerDataGridView_10.Location = new System.Drawing.Point(6, 76);
             this.übersetzerDataGridView_10.Name = "übersetzerDataGridView_10";
             this.übersetzerDataGridView_10.ReadOnly = true;
@@ -2188,7 +2212,6 @@
             // 
             this.übersetzerDataGridView_11.AllowUserToOrderColumns = true;
             this.übersetzerDataGridView_11.AutoGenerateColumns = false;
-            this.übersetzerDataGridView_11.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.übersetzerDataGridView_11.BackgroundColor = System.Drawing.SystemColors.Window;
             this.übersetzerDataGridView_11.CausesValidation = false;
             this.übersetzerDataGridView_11.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -2198,14 +2221,14 @@
             this.dataGridViewTextBoxColumn47,
             this.Arabisch});
             this.übersetzerDataGridView_11.DataSource = this.übersetzerBindingSource;
-            dataGridViewCellStyle66.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle66.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle66.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle66.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle66.SelectionBackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle66.SelectionForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle66.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.übersetzerDataGridView_11.DefaultCellStyle = dataGridViewCellStyle66;
+            dataGridViewCellStyle38.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopLeft;
+            dataGridViewCellStyle38.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle38.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle38.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle38.SelectionBackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle38.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle38.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.übersetzerDataGridView_11.DefaultCellStyle = dataGridViewCellStyle38;
             this.übersetzerDataGridView_11.Location = new System.Drawing.Point(6, 76);
             this.übersetzerDataGridView_11.Name = "übersetzerDataGridView_11";
             this.übersetzerDataGridView_11.ReadOnly = true;
@@ -2279,17 +2302,6 @@
             this.imageList1.Images.SetKeyName(9, "1483758177_Romania_flat_24.png");
             this.imageList1.Images.SetKeyName(10, "1483758217_Bulgaria_flat_24.png");
             this.imageList1.Images.SetKeyName(11, "Google-Translate-icon.png");
-            // 
-            // übersetzer_ConsultaTableAdapter
-            // 
-            this.übersetzer_ConsultaTableAdapter.ClearBeforeFill = true;
-            // 
-            // tableAdapterManager
-            // 
-            this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
-            this.tableAdapterManager.Connection = null;
-            this.tableAdapterManager.übersetzerTableAdapter = null;
-            this.tableAdapterManager.UpdateOrder = ubersetzer.übersetzerDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             // 
             // tabControl2
             // 
@@ -2396,16 +2408,16 @@
             this.Daten.Padding = new System.Windows.Forms.Padding(3);
             this.Daten.Size = new System.Drawing.Size(1013, 457);
             this.Daten.TabIndex = 1;
-            this.Daten.Text = "Daten";
+            this.Daten.Text = "Dateiverwaltung";
             this.Daten.UseVisualStyleBackColor = true;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(14, 32);
+            this.label2.Font = new System.Drawing.Font("Consolas", 8F, System.Drawing.FontStyle.Bold);
+            this.label2.Location = new System.Drawing.Point(48, 34);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(21, 15);
+            this.label2.Size = new System.Drawing.Size(19, 13);
             this.label2.TabIndex = 43;
             this.label2.Text = "ID";
             // 
@@ -2435,7 +2447,7 @@
             // 
             this.id.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.id.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.übersetzerBindingSource, "ID", true));
-            this.id.Location = new System.Drawing.Point(38, 31);
+            this.id.Location = new System.Drawing.Point(71, 31);
             this.id.Name = "id";
             this.id.ReadOnly = true;
             this.id.Size = new System.Drawing.Size(64, 20);
@@ -2444,12 +2456,13 @@
             // 
             // transaktionComboBox
             // 
+            this.transaktionComboBox.BackColor = System.Drawing.Color.GhostWhite;
             this.transaktionComboBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.übersetzerBindingSource, "Transaction", true));
             this.transaktionComboBox.FormattingEnabled = true;
             this.transaktionComboBox.Items.AddRange(new object[] {
             "Geld Senden",
             "Geld Empfangen"});
-            this.transaktionComboBox.Location = new System.Drawing.Point(660, 31);
+            this.transaktionComboBox.Location = new System.Drawing.Point(753, 31);
             this.transaktionComboBox.Name = "transaktionComboBox";
             this.transaktionComboBox.Size = new System.Drawing.Size(153, 21);
             this.transaktionComboBox.TabIndex = 31;
@@ -2486,110 +2499,20 @@
             this.dataGridViewTextBoxColumn37,
             this.dataGridViewTextBoxColumn48});
             this.übersetzerDataGridView_data.DataSource = this.übersetzerBindingSource;
+            dataGridViewCellStyle39.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopLeft;
+            dataGridViewCellStyle39.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle39.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle39.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle39.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle39.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle39.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.übersetzerDataGridView_data.DefaultCellStyle = dataGridViewCellStyle39;
             this.übersetzerDataGridView_data.EnableHeadersVisualStyles = false;
             this.übersetzerDataGridView_data.Location = new System.Drawing.Point(9, 199);
             this.übersetzerDataGridView_data.Name = "übersetzerDataGridView_data";
             this.übersetzerDataGridView_data.Size = new System.Drawing.Size(994, 241);
             this.übersetzerDataGridView_data.TabIndex = 28;
             this.übersetzerDataGridView_data.CellFormatting += new System.Windows.Forms.DataGridViewCellFormattingEventHandler(this.übersetzerDataGridView_dataFormatting);
-            // 
-            // dataGridViewTextBoxColumn9
-            // 
-            this.dataGridViewTextBoxColumn9.DataPropertyName = "Ordnung";
-            this.dataGridViewTextBoxColumn9.HeaderText = "Ordnung";
-            this.dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
-            this.dataGridViewTextBoxColumn9.Width = 80;
-            // 
-            // Transaction
-            // 
-            this.Transaction.DataPropertyName = "Transaction";
-            this.Transaction.HeaderText = "Transaction";
-            this.Transaction.Name = "Transaction";
-            this.Transaction.Width = 96;
-            // 
-            // dataGridViewTextBoxColumn15
-            // 
-            this.dataGridViewTextBoxColumn15.DataPropertyName = "Deutsch";
-            this.dataGridViewTextBoxColumn15.HeaderText = "Deutsch";
-            this.dataGridViewTextBoxColumn15.Name = "dataGridViewTextBoxColumn15";
-            this.dataGridViewTextBoxColumn15.Width = 77;
-            // 
-            // dataGridViewTextBoxColumn18
-            // 
-            this.dataGridViewTextBoxColumn18.DataPropertyName = "Englisch";
-            this.dataGridViewTextBoxColumn18.HeaderText = "Englisch";
-            this.dataGridViewTextBoxColumn18.Name = "dataGridViewTextBoxColumn18";
-            this.dataGridViewTextBoxColumn18.Width = 79;
-            // 
-            // dataGridViewTextBoxColumn21
-            // 
-            this.dataGridViewTextBoxColumn21.DataPropertyName = "Spanisch";
-            this.dataGridViewTextBoxColumn21.HeaderText = "Spanisch";
-            this.dataGridViewTextBoxColumn21.Name = "dataGridViewTextBoxColumn21";
-            this.dataGridViewTextBoxColumn21.Width = 83;
-            // 
-            // dataGridViewTextBoxColumn24
-            // 
-            this.dataGridViewTextBoxColumn24.DataPropertyName = "Portugiesisch";
-            this.dataGridViewTextBoxColumn24.HeaderText = "Portugiesisch";
-            this.dataGridViewTextBoxColumn24.Name = "dataGridViewTextBoxColumn24";
-            this.dataGridViewTextBoxColumn24.Width = 106;
-            // 
-            // dataGridViewTextBoxColumn27
-            // 
-            this.dataGridViewTextBoxColumn27.DataPropertyName = "Französisch";
-            this.dataGridViewTextBoxColumn27.HeaderText = "Französisch";
-            this.dataGridViewTextBoxColumn27.Name = "dataGridViewTextBoxColumn27";
-            this.dataGridViewTextBoxColumn27.Width = 98;
-            // 
-            // dataGridViewTextBoxColumn30
-            // 
-            this.dataGridViewTextBoxColumn30.DataPropertyName = "Italienisch";
-            this.dataGridViewTextBoxColumn30.HeaderText = "Italienisch";
-            this.dataGridViewTextBoxColumn30.Name = "dataGridViewTextBoxColumn30";
-            this.dataGridViewTextBoxColumn30.Width = 87;
-            // 
-            // dataGridViewTextBoxColumn33
-            // 
-            this.dataGridViewTextBoxColumn33.DataPropertyName = "Türkisch";
-            this.dataGridViewTextBoxColumn33.HeaderText = "Türkisch";
-            this.dataGridViewTextBoxColumn33.Name = "dataGridViewTextBoxColumn33";
-            this.dataGridViewTextBoxColumn33.Width = 78;
-            // 
-            // dataGridViewTextBoxColumn34
-            // 
-            this.dataGridViewTextBoxColumn34.DataPropertyName = "Rumänisch";
-            this.dataGridViewTextBoxColumn34.HeaderText = "Rumänisch";
-            this.dataGridViewTextBoxColumn34.Name = "dataGridViewTextBoxColumn34";
-            this.dataGridViewTextBoxColumn34.Width = 95;
-            // 
-            // dataGridViewTextBoxColumn35
-            // 
-            this.dataGridViewTextBoxColumn35.DataPropertyName = "Bulgarisch";
-            this.dataGridViewTextBoxColumn35.HeaderText = "Bulgarisch";
-            this.dataGridViewTextBoxColumn35.Name = "dataGridViewTextBoxColumn35";
-            this.dataGridViewTextBoxColumn35.Width = 90;
-            // 
-            // dataGridViewTextBoxColumn36
-            // 
-            this.dataGridViewTextBoxColumn36.DataPropertyName = "Russisch";
-            this.dataGridViewTextBoxColumn36.HeaderText = "Russisch";
-            this.dataGridViewTextBoxColumn36.Name = "dataGridViewTextBoxColumn36";
-            this.dataGridViewTextBoxColumn36.Width = 82;
-            // 
-            // dataGridViewTextBoxColumn37
-            // 
-            this.dataGridViewTextBoxColumn37.DataPropertyName = "Polnisch";
-            this.dataGridViewTextBoxColumn37.HeaderText = "Polnisch";
-            this.dataGridViewTextBoxColumn37.Name = "dataGridViewTextBoxColumn37";
-            this.dataGridViewTextBoxColumn37.Width = 79;
-            // 
-            // dataGridViewTextBoxColumn48
-            // 
-            this.dataGridViewTextBoxColumn48.DataPropertyName = "Arabisch";
-            this.dataGridViewTextBoxColumn48.HeaderText = "Arabisch";
-            this.dataGridViewTextBoxColumn48.Name = "dataGridViewTextBoxColumn48";
-            this.dataGridViewTextBoxColumn48.Width = 79;
             // 
             // bindingNavigator1
             // 
@@ -2745,8 +2668,9 @@
             // 
             // ordnungTextBox
             // 
+            this.ordnungTextBox.BackColor = System.Drawing.Color.GhostWhite;
             this.ordnungTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.übersetzerBindingSource, "Ordnung", true));
-            this.ordnungTextBox.Location = new System.Drawing.Point(428, 31);
+            this.ordnungTextBox.Location = new System.Drawing.Point(418, 31);
             this.ordnungTextBox.Name = "ordnungTextBox";
             this.ordnungTextBox.Size = new System.Drawing.Size(74, 20);
             this.ordnungTextBox.TabIndex = 3;
@@ -2754,122 +2678,146 @@
             // 
             // deutschTextBox1
             // 
+            this.deutschTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.deutschTextBox1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.übersetzerBindingSource, "Deutsch", true));
-            this.deutschTextBox1.Location = new System.Drawing.Point(81, 56);
+            this.deutschTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.deutschTextBox1.Location = new System.Drawing.Point(71, 54);
             this.deutschTextBox1.Multiline = true;
             this.deutschTextBox1.Name = "deutschTextBox1";
             this.deutschTextBox1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.deutschTextBox1.Size = new System.Drawing.Size(231, 32);
+            this.deutschTextBox1.Size = new System.Drawing.Size(250, 34);
             this.deutschTextBox1.TabIndex = 5;
             // 
             // englischTextBox1
             // 
+            this.englischTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.englischTextBox1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.übersetzerBindingSource, "Englisch", true));
-            this.englischTextBox1.Location = new System.Drawing.Point(81, 92);
+            this.englischTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.englischTextBox1.Location = new System.Drawing.Point(71, 90);
             this.englischTextBox1.Multiline = true;
             this.englischTextBox1.Name = "englischTextBox1";
             this.englischTextBox1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.englischTextBox1.Size = new System.Drawing.Size(231, 32);
+            this.englischTextBox1.Size = new System.Drawing.Size(250, 34);
             this.englischTextBox1.TabIndex = 7;
             // 
             // spanischTextBox1
             // 
+            this.spanischTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.spanischTextBox1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.übersetzerBindingSource, "Spanisch", true));
-            this.spanischTextBox1.Location = new System.Drawing.Point(81, 128);
+            this.spanischTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.spanischTextBox1.Location = new System.Drawing.Point(71, 126);
             this.spanischTextBox1.Multiline = true;
             this.spanischTextBox1.Name = "spanischTextBox1";
             this.spanischTextBox1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.spanischTextBox1.Size = new System.Drawing.Size(231, 32);
+            this.spanischTextBox1.Size = new System.Drawing.Size(250, 34);
             this.spanischTextBox1.TabIndex = 9;
             // 
             // portugiesischTextBox1
             // 
+            this.portugiesischTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.portugiesischTextBox1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.übersetzerBindingSource, "Portugiesisch", true));
-            this.portugiesischTextBox1.Location = new System.Drawing.Point(428, 128);
+            this.portugiesischTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.portugiesischTextBox1.Location = new System.Drawing.Point(418, 126);
             this.portugiesischTextBox1.Multiline = true;
             this.portugiesischTextBox1.Name = "portugiesischTextBox1";
             this.portugiesischTextBox1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.portugiesischTextBox1.Size = new System.Drawing.Size(231, 32);
+            this.portugiesischTextBox1.Size = new System.Drawing.Size(250, 34);
             this.portugiesischTextBox1.TabIndex = 11;
             // 
             // französischTextBox1
             // 
+            this.französischTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.französischTextBox1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.übersetzerBindingSource, "Französisch", true));
-            this.französischTextBox1.Location = new System.Drawing.Point(428, 56);
+            this.französischTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.französischTextBox1.Location = new System.Drawing.Point(418, 54);
             this.französischTextBox1.Multiline = true;
             this.französischTextBox1.Name = "französischTextBox1";
             this.französischTextBox1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.französischTextBox1.Size = new System.Drawing.Size(231, 32);
+            this.französischTextBox1.Size = new System.Drawing.Size(250, 34);
             this.französischTextBox1.TabIndex = 13;
             // 
             // italienischTextBox1
             // 
+            this.italienischTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.italienischTextBox1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.übersetzerBindingSource, "Italienisch", true));
-            this.italienischTextBox1.Location = new System.Drawing.Point(428, 92);
+            this.italienischTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.italienischTextBox1.Location = new System.Drawing.Point(418, 90);
             this.italienischTextBox1.Multiline = true;
             this.italienischTextBox1.Name = "italienischTextBox1";
             this.italienischTextBox1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.italienischTextBox1.Size = new System.Drawing.Size(231, 32);
+            this.italienischTextBox1.Size = new System.Drawing.Size(250, 34);
             this.italienischTextBox1.TabIndex = 15;
             // 
             // türkischTextBox1
             // 
+            this.türkischTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.türkischTextBox1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.übersetzerBindingSource, "Türkisch", true));
-            this.türkischTextBox1.Location = new System.Drawing.Point(81, 164);
+            this.türkischTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.türkischTextBox1.Location = new System.Drawing.Point(71, 162);
             this.türkischTextBox1.Multiline = true;
             this.türkischTextBox1.Name = "türkischTextBox1";
             this.türkischTextBox1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.türkischTextBox1.Size = new System.Drawing.Size(231, 32);
+            this.türkischTextBox1.Size = new System.Drawing.Size(250, 34);
             this.türkischTextBox1.TabIndex = 17;
             // 
             // rumänischTextBox1
             // 
+            this.rumänischTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.rumänischTextBox1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.übersetzerBindingSource, "Rumänisch", true));
-            this.rumänischTextBox1.Location = new System.Drawing.Point(428, 164);
+            this.rumänischTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rumänischTextBox1.Location = new System.Drawing.Point(418, 162);
             this.rumänischTextBox1.Multiline = true;
             this.rumänischTextBox1.Name = "rumänischTextBox1";
             this.rumänischTextBox1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.rumänischTextBox1.Size = new System.Drawing.Size(231, 32);
+            this.rumänischTextBox1.Size = new System.Drawing.Size(250, 34);
             this.rumänischTextBox1.TabIndex = 19;
             // 
             // bulgarischTextBox1
             // 
+            this.bulgarischTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.bulgarischTextBox1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.übersetzerBindingSource, "Bulgarisch", true));
-            this.bulgarischTextBox1.Location = new System.Drawing.Point(763, 56);
+            this.bulgarischTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bulgarischTextBox1.Location = new System.Drawing.Point(753, 54);
             this.bulgarischTextBox1.Multiline = true;
             this.bulgarischTextBox1.Name = "bulgarischTextBox1";
             this.bulgarischTextBox1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.bulgarischTextBox1.Size = new System.Drawing.Size(231, 32);
+            this.bulgarischTextBox1.Size = new System.Drawing.Size(250, 34);
             this.bulgarischTextBox1.TabIndex = 21;
             // 
             // russischTextBox1
             // 
+            this.russischTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.russischTextBox1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.übersetzerBindingSource, "Russisch", true));
-            this.russischTextBox1.Location = new System.Drawing.Point(763, 92);
+            this.russischTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.russischTextBox1.Location = new System.Drawing.Point(753, 90);
             this.russischTextBox1.Multiline = true;
             this.russischTextBox1.Name = "russischTextBox1";
             this.russischTextBox1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.russischTextBox1.Size = new System.Drawing.Size(231, 32);
+            this.russischTextBox1.Size = new System.Drawing.Size(250, 34);
             this.russischTextBox1.TabIndex = 23;
             // 
             // polnischTextBox1
             // 
+            this.polnischTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.polnischTextBox1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.übersetzerBindingSource, "Polnisch", true));
-            this.polnischTextBox1.Location = new System.Drawing.Point(763, 128);
+            this.polnischTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.polnischTextBox1.Location = new System.Drawing.Point(753, 126);
             this.polnischTextBox1.Multiline = true;
             this.polnischTextBox1.Name = "polnischTextBox1";
             this.polnischTextBox1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.polnischTextBox1.Size = new System.Drawing.Size(231, 32);
+            this.polnischTextBox1.Size = new System.Drawing.Size(250, 34);
             this.polnischTextBox1.TabIndex = 25;
             // 
             // arabischTextBox1
             // 
+            this.arabischTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.arabischTextBox1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.übersetzerBindingSource, "Arabisch", true));
-            this.arabischTextBox1.Location = new System.Drawing.Point(763, 164);
+            this.arabischTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.arabischTextBox1.Location = new System.Drawing.Point(753, 162);
             this.arabischTextBox1.Multiline = true;
             this.arabischTextBox1.Name = "arabischTextBox1";
             this.arabischTextBox1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.arabischTextBox1.Size = new System.Drawing.Size(231, 32);
+            this.arabischTextBox1.Size = new System.Drawing.Size(250, 34);
             this.arabischTextBox1.TabIndex = 27;
             // 
             // imageList3
@@ -2878,10 +2826,6 @@
             this.imageList3.TransparentColor = System.Drawing.Color.Transparent;
             this.imageList3.Images.SetKeyName(0, "global-map.png");
             this.imageList3.Images.SetKeyName(1, "server-client-exchange.png");
-            // 
-            // übersetzerTableAdapter
-            // 
-            this.übersetzerTableAdapter.ClearBeforeFill = true;
             // 
             // imageList2
             // 
@@ -2892,6 +2836,160 @@
             // bindingSource1
             // 
             this.bindingSource1.DataSource = this.übersetzerBindingSource;
+            // 
+            // übersetzer_ConsultaTableAdapter
+            // 
+            this.übersetzer_ConsultaTableAdapter.ClearBeforeFill = true;
+            // 
+            // tableAdapterManager
+            // 
+            this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
+            this.tableAdapterManager.Connection = null;
+            this.tableAdapterManager.übersetzerTableAdapter = null;
+            this.tableAdapterManager.UpdateOrder = ubersetzer.übersetzerDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            // 
+            // übersetzerTableAdapter
+            // 
+            this.übersetzerTableAdapter.ClearBeforeFill = true;
+            // 
+            // dataGridViewTextBoxColumn9
+            // 
+            this.dataGridViewTextBoxColumn9.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
+            this.dataGridViewTextBoxColumn9.DataPropertyName = "Ordnung";
+            this.dataGridViewTextBoxColumn9.HeaderText = "Ordnung";
+            this.dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
+            this.dataGridViewTextBoxColumn9.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.dataGridViewTextBoxColumn9.Width = 61;
+            // 
+            // Transaction
+            // 
+            this.Transaction.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
+            this.Transaction.DataPropertyName = "Transaction";
+            this.Transaction.HeaderText = "Transaction";
+            this.Transaction.MinimumWidth = 85;
+            this.Transaction.Name = "Transaction";
+            this.Transaction.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.Transaction.Width = 85;
+            // 
+            // dataGridViewTextBoxColumn15
+            // 
+            this.dataGridViewTextBoxColumn15.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.dataGridViewTextBoxColumn15.DataPropertyName = "Deutsch";
+            this.dataGridViewTextBoxColumn15.HeaderText = "Deutsch";
+            this.dataGridViewTextBoxColumn15.MinimumWidth = 120;
+            this.dataGridViewTextBoxColumn15.Name = "dataGridViewTextBoxColumn15";
+            this.dataGridViewTextBoxColumn15.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.dataGridViewTextBoxColumn15.Width = 120;
+            // 
+            // dataGridViewTextBoxColumn18
+            // 
+            this.dataGridViewTextBoxColumn18.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.dataGridViewTextBoxColumn18.DataPropertyName = "Englisch";
+            this.dataGridViewTextBoxColumn18.HeaderText = "Englisch";
+            this.dataGridViewTextBoxColumn18.MinimumWidth = 120;
+            this.dataGridViewTextBoxColumn18.Name = "dataGridViewTextBoxColumn18";
+            this.dataGridViewTextBoxColumn18.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.dataGridViewTextBoxColumn18.Width = 120;
+            // 
+            // dataGridViewTextBoxColumn21
+            // 
+            this.dataGridViewTextBoxColumn21.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.dataGridViewTextBoxColumn21.DataPropertyName = "Spanisch";
+            this.dataGridViewTextBoxColumn21.HeaderText = "Spanisch";
+            this.dataGridViewTextBoxColumn21.MinimumWidth = 120;
+            this.dataGridViewTextBoxColumn21.Name = "dataGridViewTextBoxColumn21";
+            this.dataGridViewTextBoxColumn21.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.dataGridViewTextBoxColumn21.Width = 120;
+            // 
+            // dataGridViewTextBoxColumn24
+            // 
+            this.dataGridViewTextBoxColumn24.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.dataGridViewTextBoxColumn24.DataPropertyName = "Portugiesisch";
+            this.dataGridViewTextBoxColumn24.HeaderText = "Portugiesisch";
+            this.dataGridViewTextBoxColumn24.MinimumWidth = 120;
+            this.dataGridViewTextBoxColumn24.Name = "dataGridViewTextBoxColumn24";
+            this.dataGridViewTextBoxColumn24.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.dataGridViewTextBoxColumn24.Width = 120;
+            // 
+            // dataGridViewTextBoxColumn27
+            // 
+            this.dataGridViewTextBoxColumn27.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.dataGridViewTextBoxColumn27.DataPropertyName = "Französisch";
+            this.dataGridViewTextBoxColumn27.HeaderText = "Französisch";
+            this.dataGridViewTextBoxColumn27.MinimumWidth = 120;
+            this.dataGridViewTextBoxColumn27.Name = "dataGridViewTextBoxColumn27";
+            this.dataGridViewTextBoxColumn27.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.dataGridViewTextBoxColumn27.Width = 120;
+            // 
+            // dataGridViewTextBoxColumn30
+            // 
+            this.dataGridViewTextBoxColumn30.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.dataGridViewTextBoxColumn30.DataPropertyName = "Italienisch";
+            this.dataGridViewTextBoxColumn30.HeaderText = "Italienisch";
+            this.dataGridViewTextBoxColumn30.MinimumWidth = 120;
+            this.dataGridViewTextBoxColumn30.Name = "dataGridViewTextBoxColumn30";
+            this.dataGridViewTextBoxColumn30.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.dataGridViewTextBoxColumn30.Width = 120;
+            // 
+            // dataGridViewTextBoxColumn33
+            // 
+            this.dataGridViewTextBoxColumn33.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.dataGridViewTextBoxColumn33.DataPropertyName = "Türkisch";
+            this.dataGridViewTextBoxColumn33.HeaderText = "Türkisch";
+            this.dataGridViewTextBoxColumn33.MinimumWidth = 120;
+            this.dataGridViewTextBoxColumn33.Name = "dataGridViewTextBoxColumn33";
+            this.dataGridViewTextBoxColumn33.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.dataGridViewTextBoxColumn33.Width = 120;
+            // 
+            // dataGridViewTextBoxColumn34
+            // 
+            this.dataGridViewTextBoxColumn34.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.dataGridViewTextBoxColumn34.DataPropertyName = "Rumänisch";
+            this.dataGridViewTextBoxColumn34.HeaderText = "Rumänisch";
+            this.dataGridViewTextBoxColumn34.MinimumWidth = 120;
+            this.dataGridViewTextBoxColumn34.Name = "dataGridViewTextBoxColumn34";
+            this.dataGridViewTextBoxColumn34.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.dataGridViewTextBoxColumn34.Width = 120;
+            // 
+            // dataGridViewTextBoxColumn35
+            // 
+            this.dataGridViewTextBoxColumn35.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.dataGridViewTextBoxColumn35.DataPropertyName = "Bulgarisch";
+            this.dataGridViewTextBoxColumn35.HeaderText = "Bulgarisch";
+            this.dataGridViewTextBoxColumn35.MinimumWidth = 120;
+            this.dataGridViewTextBoxColumn35.Name = "dataGridViewTextBoxColumn35";
+            this.dataGridViewTextBoxColumn35.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.dataGridViewTextBoxColumn35.Width = 120;
+            // 
+            // dataGridViewTextBoxColumn36
+            // 
+            this.dataGridViewTextBoxColumn36.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.dataGridViewTextBoxColumn36.DataPropertyName = "Russisch";
+            this.dataGridViewTextBoxColumn36.HeaderText = "Russisch";
+            this.dataGridViewTextBoxColumn36.MinimumWidth = 120;
+            this.dataGridViewTextBoxColumn36.Name = "dataGridViewTextBoxColumn36";
+            this.dataGridViewTextBoxColumn36.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.dataGridViewTextBoxColumn36.Width = 120;
+            // 
+            // dataGridViewTextBoxColumn37
+            // 
+            this.dataGridViewTextBoxColumn37.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.dataGridViewTextBoxColumn37.DataPropertyName = "Polnisch";
+            this.dataGridViewTextBoxColumn37.HeaderText = "Polnisch";
+            this.dataGridViewTextBoxColumn37.MinimumWidth = 120;
+            this.dataGridViewTextBoxColumn37.Name = "dataGridViewTextBoxColumn37";
+            this.dataGridViewTextBoxColumn37.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.dataGridViewTextBoxColumn37.Width = 120;
+            // 
+            // dataGridViewTextBoxColumn48
+            // 
+            this.dataGridViewTextBoxColumn48.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.dataGridViewTextBoxColumn48.DataPropertyName = "Arabisch";
+            this.dataGridViewTextBoxColumn48.HeaderText = "Arabisch";
+            this.dataGridViewTextBoxColumn48.MinimumWidth = 120;
+            this.dataGridViewTextBoxColumn48.Name = "dataGridViewTextBoxColumn48";
+            this.dataGridViewTextBoxColumn48.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.dataGridViewTextBoxColumn48.Width = 120;
             // 
             // Form1
             // 
@@ -3124,24 +3222,6 @@
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn9;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Transaction;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn15;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn18;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn21;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn24;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn27;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn30;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn33;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn34;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn35;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn36;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn37;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn48;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn8;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn39;
@@ -3182,6 +3262,24 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn20;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn43;
         private System.Windows.Forms.DataGridViewTextBoxColumn Rumänisch;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn9;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Transaction;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn15;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn18;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn21;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn24;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn27;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn30;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn33;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn34;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn35;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn36;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn37;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn48;
     }
 }
 

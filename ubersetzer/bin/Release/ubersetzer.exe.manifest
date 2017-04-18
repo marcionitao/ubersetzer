@@ -79,14 +79,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ubersetzer.exe" size="527296">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ubersetzer.exe" size="530880">
       <assemblyIdentity name="ubersetzer" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>OeV3eu1cOFIVgwX0/jxl8C1Bc5AcpkYakbmpH7fbWJY=</dsig:DigestValue>
+        <dsig:DigestValue>SBlCVkPIr+Q94jIP38+f3qMjtXyWs6ac65T92IjVaVM=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -231,7 +231,7 @@
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>lGLKaX5MgW/TE8nk8JdiQZiY9JeIaKYgsZ9L0uNVNNw=</dsig:DigestValue>
+      <dsig:DigestValue>kHTTQt5sE3FhKJlzF0vRHQCDHsiMmgxBOBxdGbcDtbE=</dsig:DigestValue>
     </hash>
   </file>
   <file name="ubersetzer.exe.config" size="1402">
