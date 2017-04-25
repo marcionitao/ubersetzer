@@ -11,8 +11,8 @@ using System.Windows.Forms;
 using System.Media;
 using System.Net;
 using System.IO;
-using NAudio;
-using NAudio.Wave;
+//using NAudio;
+//using NAudio.Wave;
 
 namespace ubersetzer
 {
@@ -86,9 +86,28 @@ namespace ubersetzer
                 string strProvider = @"Provider = Microsoft.ACE.OLEDB.12.0; Data Source=C:\VisualStudio_Projects\ubersetzer\ubersetzer\übersetzer.accdb";
                 OleDbConnection con = new OleDbConnection(strProvider);
                 con.Open();
-                string strSql = "update [übersetzer] set [Ordnung]='" + ordnungTextBox.Text + "' ,[Transaction]='" + transaktionComboBox.Text + "' ,[Deutsch]='" + deutschTextBox1.Text + "' ,[Englisch]='" + englischTextBox1.Text + "' ,[Spanisch]='" + spanischTextBox1.Text + "' ,[Portugiesisch]='" + portugiesischTextBox1.Text + "' ,[Französisch]='" + französischTextBox1.Text + "' ,[Italienisch]='" + italienischTextBox1.Text + "' ,[Türkisch]='" + türkischTextBox1.Text + "' ,[Rumänisch]='" + rumänischTextBox1.Text + "' ,[Bulgarisch]='" + bulgarischTextBox1.Text + "' ,[Russisch]='" + russischTextBox1.Text + "' ,[Polnisch]='" + polnischTextBox1.Text + "' ,[Arabisch]='" + arabischTextBox1.Text + "' where ID=" + id.Text + "";
+                //string strSql = "update [übersetzer] set [Ordnung]='" + ordnungTextBox.Text + "' ,[Transaction]='" + transaktionComboBox.Text + "' ,[Deutsch]='" + deutschTextBox1.Text + "' ,[Englisch]='" + englischTextBox1.Text + "' ,[Spanisch]='" + spanischTextBox1.Text + "' ,[Portugiesisch]='" + portugiesischTextBox1.Text + "' ,[Französisch]='" + französischTextBox1.Text + "' ,[Italienisch]='" + italienischTextBox1.Text + "' ,[Türkisch]='" + türkischTextBox1.Text + "' ,[Rumänisch]='" + rumänischTextBox1.Text + "' ,[Bulgarisch]='" + bulgarischTextBox1.Text + "' ,[Russisch]='" + russischTextBox1.Text + "' ,[Polnisch]='" + polnischTextBox1.Text + "' ,[Arabisch]='" + arabischTextBox1.Text + "' where ID=" + id.Text + "";
+                string strSql = "UPDATE [übersetzer] SET [Ordnung]=@Ordnung,[Transaction]=@Transaction,[Deutsch]=@Deustch,[Englisch]=@Englisch,[Spanisch]=@Spanisch,[Portugiesisch]=@Portugiesisch,[Französisch]=@Französisch,[Italienisch]=@Italienisch,[Türkisch]=@Türkisch,[Rumänisch]=@Rumänisch,[Bulgarisch]=@Bulgarisch,[Russisch]=@Russisch,[Polnisch]=@Polnisch,[Arabisch]=@Arabisch WHERE ID=@ID";
+                
                 // MessageBox.Show(strSql);
                 OleDbCommand cmd = new OleDbCommand(strSql, con);
+
+                cmd.Parameters.AddWithValue("@ID", id.Text);
+                cmd.Parameters.AddWithValue("@Ordnung", ordnungTextBox.Text);
+                cmd.Parameters.AddWithValue("@Transaction", transaktionComboBox.Text);
+                cmd.Parameters.AddWithValue("@Deutsch", deutschTextBox1.Text);
+                cmd.Parameters.AddWithValue("@Englisch", englischTextBox1.Text);
+                cmd.Parameters.AddWithValue("@Spanisch", spanischTextBox1.Text);
+                cmd.Parameters.AddWithValue("@Portugiesisch", portugiesischTextBox1.Text);
+                cmd.Parameters.AddWithValue("@Französisch", französischTextBox1.Text);
+                cmd.Parameters.AddWithValue("@Italienisch", italienischTextBox1.Text);
+                cmd.Parameters.AddWithValue("@Türkisch", türkischTextBox1.Text);
+                cmd.Parameters.AddWithValue("@Rumänisch", rumänischTextBox1.Text);
+                cmd.Parameters.AddWithValue("@Bulgarisch", bulgarischTextBox1.Text);
+                cmd.Parameters.AddWithValue("@Russisch", russischTextBox1.Text);
+                cmd.Parameters.AddWithValue("@Polnisch", polnischTextBox1.Text);
+                cmd.Parameters.AddWithValue("@Arabisch", arabischTextBox1.Text);
+
                 cmd.ExecuteNonQuery();
                 MessageBox.Show("Die Daten wurden mit Erfolg aufgenommen!");
                 con.Close();
@@ -96,6 +115,7 @@ namespace ubersetzer
             catch (System.Exception ex)
             {
                 MessageBox.Show("Achtung! Setzen Sie nicht Zeichen, wie zB: / + '- \\ ; ´ | \" * ´ ");
+                //MessageBox.Show("Error : "+ex);
             }
 
             this.Validate();
@@ -114,7 +134,6 @@ namespace ubersetzer
             }
             else
             {
-
                 try
                 {
                     string strProvider = @"Provider = Microsoft.ACE.OLEDB.12.0; Data Source=C:\VisualStudio_Projects\ubersetzer\ubersetzer\übersetzer.accdb";
@@ -928,36 +947,18 @@ namespace ubersetzer
             //--------------------------DataGrieView in the Management Data------------------------------------------
             this.übersetzerDataGridView_data.AllowUserToAddRows = false; //disable the last blank line in DatagridView
             this.übersetzerDataGridView_data.ColumnHeadersDefaultCellStyle.Font = new Font("Consolas", 8.00F, FontStyle.Bold);
+            this.übersetzerDataGridView_data.DefaultCellStyle.Font = new Font("Consolas", 8.50F);// change font in content cell
+            this.übersetzerDataGridView_data.ColumnHeadersDefaultCellStyle.Alignment = DataGridViewContentAlignment.TopCenter;
+            this.übersetzerDataGridView_data.ColumnHeadersDefaultCellStyle.BackColor = Color.LemonChiffon;
 
-            // break line and adjust text in cell and fill
-            this.übersetzerDataGridView_data.Columns[2].DefaultCellStyle.WrapMode = DataGridViewTriState.True; // option only one column         
-            this.übersetzerDataGridView_data.Columns[3].DefaultCellStyle.WrapMode = DataGridViewTriState.True; // option only one column
-            this.übersetzerDataGridView_data.Columns[4].DefaultCellStyle.WrapMode = DataGridViewTriState.True; // option only one column         
-            this.übersetzerDataGridView_data.Columns[5].DefaultCellStyle.WrapMode = DataGridViewTriState.True; // option only one column         
-            this.übersetzerDataGridView_data.Columns[6].DefaultCellStyle.WrapMode = DataGridViewTriState.True; // option only one column         
-            this.übersetzerDataGridView_data.Columns[7].DefaultCellStyle.WrapMode = DataGridViewTriState.True; // option only one column
-            this.übersetzerDataGridView_data.Columns[8].DefaultCellStyle.WrapMode = DataGridViewTriState.True; // option only one column         
-            this.übersetzerDataGridView_data.Columns[9].DefaultCellStyle.WrapMode = DataGridViewTriState.True; // option only one column    
-            this.übersetzerDataGridView_data.Columns[10].DefaultCellStyle.WrapMode = DataGridViewTriState.True; // option only one column         
-            this.übersetzerDataGridView_data.Columns[11].DefaultCellStyle.WrapMode = DataGridViewTriState.True; // option only one column
-            this.übersetzerDataGridView_data.Columns[12].DefaultCellStyle.WrapMode = DataGridViewTriState.True; // option only one column         
-            this.übersetzerDataGridView_data.Columns[13].DefaultCellStyle.WrapMode = DataGridViewTriState.True; // option only one column    
-
-            this.übersetzerDataGridView_data.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.DisplayedCells;
-
-            this.übersetzerDataGridView_data.Columns[2].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
-            this.übersetzerDataGridView_data.Columns[3].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
-            this.übersetzerDataGridView_data.Columns[4].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
-            this.übersetzerDataGridView_data.Columns[5].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
-            this.übersetzerDataGridView_data.Columns[6].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
-            this.übersetzerDataGridView_data.Columns[7].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
-            this.übersetzerDataGridView_data.Columns[8].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
-            this.übersetzerDataGridView_data.Columns[9].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
-            this.übersetzerDataGridView_data.Columns[10].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
-            this.übersetzerDataGridView_data.Columns[11].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
-            this.übersetzerDataGridView_data.Columns[12].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
-            this.übersetzerDataGridView_data.Columns[13].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
-
+            // break line and adjust text in cell and fill - All 13 columns are formated
+            for (int i=2;i<=13;i++)
+            {
+                this.übersetzerDataGridView_data.Columns[i].DefaultCellStyle.WrapMode = DataGridViewTriState.True;
+                this.übersetzerDataGridView_data.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.DisplayedCells;
+                this.übersetzerDataGridView_data.Columns[i].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            }
+            
         }
 
         // ----Function Define Colors condiction in Rows - "geld senden" or "geld empfangen" - begin----------------
@@ -1185,10 +1186,10 @@ namespace ubersetzer
             int month = DateTime.Now.Month;
             int year = DateTime.Now.Year;
 
-            DateTime dateEnd = new DateTime(2017, 04, 30);
+            DateTime dateEnd = new DateTime(2017, 05, 30);//change date here
             DateTime dateCurrent = DateTime.Now;
 
-            if (day >= 30 && month >= 4 && year == 2017)
+            if (day >= 30 && month >= 5 && year == 2017)//change date here
             {
                 MessageBox.Show("Tut mir leid. Die Frist dieser Anwendung erreicht das Ende!");
                 Application.Exit();
