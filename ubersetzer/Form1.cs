@@ -11,8 +11,6 @@ using System.Windows.Forms;
 using System.Media;
 using System.Net;
 using System.IO;
-//using NAudio;
-//using NAudio.Wave;
 
 namespace ubersetzer
 {
@@ -20,7 +18,7 @@ namespace ubersetzer
     {
 
         Uri urltts;
-        string mp3Path, path;
+        string mp3Path;
         string teks;
         WebClient tts;
 
@@ -62,7 +60,8 @@ namespace ubersetzer
             // dataGridImage = new Datagridview();
             // Add image in all row of column
             DataGridViewImageColumn img = new DataGridViewImageColumn();
-            Image image = Image.FromFile(@"C:\Users\Márcio\Desktop\david\icons\sound_16.bmp");
+            //Image image = Image.FromFile(@"C:\Users\Márcio\Desktop\david\icons\sound_16.bmp");
+            Image image = Image.FromFile(@" C:\übersetzer\sound_16.bmp");
             img.Image = image;
 
             dataGridImage.Columns.Add(img);
@@ -83,7 +82,10 @@ namespace ubersetzer
 
             try
             {
-                string strProvider = @"Provider = Microsoft.ACE.OLEDB.12.0; Data Source=C:\VisualStudio_Projects\ubersetzer\ubersetzer\übersetzer.accdb";
+                //string strProvider = @"Provider = Microsoft.ACE.OLEDB.12.0; Data Source=C:\VisualStudio_Projects\ubersetzer\ubersetzer\übersetzer.accdb";
+
+                string strProvider = @"Provider = Microsoft.ACE.OLEDB.12.0; Data Source=C:\übersetzer\übersetzer.accdb";
+
                 OleDbConnection con = new OleDbConnection(strProvider);
                 con.Open();
                 //string strSql = "update [übersetzer] set [Ordnung]='" + ordnungTextBox.Text + "' ,[Transaction]='" + transaktionComboBox.Text + "' ,[Deutsch]='" + deutschTextBox1.Text + "' ,[Englisch]='" + englischTextBox1.Text + "' ,[Spanisch]='" + spanischTextBox1.Text + "' ,[Portugiesisch]='" + portugiesischTextBox1.Text + "' ,[Französisch]='" + französischTextBox1.Text + "' ,[Italienisch]='" + italienischTextBox1.Text + "' ,[Türkisch]='" + türkischTextBox1.Text + "' ,[Rumänisch]='" + rumänischTextBox1.Text + "' ,[Bulgarisch]='" + bulgarischTextBox1.Text + "' ,[Russisch]='" + russischTextBox1.Text + "' ,[Polnisch]='" + polnischTextBox1.Text + "' ,[Arabisch]='" + arabischTextBox1.Text + "' where ID=" + id.Text + "";
@@ -112,7 +114,7 @@ namespace ubersetzer
                 MessageBox.Show("Die Daten wurden mit Erfolg aufgenommen!");
                 con.Close();
             }
-            catch (System.Exception ex)
+            catch (System.Exception)
             {
                 MessageBox.Show("Achtung! Setzen Sie nicht Zeichen, wie zB: / + '- \\ ; ´ | \" * ´ ");
                 //MessageBox.Show("Error : "+ex);
@@ -136,7 +138,9 @@ namespace ubersetzer
             {
                 try
                 {
-                    string strProvider = @"Provider = Microsoft.ACE.OLEDB.12.0; Data Source=C:\VisualStudio_Projects\ubersetzer\ubersetzer\übersetzer.accdb";
+                    //string strProvider = @"Provider = Microsoft.ACE.OLEDB.12.0; Data Source=C:\VisualStudio_Projects\ubersetzer\ubersetzer\übersetzer.accdb";
+                    //string strProvider = @"Provider = Microsoft.ACE.OLEDB.12.0; Data Source=C:\Program Files (x86)\MN Projects\ubersetzer\übersetzer.accdb";
+                    string strProvider = @"Provider = Microsoft.ACE.OLEDB.12.0; Data Source=C:\übersetzer\übersetzer.accdb";
                     OleDbConnection con = new OleDbConnection(strProvider);
                     con.Open();
                     string strSql = "INSERT INTO [übersetzer] ([Ordnung],[Transaction],[Deutsch],[Englisch],[Spanisch],[Portugiesisch],[Französisch],[Italienisch],[Türkisch],[Rumänisch],[Bulgarisch],[Russisch],[Polnisch],[Arabisch])" + " VALUES(@Ordnung, @Transaction, @Deustch, @Englisch,@Spanisch,@Portugiesisch,@Französisch,@Italienisch,@Türkisch,@Rumänisch,@Bulgarisch,@Russisch,@Polnisch,@Arabisch)";
@@ -187,8 +191,10 @@ namespace ubersetzer
         {
             AutoCompleteStringCollection namesCollection = new AutoCompleteStringCollection();
 
-            // string strProvider = @"Provider = Microsoft.ACE.OLEDB.12.0; Data Source=C:\Users\Márcio\documents\visual studio 2015\Projects\ubersetzer\ubersetzer\übersetzer.accdb";
-            string strProvider = @"Provider = Microsoft.ACE.OLEDB.12.0; Data Source=C:\VisualStudio_Projects\ubersetzer\ubersetzer\übersetzer.accdb";
+
+            //string strProvider = @"Provider = Microsoft.ACE.OLEDB.12.0; Data Source=C:\VisualStudio_Projects\ubersetzer\ubersetzer\übersetzer.accdb";
+            //string strProvider = @"Provider = Microsoft.ACE.OLEDB.12.0; Data Source=C:\Program Files (x86)\MN Projects\ubersetzer\übersetzer.accdb";
+            string strProvider = @"Provider = Microsoft.ACE.OLEDB.12.0; Data Source=C:\übersetzer\übersetzer.accdb";
             String strText = txtSuche.Text;
 
             string strSql = "SELECT * from übersetzer where (deutsch like '" + strText + "%') OR (englisch like '" + strText + "%') OR (spanisch like '" + strText + "%')  OR (portugiesisch like '" + strText + "%') OR (französisch like '" + strText + "%') OR (italienisch like '" + strText + "%') OR (türkisch like '" + strText + "%') OR (rumänisch like '" + strText + "%') OR (bulgarisch like '" + strText + "%') OR (russisch like '" + strText + "%') OR (polnisch like '" + strText + "%') OR (arabisch like '" + strText + "%')";
@@ -229,8 +235,10 @@ namespace ubersetzer
         {
             this.DateTimeOut();// Time out date
 
-            // string strProvider = @"Provider = Microsoft.ACE.OLEDB.12.0; Data Source=C:\Users\Márcio\documents\visual studio 2015\Projects\ubersetzer\ubersetzer\übersetzer.accdb";
-            string strProvider = @"Provider = Microsoft.ACE.OLEDB.12.0; Data Source=C:\VisualStudio_Projects\ubersetzer\ubersetzer\übersetzer.accdb";
+
+            //string strProvider = @"Provider = Microsoft.ACE.OLEDB.12.0; Data Source=C:\VisualStudio_Projects\ubersetzer\ubersetzer\übersetzer.accdb";
+            //string strProvider = @"Provider = Microsoft.ACE.OLEDB.12.0; Data Source=C:\Program Files (x86)\MN Projects\ubersetzer\übersetzer.accdb";
+            string strProvider = @"Provider = Microsoft.ACE.OLEDB.12.0; Data Source=C:\übersetzer\übersetzer.accdb";
             String strText = txtSuche.Text;
 
             string strSql = "SELECT * from übersetzer where (deutsch like '" + strText + "%') OR (englisch like '" + strText + "%') OR (spanisch like '" + strText + "%')  OR (portugiesisch like '" + strText + "%') OR (französisch like '" + strText + "%') OR (italienisch like '" + strText + "%') OR (türkisch like '" + strText + "%') OR (rumänisch like '" + strText + "%') OR (bulgarisch like '" + strText + "%') OR (russisch like '" + strText + "%') OR (polnisch like '" + strText + "%') OR (arabisch like '" + strText + "%')";
@@ -321,7 +329,9 @@ namespace ubersetzer
         {
             try
             {
-                string strProvider = @"Provider = Microsoft.ACE.OLEDB.12.0; Data Source=C:\VisualStudio_Projects\ubersetzer\ubersetzer\übersetzer.accdb";
+                //string strProvider = @"Provider = Microsoft.ACE.OLEDB.12.0; Data Source=C:\VisualStudio_Projects\ubersetzer\ubersetzer\übersetzer.accdb";
+                //string strProvider = @"Provider = Microsoft.ACE.OLEDB.12.0; Data Source=C:\Program Files (x86)\MN Projects\ubersetzer\übersetzer.accdb";
+                string strProvider = @"Provider = Microsoft.ACE.OLEDB.12.0; Data Source=C:\übersetzer\übersetzer.accdb";
                 OleDbConnection con = new OleDbConnection(strProvider);
                 con.Open();
 
@@ -351,7 +361,9 @@ namespace ubersetzer
             //First Verify if record exist, then define save or update
             try
             {
-                string strProvider = @"Provider = Microsoft.ACE.OLEDB.12.0; Data Source=C:\VisualStudio_Projects\ubersetzer\ubersetzer\übersetzer.accdb";
+                //string strProvider = @"Provider = Microsoft.ACE.OLEDB.12.0; Data Source=C:\VisualStudio_Projects\ubersetzer\ubersetzer\übersetzer.accdb";
+                //string strProvider = @"Provider = Microsoft.ACE.OLEDB.12.0; Data Source=C:\Program Files (x86)\MN Projects\ubersetzer\übersetzer.accdb";
+                string strProvider = @"Provider = Microsoft.ACE.OLEDB.12.0; Data Source=C:\übersetzer\übersetzer.accdb";
                 OleDbConnection con = new OleDbConnection(strProvider);
                 con.Open();
                 string strSql = "SELECT COUNT(*) FROM [übersetzer] WHERE ([ID] = @id)";
@@ -1186,10 +1198,10 @@ namespace ubersetzer
             int month = DateTime.Now.Month;
             int year = DateTime.Now.Year;
 
-            DateTime dateEnd = new DateTime(2017, 05, 30);//change date here
+            DateTime dateEnd = new DateTime(2017, 06, 30);//change date here
             DateTime dateCurrent = DateTime.Now;
 
-            if (day >= 30 && month >= 5 && year == 2017)//change date here
+            if (day >= 30 && month >= 6 && year == 2017)//change date here
             {
                 MessageBox.Show("Tut mir leid. Die Frist dieser Anwendung erreicht das Ende!");
                 Application.Exit();
@@ -1205,10 +1217,11 @@ namespace ubersetzer
             }
 
             string numdays = NrOfDays.ToString();
-            this.txtNrDays.Text = numdays + " tages";
-            this.txtNrDays_2.Text = numdays + " tages";
+            this.txtNrDays.Text = numdays + " tage";
+            this.txtNrDays_2.Text = numdays + " tage";
         }
 
+     
     }
 
 }

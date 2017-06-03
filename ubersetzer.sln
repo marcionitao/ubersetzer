@@ -5,7 +5,7 @@ VisualStudioVersion = 15.0.26403.7
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ubersetzer", "ubersetzer\ubersetzer.csproj", "{8625C819-730C-41CB-BA6B-D4B466DB196E}"
 EndProject
-Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Setup_ubersetzer", "Setup1\Setup1.vdproj", "{4AF31CD3-93C7-48D0-9B1B-28A696876B36}"
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "ubersetzer_setup", "ubersetzer_setup\ubersetzer_setup.vdproj", "{6C5ABEE6-2E62-4AE1-92B5-36E855A597A1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,12 +23,10 @@ Global
 		{8625C819-730C-41CB-BA6B-D4B466DB196E}.Release|Any CPU.Build.0 = Release|Any CPU
 		{8625C819-730C-41CB-BA6B-D4B466DB196E}.Release|x86.ActiveCfg = Release|x86
 		{8625C819-730C-41CB-BA6B-D4B466DB196E}.Release|x86.Build.0 = Release|x86
-		{4AF31CD3-93C7-48D0-9B1B-28A696876B36}.Debug|Any CPU.ActiveCfg = Debug
-		{4AF31CD3-93C7-48D0-9B1B-28A696876B36}.Debug|x86.ActiveCfg = Debug
-		{4AF31CD3-93C7-48D0-9B1B-28A696876B36}.Debug|x86.Build.0 = Debug
-		{4AF31CD3-93C7-48D0-9B1B-28A696876B36}.Release|Any CPU.ActiveCfg = Release
-		{4AF31CD3-93C7-48D0-9B1B-28A696876B36}.Release|x86.ActiveCfg = Release
-		{4AF31CD3-93C7-48D0-9B1B-28A696876B36}.Release|x86.Build.0 = Release
+		{6C5ABEE6-2E62-4AE1-92B5-36E855A597A1}.Debug|Any CPU.ActiveCfg = Debug
+		{6C5ABEE6-2E62-4AE1-92B5-36E855A597A1}.Debug|x86.ActiveCfg = Debug
+		{6C5ABEE6-2E62-4AE1-92B5-36E855A597A1}.Release|Any CPU.ActiveCfg = Release
+		{6C5ABEE6-2E62-4AE1-92B5-36E855A597A1}.Release|x86.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -4,6 +4,7 @@ namespace ubersetzer.Properties
 {
     internal class Resources1
     {
+        /*
         internal static Image _1483757841_Germany_flat;
         internal static Image _1483758073_United_Kingdom_flat;
         internal static Image _1483758073_United_Kingdom_flat_32;
@@ -19,5 +20,6 @@ namespace ubersetzer.Properties
         internal static Image _1483915568_France_flat;
         internal static Image _1483915585_Spain_flat;
         internal static Image western_union;
+        */
     }
 }

@@ -4,7 +4,7 @@
   <description asmv2:iconFile="uebersetzer-online.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
   <application />
   <entryPoint>
-    <assemblyIdentity name="ubersetzer" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
+    <assemblyIdentity name="ubersetzer" version="2.0.0.0" language="neutral" processorArchitecture="x86" />
     <commandLine file="ubersetzer.exe" parameters="" />
   </entryPoint>
   <trustInfo>
@@ -50,7 +50,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>fotHVsGQOHUaCpy0/Gxr6sXNYDzJvxqyNXmJ7pR90+w=</dsig:DigestValue>
+        <dsig:DigestValue>ns9OCSDVJ3MpcDyHEeXDss1YJrcjlOc+YDJHzlnKXjg=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -62,19 +62,19 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>cSOyv/G3k9k2F0OG2b5kScOFJ/U0RSpd2G9o+4Vb5a0=</dsig:DigestValue>
+        <dsig:DigestValue>phqixIhljIAOgK341j48jvFh05XAcwjLKuQ7uAEF5A0=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ubersetzer.exe" size="530880">
-      <assemblyIdentity name="ubersetzer" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ubersetzer.exe" size="514496">
+      <assemblyIdentity name="ubersetzer" version="2.0.0.0" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>3/FRVWSwGWxdcEHKhhkdCKFG2FbSieQ+F6OEoSFZ41g=</dsig:DigestValue>
+        <dsig:DigestValue>mAeoURBV2Rhwa3UPteMtLrmjFO8ancJBggudQAQ5rf4=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
