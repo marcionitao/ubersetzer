@@ -23,3 +23,9 @@ It is possible to hear in each language the proper pronunciation of the phrase.
 - C#
 - Ms Access DB
 - Google Translate
+
+### ScreenShot
+
+![capturar](https://cloud.githubusercontent.com/assets/3647246/26784328/53779ab0-49fd-11e7-8675-af487e73bcfe.PNG)
+![capturar_2](https://cloud.githubusercontent.com/assets/3647246/26784327/53767f22-49fd-11e7-95f9-1db3b830ca1b.PNG)
+![capturar_3](https://cloud.githubusercontent.com/assets/3647246/26784326/53756542-49fd-11e7-8855-10a21fc59dd7.PNG)
