@@ -1198,10 +1198,10 @@ namespace ubersetzer
             int month = DateTime.Now.Month;
             int year = DateTime.Now.Year;
 
-            DateTime dateEnd = new DateTime(2017, 06, 30);//change date here
+            DateTime dateEnd = new DateTime(2017, 07, 31);//change date here
             DateTime dateCurrent = DateTime.Now;
 
-            if (day >= 30 && month >= 6 && year == 2017)//change date here
+            if (day >= 31 && month >= 7 && year == 2017)//change date here
             {
                 MessageBox.Show("Tut mir leid. Die Frist dieser Anwendung erreicht das Ende!");
                 Application.Exit();

@@ -16,3 +16,4 @@ C:\VisualStudio_Projects\ubersetzer\ubersetzer\obj\x86\Release\ubersetzer.exe.ma
 C:\VisualStudio_Projects\ubersetzer\ubersetzer\obj\x86\Release\ubersetzer.application
 C:\VisualStudio_Projects\ubersetzer\ubersetzer\obj\x86\Release\ubersetzer.exe
 C:\VisualStudio_Projects\ubersetzer\ubersetzer\obj\x86\Release\ubersetzer.pdb
+C:\VisualStudio_Projects\ubersetzer\ubersetzer\obj\x86\Release\ubersetzer.csprojResolveAssemblyReference.cache
